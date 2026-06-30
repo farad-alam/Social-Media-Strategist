@@ -28,16 +28,16 @@ export default function TemplatePage() {
       {/* Hero */}
       <section className="gradient-hero pt-32 pb-20 md:pt-40 md:pb-28">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6 bg-white/10 text-white/80 border border-white/20">
+          <span className="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6 bg-slate-900/5 text-slate-600 border border-slate-900/10">
             Free Resource
           </span>
-          <h1 className="text-display font-bold text-white mb-6">
+          <h1 className="text-display font-bold text-slate-900 mb-6">
             The Ultimate Social Media{" "}
-            <span className="bg-gradient-to-r from-primary-200 to-secondary-light bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               Strategy Template
             </span>
           </h1>
-          <p className="text-xl text-white/70 leading-relaxed max-w-2xl mx-auto mb-10">
+          <p className="text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto mb-10">
             Stop guessing and start planning. Download the exact template I use to build revenue-driving social media strategies for my clients.
           </p>
           

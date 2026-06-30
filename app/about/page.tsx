@@ -86,36 +86,36 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <span className="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6 bg-white/10 text-white/80 border border-white/20">
+              <span className="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6 bg-slate-900/5 text-slate-600 border border-slate-900/10">
                 About Me
               </span>
-              <h1 className="text-display font-bold text-white mb-6">
+              <h1 className="text-display font-bold text-slate-900 mb-6">
                 Hi, I&apos;m{" "}
-                <span className="bg-gradient-to-r from-primary-200 to-secondary-light bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                   Abul Hasan
                 </span>
               </h1>
-              <p className="text-xl text-white/70 leading-relaxed mb-8">
-                A social media strategist with <strong className="text-white">13+ years of experience</strong> helping
+              <p className="text-xl text-slate-600 leading-relaxed mb-8">
+                A social media strategist with <strong className="text-slate-900">13+ years of experience</strong> helping
                 businesses transform their social media from random posting into strategic, revenue-driving systems.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button href="/contact" size="lg" variant="primary">
                   Book a Strategy Call
                 </Button>
-                <Button href="/services" size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 hover:text-white">
+                <Button href="/services" size="lg" variant="outline" className="border-slate-900/20 text-slate-900 hover:bg-slate-900/5 hover:text-slate-900">
                   View Services
                 </Button>
               </div>
             </div>
             <div className="relative">
               <div className="aspect-[4/5] max-w-sm mx-auto rounded-2xl bg-gradient-to-br from-primary/80 to-primary-dark overflow-hidden shadow-2xl shadow-primary/30 flex items-center justify-center">
-                <div className="text-center text-white p-8">
-                  <div className="w-40 h-40 rounded-full bg-white/20 backdrop-blur-sm mx-auto mb-6 flex items-center justify-center text-6xl font-bold border-4 border-white/20">
+                <div className="text-center text-slate-900 p-8">
+                  <div className="w-40 h-40 rounded-full bg-slate-900/10 backdrop-blur-sm mx-auto mb-6 flex items-center justify-center text-6xl font-bold border-4 border-slate-900/10">
                     AH
                   </div>
                   <h2 className="text-2xl font-bold">Abul Hasan</h2>
-                  <p className="text-white/70 mt-1">Social Media Strategist</p>
+                  <p className="text-slate-600 mt-1">Social Media Strategist</p>
                   <p className="text-white/50 text-sm mt-1">Since 2012</p>
                 </div>
               </div>

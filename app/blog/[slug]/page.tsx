@@ -78,16 +78,16 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
         {/* Header */}
         <header className="gradient-hero pt-32 pb-20 md:pt-40 md:pb-28">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <span className="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6 bg-white/10 text-white/80 border border-white/20">
+            <span className="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6 bg-slate-900/5 text-slate-600 border border-slate-900/10">
               {post.category}
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-8 leading-tight">
               {post.title}
             </h1>
-            <div className="flex items-center justify-center gap-4 text-white/60 text-sm">
+            <div className="flex items-center justify-center gap-4 text-slate-500 text-sm">
               <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xs">AH</div>
-                <span className="text-white/90 font-medium">{post.author}</span>
+                <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-slate-900 font-bold text-xs">AH</div>
+                <span className="text-slate-800 font-medium">{post.author}</span>
               </div>
               <span>•</span>
               <span>{new Date(post.date).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}</span>

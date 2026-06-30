@@ -444,24 +444,24 @@ export default function HomePage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-40">
           <div className="max-w-4xl">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm mb-8 animate-fade-in">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/5 border border-slate-900/10 backdrop-blur-sm mb-8 animate-fade-in">
               <span className="w-2 h-2 rounded-full bg-secondary-light animate-pulse" />
-              <span className="text-sm text-white/80 font-medium">
+              <span className="text-sm text-slate-600 font-medium">
                 13+ Years of Strategic Excellence
               </span>
             </div>
 
             {/* H1 */}
-            <h1 className="text-display font-bold text-white mb-6 animate-fade-in-up">
+            <h1 className="text-display font-bold text-slate-900 mb-6 animate-fade-in-up">
               Social Media Strategy That{" "}
-              <span className="bg-gradient-to-r from-primary-200 via-blue-300 to-secondary-light bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-primary via-primary-light to-secondary bg-clip-text text-transparent">
                 Actually Grows
               </span>{" "}
               Your Business
             </h1>
 
             {/* Subtitle */}
-            <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-2xl mb-10 animate-fade-in-up stagger-2">
+            <p className="text-xl md:text-2xl text-slate-600 leading-relaxed max-w-2xl mb-10 animate-fade-in-up stagger-2">
               Custom social media strategies built by a veteran strategist.
               Increase brand awareness, generate qualified leads, and improve ROI
               — backed by 300+ successful client engagements.
@@ -472,19 +472,19 @@ export default function HomePage() {
               <Button href="/contact" size="lg" variant="primary">
                 Get Your Free Strategy Call
               </Button>
-              <Button href="/social-media-strategy-guide" size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 hover:text-white">
+              <Button href="/social-media-strategy-guide" size="lg" variant="outline" className="border-slate-900/20 text-slate-900 hover:bg-slate-900/5 hover:text-slate-900">
                 View Strategy Guide
               </Button>
             </div>
 
             {/* Social Proof Mini */}
-            <div className="mt-12 flex flex-wrap items-center gap-8 text-white/60 text-sm animate-fade-in stagger-4">
+            <div className="mt-12 flex flex-wrap items-center gap-8 text-slate-500 text-sm animate-fade-in stagger-4">
               <div className="flex items-center gap-2">
                 <div className="flex -space-x-2">
                   {[...Array(4)].map((_, i) => (
                     <div
                       key={i}
-                      className="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-secondary border-2 border-slate-900 flex items-center justify-center text-white text-xs font-bold"
+                      className="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-secondary border-2 border-slate-900 flex items-center justify-center text-slate-900 text-xs font-bold"
                     >
                       {["S", "M", "E", "D"][i]}
                     </div>
@@ -924,10 +924,10 @@ export default function HomePage() {
 
         <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <ScrollReveal>
-            <h2 className="text-h1 font-bold text-white mb-6">
+            <h2 className="text-h1 font-bold text-slate-900 mb-6">
               Need a Custom Social Media Strategy?
             </h2>
-            <p className="text-xl text-white/70 mb-10 leading-relaxed">
+            <p className="text-xl text-slate-600 mb-10 leading-relaxed">
               Let&apos;s build a strategy that actually works for your business.
               Book your free 30-minute strategy call and get personalized
               recommendations — no strings attached.
@@ -940,7 +940,7 @@ export default function HomePage() {
                 href="/social-media-strategy-template"
                 size="lg"
                 variant="outline"
-                className="border-white/30 text-white hover:bg-white/10 hover:text-white"
+                className="border-slate-900/20 text-slate-900 hover:bg-slate-900/5 hover:text-slate-900"
               >
                 Download Free Template
               </Button>
