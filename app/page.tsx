@@ -924,11 +924,11 @@ export default function HomePage() {
 
         <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <ScrollReveal>
-            <h2 className="text-h1 font-bold text-slate-900 mb-6">
+            <h2 className="text-h1 font-bold text-white mb-6">
               Need a Custom Social Media Strategy?
             </h2>
-            <p className="text-xl text-slate-600 mb-10 leading-relaxed">
-              Let&apos;s build a strategy that actually works for your business.
+            <p className="text-xl text-white/80 mb-10 leading-relaxed">
+              Let's build a strategy that actually works for your business.
               Book your free 30-minute strategy call and get personalized
               recommendations — no strings attached.
             </p>
@@ -940,7 +940,7 @@ export default function HomePage() {
                 href="/social-media-strategy-template"
                 size="lg"
                 variant="outline"
-                className="border-slate-900/20 text-slate-900 hover:bg-slate-900/5 hover:text-slate-900"
+                className="border-white/30 text-white hover:bg-white/10 hover:text-white"
               >
                 Download Free Template
               </Button>

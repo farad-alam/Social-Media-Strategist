@@ -4,12 +4,12 @@ import Link from "next/link";
 
 const footerLinks = {
   services: [
-    { href: "/services", label: "Strategy Planning" },
-    { href: "/services", label: "Content Calendar" },
-    { href: "/services", label: "Competitor Research" },
-    { href: "/services", label: "Audience Research" },
-    { href: "/services", label: "Brand Positioning" },
-    { href: "/services", label: "Monthly Consulting" },
+    { href: "/services/strategy-planning", label: "Strategy Planning" },
+    { href: "/services/content-calendar", label: "Content Calendar" },
+    { href: "/services/competitor-research", label: "Competitor Research" },
+    { href: "/services/audience-research", label: "Audience Research" },
+    { href: "/services/brand-positioning", label: "Brand Positioning" },
+    { href: "/services/monthly-consulting", label: "Monthly Consulting" },
   ],
   resources: [
     { href: "/social-media-strategy-guide", label: "Strategy Guide" },
