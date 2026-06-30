@@ -7,6 +7,7 @@ import Accordion from "@/components/ui/Accordion";
 import Timeline from "@/components/ui/Timeline";
 import TestimonialCarousel from "@/components/ui/TestimonialCarousel";
 import ScrollReveal from "@/components/ui/ScrollReveal";
+import ShaderHeroBackground from "@/components/ui/ShaderHeroBackground";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -431,37 +432,31 @@ export default function HomePage() {
       />
 
       {/* ===== HERO SECTION ===== */}
-      <section id="hero" className="relative min-h-screen flex items-center gradient-hero overflow-hidden">
+      <section id="hero" className="relative min-h-screen flex items-center overflow-hidden">
         {/* Background Effects */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-1/4 -right-20 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float" />
-          <div className="absolute bottom-1/4 -left-20 w-80 h-80 bg-secondary/15 rounded-full blur-3xl animate-float" style={{ animationDelay: "3s" }} />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-3xl" />
-          {/* Grid pattern overlay */}
-          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTAgMGg0MHY0MEgweiIvPjwvZz48L2c+PC9zdmc+')] opacity-50" />
-        </div>
+        <ShaderHeroBackground />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-40">
           <div className="max-w-4xl">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/5 border border-slate-900/10 backdrop-blur-sm mb-8 animate-fade-in">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm mb-8 animate-fade-in">
               <span className="w-2 h-2 rounded-full bg-secondary-light animate-pulse" />
-              <span className="text-sm text-slate-600 font-medium">
+              <span className="text-sm text-white/80 font-medium">
                 13+ Years of Strategic Excellence
               </span>
             </div>
 
             {/* H1 */}
-            <h1 className="text-display font-bold text-slate-900 mb-6 animate-fade-in-up">
+            <h1 className="text-display font-bold text-white mb-6 animate-fade-in-up">
               Social Media Strategy That{" "}
-              <span className="bg-gradient-to-r from-primary via-primary-light to-secondary bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-primary-200 via-blue-300 to-secondary-light bg-clip-text text-transparent">
                 Actually Grows
               </span>{" "}
               Your Business
             </h1>
 
             {/* Subtitle */}
-            <p className="text-xl md:text-2xl text-slate-600 leading-relaxed max-w-2xl mb-10 animate-fade-in-up stagger-2">
+            <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-2xl mb-10 animate-fade-in-up stagger-2">
               Custom social media strategies built by a veteran strategist.
               Increase brand awareness, generate qualified leads, and improve ROI
               — backed by 300+ successful client engagements.
@@ -472,7 +467,7 @@ export default function HomePage() {
               <Button href="/contact" size="lg" variant="primary">
                 Get Your Free Strategy Call
               </Button>
-              <Button href="/social-media-strategy-guide" size="lg" variant="outline" className="border-slate-900/20 text-slate-900 hover:bg-slate-900/5 hover:text-slate-900">
+              <Button href="/social-media-strategy-guide" size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 hover:text-white">
                 View Strategy Guide
               </Button>
             </div>
