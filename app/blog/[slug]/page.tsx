@@ -86,7 +86,7 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
             </h1>
             <div className="flex items-center justify-center gap-4 text-white/60 text-sm">
               <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xs">AH</div>
+                <img src="/images/abul-hasan.jpg" alt={post.author} className="w-8 h-8 rounded-full border border-white/20 object-cover object-top" />
                 <span className="text-white/90 font-medium">{post.author}</span>
               </div>
               <span>•</span>
@@ -105,8 +105,22 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
             
-            {/* Share/CTA Block */}
+            {/* Author Bio */}
             <div className="mt-16 pt-8 border-t border-slate-200">
+              <div className="flex flex-col sm:flex-row gap-6 items-start">
+                <img src="/images/abul-hasan.jpg" alt={post.author} className="w-20 h-20 rounded-full object-cover object-top border-4 border-slate-100 flex-shrink-0" />
+                <div>
+                  <h3 className="text-xl font-bold text-slate-900 mb-1">Written by {post.author}</h3>
+                  <p className="text-sm font-medium text-primary mb-3">Lead Social Media Strategist</p>
+                  <p className="text-slate-600 leading-relaxed text-sm">
+                    Abul is a social media strategist with over 13 years of experience helping B2B and B2C brands turn their social channels into revenue engines. He is a BASIS Outsourcing Award winner and a Top Rated professional on Upwork.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            {/* Share/CTA Block */}
+            <div className="mt-12">
                <div className="bg-slate-50 rounded-2xl p-8 text-center border border-slate-200">
                  <h3 className="text-2xl font-bold text-slate-900 mb-4">Want more insights like this?</h3>
                  <p className="text-slate-600 mb-8">

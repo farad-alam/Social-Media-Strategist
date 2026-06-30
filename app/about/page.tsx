@@ -109,25 +109,32 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="relative">
-              <div className="aspect-[4/5] max-w-sm mx-auto rounded-2xl bg-gradient-to-br from-primary/80 to-primary-dark overflow-hidden shadow-2xl shadow-primary/30 flex items-center justify-center">
-                <div className="text-center text-white p-8">
-                  <div className="w-40 h-40 rounded-full bg-white/20 backdrop-blur-sm mx-auto mb-6 flex items-center justify-center text-6xl font-bold border-4 border-white/20">
-                    AH
-                  </div>
-                  <h2 className="text-2xl font-bold">Abul Hasan</h2>
-                  <p className="text-white/80 mt-1">Social Media Strategist</p>
-                  <p className="text-white/50 text-sm mt-1">Since 2012</p>
+              <div className="aspect-[4/5] max-w-sm mx-auto rounded-2xl bg-slate-800 overflow-hidden shadow-2xl shadow-primary/30 relative border-4 border-white/10">
+                <img 
+                  src="/images/abul-hasan.jpg" 
+                  alt="Abul Hasan - Social Media Strategist" 
+                  className="w-full h-full object-cover object-top"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute bottom-6 left-6 right-6 text-center">
+                  <h2 className="text-2xl font-bold text-white mb-1">Abul Hasan</h2>
+                  <p className="text-white/90 font-medium">Lead Social Media Strategist</p>
+                  <p className="text-white/60 text-sm mt-1">Since 2012</p>
                 </div>
               </div>
-              <div className="absolute -right-4 top-8 bg-white rounded-xl p-4 shadow-xl border border-slate-100 animate-float">
-                <div className="text-2xl mb-1">🏆</div>
-                <div className="text-xs font-bold text-white/90">BASIS Award</div>
-                <div className="text-xs text-white/60">2021</div>
+              <div className="absolute -right-4 top-8 bg-white rounded-xl p-4 shadow-xl border border-slate-100 animate-float flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center text-xl">🏆</div>
+                <div>
+                  <div className="text-sm font-bold text-slate-900">BASIS Award</div>
+                  <div className="text-xs text-slate-500">2021 Top Individual</div>
+                </div>
               </div>
-              <div className="absolute -left-4 bottom-16 bg-white rounded-xl p-4 shadow-xl border border-slate-100 animate-float" style={{ animationDelay: "2s" }}>
-                <div className="text-2xl mb-1">⭐</div>
-                <div className="text-xs font-bold text-white/90">Top Rated</div>
-                <div className="text-xs text-white/60">Upwork</div>
+              <div className="absolute -left-4 bottom-16 bg-white rounded-xl p-4 shadow-xl border border-slate-100 animate-float flex items-center gap-3" style={{ animationDelay: "2s" }}>
+                <div className="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center text-xl">⭐</div>
+                <div>
+                  <div className="text-sm font-bold text-slate-900">Top Rated</div>
+                  <div className="text-xs text-slate-500">Upwork</div>
+                </div>
               </div>
             </div>
           </div>
@@ -164,25 +171,39 @@ export default function AboutPage() {
             />
           </ScrollReveal>
 
-          <ScrollReveal>
-            <div className="prose prose-lg max-w-none text-slate-600">
-              <p>
-                My journey as a social media strategist began over 13 years ago when social media was still finding its place in the business world. While most saw it as just a place to share updates, I recognized its potential as a powerful business growth engine — and I built my career on that conviction.
-              </p>
-              <p>
-                Over the years, I&apos;ve had the privilege of working with <strong className="text-slate-800">300+ clients</strong> across more than 50 industries. From local startups to international brands, each engagement taught me something new about what makes social media strategy truly effective: it&apos;s not about following trends — it&apos;s about understanding people.
-              </p>
-              <p>
-                My work on Upwork, where I&apos;ve delivered <strong className="text-slate-800">42,000+ hours</strong> as a Top Rated professional, gave me the unique opportunity to work across diverse markets and cultures. This cross-industry experience is what allows me to bring fresh, proven strategies to every new client.
-              </p>
-              <p>
-                In 2021, I received the <strong className="text-slate-800">BASIS Outsourcing Award</strong> as the District Level Top Individual — a recognition that validated years of dedication to excellence. That same year, I founded my own agency to scale the impact of strategic social media beyond one-on-one consulting.
-              </p>
-              <p>
-                Today, I continue to help businesses build social media strategies that don&apos;t just look good on paper — they drive real, measurable results. Every strategy I create is rooted in data, informed by experience, and designed for growth.
-              </p>
-            </div>
-          </ScrollReveal>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <ScrollReveal>
+              <div className="prose prose-lg max-w-none text-slate-600">
+                <p>
+                  My journey as a social media strategist began over 13 years ago when social media was still finding its place in the business world. While most saw it as just a place to share updates, I recognized its potential as a powerful business growth engine — and I built my career on that conviction.
+                </p>
+                <p>
+                  Over the years, I&apos;ve had the privilege of working with <strong className="text-slate-800">300+ clients</strong> across more than 50 industries. From local startups to international brands, each engagement taught me something new about what makes social media strategy truly effective: it&apos;s not about following trends — it&apos;s about understanding people.
+                </p>
+                <p>
+                  My work on Upwork, where I&apos;ve delivered <strong className="text-slate-800">42,000+ hours</strong> as a Top Rated professional, gave me the unique opportunity to work across diverse markets and cultures. This cross-industry experience is what allows me to bring fresh, proven strategies to every new client.
+                </p>
+                <p>
+                  Today, I continue to help businesses build social media strategies that don&apos;t just look good on paper — they drive real, measurable results. Every strategy I create is rooted in data, informed by experience, and designed for growth.
+                </p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={200}>
+              <div className="relative">
+                <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl border border-slate-200">
+                  <img src="/images/workspace.png" alt="Social Media Strategy Workspace" className="w-full h-full object-cover" />
+                </div>
+                <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl border border-slate-100 max-w-[280px]">
+                  <div className="flex gap-1 mb-2">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-4 h-4 text-accent-light" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                    ))}
+                  </div>
+                  <p className="text-sm font-bold text-slate-900">"Data-driven strategies that actually drive real ROI."</p>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
         </div>
       </section>
 

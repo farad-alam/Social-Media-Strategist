@@ -166,6 +166,8 @@ const testimonials = [
     name: "Sarah Johnson",
     role: "Marketing Director",
     company: "TechStart Inc.",
+    avatar: "/images/avatar-1.png",
+    source: "Upwork",
   },
   {
     quote:
@@ -173,6 +175,8 @@ const testimonials = [
     name: "Michael Chen",
     role: "CEO",
     company: "GrowthLab Agency",
+    avatar: "/images/avatar-2.png",
+    source: "LinkedIn",
   },
   {
     quote:
@@ -180,6 +184,8 @@ const testimonials = [
     name: "Emily Rodriguez",
     role: "Founder",
     company: "Bloom Wellness",
+    avatar: "/images/avatar-3.png",
+    source: "Upwork",
   },
   {
     quote:
@@ -187,6 +193,8 @@ const testimonials = [
     name: "David Park",
     role: "VP of Marketing",
     company: "CloudSync Solutions",
+    avatar: "/images/avatar-4.png",
+    source: "Direct Client",
   },
   {
     quote:
@@ -194,6 +202,8 @@ const testimonials = [
     name: "Lisa Thompson",
     role: "Brand Manager",
     company: "Artisan Foods Co.",
+    avatar: "/images/avatar-5.png",
+    source: "Upwork",
   },
 ];
 
@@ -431,9 +441,9 @@ export default function HomePage() {
       />
 
       {/* ===== HERO SECTION ===== */}
-      <section id="hero" className="relative min-h-screen flex items-center gradient-hero overflow-hidden">
+      <section id="hero" className="relative min-h-[95vh] pt-32 pb-16 md:pt-40 md:pb-24 flex items-center gradient-hero overflow-hidden">
         {/* Background Effects */}
-        <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-1/4 -right-20 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float" />
           <div className="absolute bottom-1/4 -left-20 w-80 h-80 bg-secondary/15 rounded-full blur-3xl animate-float" style={{ animationDelay: "3s" }} />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-3xl" />
@@ -441,72 +451,127 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTAgMGg0MHY0MEgweiIvPjwvZz48L2c+PC9zdmc+')] opacity-50" />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-40">
-          <div className="max-w-4xl">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm mb-8 animate-fade-in">
-              <span className="w-2 h-2 rounded-full bg-secondary-light animate-pulse" />
-              <span className="text-sm text-white/80 font-medium">
-                13+ Years of Strategic Excellence
-              </span>
-            </div>
-
-            {/* H1 */}
-            <h1 className="text-display font-bold text-white mb-6 animate-fade-in-up">
-              Social Media Strategy That{" "}
-              <span className="bg-gradient-to-r from-primary-200 via-blue-300 to-secondary-light bg-clip-text text-transparent">
-                Actually Grows
-              </span>{" "}
-              Your Business
-            </h1>
-
-            {/* Subtitle */}
-            <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-2xl mb-10 animate-fade-in-up stagger-2">
-              Custom social media strategies built by a veteran strategist.
-              Increase brand awareness, generate qualified leads, and improve ROI
-              — backed by 300+ successful client engagements.
-            </p>
-
-            {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up stagger-3">
-              <Button href="/contact" size="lg" variant="primary">
-                Get Your Free Strategy Call
-              </Button>
-              <Button href="/social-media-strategy-guide" size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 hover:text-white">
-                View Strategy Guide
-              </Button>
-            </div>
-
-            {/* Social Proof Mini */}
-            <div className="mt-12 flex flex-wrap items-center gap-8 text-slate-500 text-sm animate-fade-in stagger-4">
-              <div className="flex items-center gap-2">
-                <div className="flex -space-x-2">
-                  {[...Array(4)].map((_, i) => (
-                    <div
-                      key={i}
-                      className="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-secondary border-2 border-slate-900 flex items-center justify-center text-slate-900 text-xs font-bold"
-                    >
-                      {["S", "M", "E", "D"][i]}
-                    </div>
-                  ))}
-                </div>
-                <span>300+ clients served</span>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div className="grid lg:grid-cols-12 gap-12 items-center">
+            
+            {/* Left Column - Text */}
+            <div className="lg:col-span-7">
+              {/* Badge */}
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm mb-8 animate-fade-in">
+                <span className="w-2 h-2 rounded-full bg-secondary-light animate-pulse" />
+                <span className="text-sm text-white/80 font-medium">
+                  Top Rated Social Media Strategist
+                </span>
               </div>
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-accent-light" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <span>BASIS Outsourcing Award 2021</span>
+
+              {/* H1 */}
+              <h1 className="text-display font-bold text-white mb-6 animate-fade-in-up">
+                Social Media Strategy That{" "}
+                <span className="bg-gradient-to-r from-primary-200 via-blue-300 to-secondary-light bg-clip-text text-transparent">
+                  Actually Grows
+                </span>{" "}
+                Your Business
+              </h1>
+
+              {/* Subtitle */}
+              <p className="text-xl md:text-2xl text-white/70 leading-relaxed mb-10 animate-fade-in-up stagger-2 max-w-2xl">
+                Custom social media strategies built by a veteran strategist.
+                Increase brand awareness, generate qualified leads, and improve ROI
+                — backed by 13+ years and 300+ successful client engagements.
+              </p>
+
+              {/* CTAs */}
+              <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up stagger-3">
+                <Button href="/contact" size="lg" variant="primary">
+                  Get Your Free Strategy Call
+                </Button>
+                <Button href="/services" size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 hover:text-white">
+                  View Custom Packages
+                </Button>
+              </div>
+              
+              {/* Mini Social Proof */}
+              <div className="mt-8 flex items-center gap-4 animate-fade-in-up stagger-4">
+                <div className="flex -space-x-3">
+                  <img src="/images/avatar-1.png" alt="Client" className="w-10 h-10 rounded-full border-2 border-slate-900 object-cover" />
+                  <img src="/images/avatar-2.png" alt="Client" className="w-10 h-10 rounded-full border-2 border-slate-900 object-cover" />
+                  <img src="/images/avatar-3.png" alt="Client" className="w-10 h-10 rounded-full border-2 border-slate-900 object-cover" />
+                  <div className="w-10 h-10 rounded-full border-2 border-slate-900 bg-slate-800 flex items-center justify-center text-xs font-bold text-white">
+                    300+
+                  </div>
+                </div>
+                <div className="text-sm text-white/60">
+                  Trusted by founders and marketing teams worldwide
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column - Image & Proof Cards */}
+            <div className="lg:col-span-5 relative animate-fade-in-up stagger-2 hidden lg:block">
+              <div className="relative w-full max-w-[450px] aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10 mx-auto bg-slate-800">
+                <img 
+                  src="/images/abul-hasan.jpg" 
+                  alt="Abul Hasan - Social Media Strategist" 
+                  className="w-full h-full object-cover object-top"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute bottom-6 left-6 right-6">
+                  <div className="text-2xl font-bold text-white mb-1">Abul Hasan</div>
+                  <div className="text-sm text-white/80 font-medium">Lead Social Media Strategist</div>
+                </div>
+              </div>
+
+              {/* Floating Card 1 */}
+              <div className="absolute -left-12 top-20 bg-slate-900/90 backdrop-blur-md border border-white/10 rounded-xl p-4 shadow-xl animate-float">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center">
+                    <span className="text-secondary-light font-bold">13+</span>
+                  </div>
+                  <div>
+                    <div className="text-white font-bold text-sm">Years Experience</div>
+                    <div className="text-white/60 text-xs">Since 2012</div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Floating Card 2 */}
+              <div className="absolute -right-8 bottom-32 bg-slate-900/90 backdrop-blur-md border border-white/10 rounded-xl p-4 shadow-xl animate-float" style={{ animationDelay: "2s" }}>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center">
+                    <span className="text-xl">🏆</span>
+                  </div>
+                  <div>
+                    <div className="text-white font-bold text-sm">BASIS Award</div>
+                    <div className="text-white/60 text-xs">Top Individual 2021</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          {/* Trust Logo Bar */}
+          <div className="mt-20 pt-10 border-t border-white/10">
+            <p className="text-center text-sm font-medium text-white/40 mb-6 tracking-widest uppercase">
+              Trusted by Brands & Agencies on
+            </p>
+            <div className="flex flex-wrap justify-center items-center gap-10 md:gap-20 opacity-60 grayscale hover:grayscale-0 transition-all duration-300">
+              <div className="text-xl font-black text-white tracking-tighter flex items-center gap-1"><span className="text-secondary-light">up</span>work</div>
+              <div className="text-xl font-bold text-white flex items-center gap-1">
+                <div className="bg-white text-blue-600 rounded-sm px-1 leading-none pt-1">in</div> LinkedIn
+              </div>
+              <div className="text-xl font-bold text-white flex items-center gap-1">
+                <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12c0-5.523-4.477-10-10-10z"/>
+                </svg> Meta
+              </div>
+              <div className="text-xl font-bold text-white flex items-center gap-1">
+                <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                </svg> Instagram
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <svg className="w-6 h-6 text-white/40" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg>
         </div>
       </section>
 
@@ -811,6 +876,101 @@ export default function HomePage() {
                 </Link>
               </ScrollReveal>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ===== REAL RESULTS (CASE STUDIES) ===== */}
+      <section id="case-studies" className="section-padding bg-slate-900 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollReveal>
+            <div className="text-center mb-16">
+              <span className="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6 bg-white/10 text-white/80 border border-white/20">
+                Proven Results
+              </span>
+              <h2 className="text-3xl md:text-5xl font-bold mb-4">Numbers That Speak for Themselves</h2>
+              <p className="text-lg text-white/70 max-w-2xl mx-auto">Real ROI from data-driven social media strategies.</p>
+            </div>
+          </ScrollReveal>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {/* Case Study 1 */}
+            <ScrollReveal delay={100}>
+              <div className="bg-slate-800 rounded-2xl p-8 border border-white/10 relative overflow-hidden group hover:border-primary/50 transition-colors h-full flex flex-col justify-between">
+                <div>
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2" />
+                  <div className="text-sm text-secondary-light font-semibold mb-2">B2B SaaS Company</div>
+                  <h3 className="text-xl font-bold mb-6">LinkedIn Lead Gen Strategy</h3>
+                  <div className="space-y-4 mb-8">
+                    <div className="flex justify-between items-end border-b border-white/10 pb-2">
+                      <span className="text-sm text-white/60">Qualified Leads (Q1)</span>
+                      <span className="text-2xl font-bold text-emerald-400">+340%</span>
+                    </div>
+                    <div className="flex justify-between items-end border-b border-white/10 pb-2">
+                      <span className="text-sm text-white/60">Cost Per Lead (CPL)</span>
+                      <span className="text-2xl font-bold text-emerald-400">-42%</span>
+                    </div>
+                    <div className="flex justify-between items-end border-b border-white/10 pb-2">
+                      <span className="text-sm text-white/60">Organic Impressions</span>
+                      <span className="text-2xl font-bold text-white">1.2M</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="text-sm text-white/70 italic border-t border-white/10 pt-4 mt-auto">"Abul's LinkedIn framework turned our profile from a digital resume into our #1 lead source."</div>
+              </div>
+            </ScrollReveal>
+
+            {/* Case Study 2 */}
+            <ScrollReveal delay={200}>
+              <div className="bg-slate-800 rounded-2xl p-8 border border-white/10 relative overflow-hidden group hover:border-primary/50 transition-colors h-full flex flex-col justify-between">
+                <div>
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/20 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2" />
+                  <div className="text-sm text-secondary-light font-semibold mb-2">D2C E-commerce</div>
+                  <h3 className="text-xl font-bold mb-6">Instagram Growth Strategy</h3>
+                  <div className="space-y-4 mb-8">
+                    <div className="flex justify-between items-end border-b border-white/10 pb-2">
+                      <span className="text-sm text-white/60">Sales from Social</span>
+                      <span className="text-2xl font-bold text-emerald-400">+185%</span>
+                    </div>
+                    <div className="flex justify-between items-end border-b border-white/10 pb-2">
+                      <span className="text-sm text-white/60">Engagement Rate</span>
+                      <span className="text-2xl font-bold text-emerald-400">8.4%</span>
+                    </div>
+                    <div className="flex justify-between items-end border-b border-white/10 pb-2">
+                      <span className="text-sm text-white/60">Follower Growth</span>
+                      <span className="text-2xl font-bold text-white">24k+</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="text-sm text-white/70 italic border-t border-white/10 pt-4 mt-auto">"The content calendar completely changed how we sell online. We finally have a community."</div>
+              </div>
+            </ScrollReveal>
+
+            {/* Case Study 3 */}
+            <ScrollReveal delay={300}>
+              <div className="bg-slate-800 rounded-2xl p-8 border border-white/10 relative overflow-hidden group hover:border-primary/50 transition-colors h-full flex flex-col justify-between">
+                <div>
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-accent/20 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2" />
+                  <div className="text-sm text-secondary-light font-semibold mb-2">Local Service Business</div>
+                  <h3 className="text-xl font-bold mb-6">Local Awareness Campaign</h3>
+                  <div className="space-y-4 mb-8">
+                    <div className="flex justify-between items-end border-b border-white/10 pb-2">
+                      <span className="text-sm text-white/60">Inbound Inquiries</span>
+                      <span className="text-2xl font-bold text-emerald-400">4x</span>
+                    </div>
+                    <div className="flex justify-between items-end border-b border-white/10 pb-2">
+                      <span className="text-sm text-white/60">Local Reach</span>
+                      <span className="text-2xl font-bold text-emerald-400">+560%</span>
+                    </div>
+                    <div className="flex justify-between items-end border-b border-white/10 pb-2">
+                      <span className="text-sm text-white/60">Google Reviews (via Social)</span>
+                      <span className="text-2xl font-bold text-white">+112</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="text-sm text-white/70 italic border-t border-white/10 pt-4 mt-auto">"We stopped paying for billboard ads. Social media is driving 90% of our new bookings now."</div>
+              </div>
+            </ScrollReveal>
           </div>
         </div>
       </section>
