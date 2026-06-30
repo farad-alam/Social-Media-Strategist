@@ -67,21 +67,21 @@ export default function GuidePage() {
       {/* Hero */}
       <section className="gradient-hero pt-32 pb-20 md:pt-40 md:pb-28">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6 bg-slate-900/5 text-slate-600 border border-slate-900/10">
+          <span className="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6 bg-white/10 text-white/80 border border-white/20">
             The Definitive Guide
           </span>
-          <h1 className="text-display font-bold text-slate-900 mb-6">
+          <h1 className="text-display font-bold text-white mb-6">
             The Ultimate Social Media{" "}
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary-200 to-secondary-light bg-clip-text text-transparent">
               Strategy Guide
             </span>
           </h1>
-          <p className="text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto mb-8">
+          <p className="text-xl text-white/80 leading-relaxed max-w-2xl mx-auto mb-8">
             Stop posting randomly and start driving real revenue. This step-by-step guide will teach you exactly how to build a social media strategy that works.
           </p>
-          <div className="flex items-center justify-center gap-4 text-slate-500 text-sm">
+          <div className="flex items-center justify-center gap-4 text-white/60 text-sm">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-slate-900 font-bold text-xs">AH</div>
+              <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xs">AH</div>
               <span>By Abul Hasan</span>
             </div>
             <span>•</span>

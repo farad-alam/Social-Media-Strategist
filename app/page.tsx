@@ -7,7 +7,6 @@ import Accordion from "@/components/ui/Accordion";
 import Timeline from "@/components/ui/Timeline";
 import TestimonialCarousel from "@/components/ui/TestimonialCarousel";
 import ScrollReveal from "@/components/ui/ScrollReveal";
-import ShaderHeroBackground from "@/components/ui/ShaderHeroBackground";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -432,9 +431,15 @@ export default function HomePage() {
       />
 
       {/* ===== HERO SECTION ===== */}
-      <section id="hero" className="relative min-h-screen flex items-center overflow-hidden">
+      <section id="hero" className="relative min-h-screen flex items-center gradient-hero overflow-hidden">
         {/* Background Effects */}
-        <ShaderHeroBackground />
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-1/4 -right-20 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float" />
+          <div className="absolute bottom-1/4 -left-20 w-80 h-80 bg-secondary/15 rounded-full blur-3xl animate-float" style={{ animationDelay: "3s" }} />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-3xl" />
+          {/* Grid pattern overlay */}
+          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTAgMGg0MHY0MEgweiIvPjwvZz48L2c+PC9zdmc+')] opacity-50" />
+        </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-40">
           <div className="max-w-4xl">

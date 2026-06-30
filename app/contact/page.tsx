@@ -44,16 +44,16 @@ export default function ContactPage() {
       {/* Hero */}
       <section className="gradient-hero pt-32 pb-20 md:pt-40 md:pb-28">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6 bg-slate-900/5 text-slate-600 border border-slate-900/10">
+          <span className="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6 bg-white/10 text-white/80 border border-white/20">
             Get in Touch
           </span>
-          <h1 className="text-display font-bold text-slate-900 mb-6">
+          <h1 className="text-display font-bold text-white mb-6">
             Let&apos;s Build Your{" "}
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary-200 to-secondary-light bg-clip-text text-transparent">
               Strategy
             </span>
           </h1>
-          <p className="text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto">
+          <p className="text-xl text-white/80 leading-relaxed max-w-2xl mx-auto">
             Book your free 30-minute strategy call or send a message. I&apos;ll respond within 24 hours.
           </p>
         </div>
