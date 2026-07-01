@@ -998,21 +998,22 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <ScrollReveal direction="left">
               <div className="relative">
-                <div className="aspect-square max-w-md mx-auto rounded-2xl bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center overflow-hidden shadow-2xl shadow-primary/20">
-                  <div className="text-center text-white p-8">
-                    <div className="w-32 h-32 rounded-full bg-white/20 backdrop-blur-sm mx-auto mb-6 flex items-center justify-center text-5xl font-bold">
-                      AH
-                    </div>
-                    <h3 className="text-2xl font-bold">Abul Hasan</h3>
-                    <p className="text-white/70 mt-2">Social Media Strategist</p>
+                <div className="aspect-square max-w-md mx-auto rounded-2xl bg-slate-800 overflow-hidden shadow-2xl shadow-primary/20 relative border-4 border-white/10">
+                  <img src="/images/abul-hasan.jpg" alt="Abul Hasan - Social Media Strategist" className="w-full h-full object-cover object-top" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent pointer-events-none" />
+                  <div className="absolute bottom-6 left-6 right-6 text-center">
+                    <h3 className="text-2xl font-bold text-white mb-1">Abul Hasan</h3>
+                    <p className="text-white/90 font-medium">Lead Social Media Strategist</p>
                   </div>
                 </div>
                 {/* Floating badges */}
-                <div className="absolute -right-4 top-10 bg-white rounded-xl p-3 shadow-lg border border-slate-100 animate-float">
-                  <div className="text-xs font-bold text-slate-800">🏆 BASIS Award</div>
+                <div className="absolute -right-4 top-10 bg-white rounded-xl p-3 shadow-lg border border-slate-100 animate-float flex items-center gap-2">
+                  <div className="text-lg">🏆</div>
+                  <div className="text-xs font-bold text-slate-900">BASIS Award</div>
                 </div>
-                <div className="absolute -left-4 bottom-20 bg-white rounded-xl p-3 shadow-lg border border-slate-100 animate-float" style={{ animationDelay: "2s" }}>
-                  <div className="text-xs font-bold text-slate-800">⭐ Top Rated</div>
+                <div className="absolute -left-4 bottom-20 bg-white rounded-xl p-3 shadow-lg border border-slate-100 animate-float flex items-center gap-2" style={{ animationDelay: "2s" }}>
+                  <div className="text-lg">⭐</div>
+                  <div className="text-xs font-bold text-slate-900">Top Rated</div>
                 </div>
               </div>
             </ScrollReveal>
