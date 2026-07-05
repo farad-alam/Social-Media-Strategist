@@ -5,27 +5,8 @@ import SectionHeading from "@/components/ui/SectionHeading";
 import { notFound } from "next/navigation";
 import { industries } from "@/data/industries";
 
-export async function generateStaticParams() {
-  return Object.keys(industries).map((industry) => ({
-    industry,
-  }));
-}
-
-export function generateMetadata({ params }: { params: { industry: string } }): Metadata {
-  const data = industries[params.industry];
-  if (!data) return {};
-
-  return {
-    title: data.title,
-    description: data.description,
-    alternates: {
-      canonical: `https://socialmediastrategist.net/strategy-for-${params.industry}`,
-    },
-  };
-}
-
-export default function IndustryPage({ params }: { params: { industry: string } }) {
-  const data = industries[params.industry];
+export default function IndustryPageTemplate({ industry }: { industry: string }) {
+  const data = industries[industry];
   
   if (!data) {
     notFound();
