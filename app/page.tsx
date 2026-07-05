@@ -554,7 +554,7 @@ export default function HomePage() {
               Trusted by Brands & Agencies on
             </p>
             <div className="flex flex-wrap justify-center items-center gap-10 md:gap-16 opacity-70 grayscale hover:grayscale-0 transition-all duration-300">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Upwork-logo.svg" alt="Upwork" className="h-7 brightness-0 invert" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Upwork-logo.svg" alt="Upwork" className="h-9 brightness-0 invert" />
               <div className="text-xl font-bold text-white flex items-center gap-1">
                 <div className="bg-white text-blue-600 rounded-sm px-1 leading-none pt-1">in</div> LinkedIn
               </div>
