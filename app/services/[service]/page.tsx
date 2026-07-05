@@ -72,7 +72,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${serviceInfo.title} Services | Social Media Strategist`,
     description: serviceInfo.description,
     alternates: {
-      canonical: `https://socialmediastrategist.ne/services/${params.service}`,
+      canonical: `https://socialmediastrategist.net/services/${params.service}`,
     },
   };
 }
@@ -97,7 +97,7 @@ export default function ServicePage({ params }: Props) {
     },
     description: serviceInfo.description,
     areaServed: "Worldwide",
-    url: `https://socialmediastrategist.ne/services/${serviceKey}`,
+    url: `https://socialmediastrategist.net/services/${serviceKey}`,
   };
 
   return (

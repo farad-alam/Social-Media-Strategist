@@ -78,7 +78,7 @@ export function generateMetadata({ params }: { params: { industry: string } }): 
     title: data.title,
     description: data.description,
     alternates: {
-      canonical: `https://socialmediastrategist.ne/strategy-for-${params.industry}`,
+      canonical: `https://socialmediastrategist.net/strategy-for-${params.industry}`,
     },
   };
 }

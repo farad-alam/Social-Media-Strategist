@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     title: `${post.title} | Social Media Strategy Blog`,
     description: post.excerpt,
     alternates: {
-      canonical: `https://socialmediastrategist.ne/blog/${post.slug}`,
+      canonical: `https://socialmediastrategist.net/blog/${post.slug}`,
     },
   };
 }
@@ -43,19 +43,19 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
     author: {
       "@type": "Person",
       name: post.author,
-      url: "https://socialmediastrategist.ne/about"
+      url: "https://socialmediastrategist.net/about"
     },
     publisher: {
       "@type": "Organization",
       name: "Abul Hasan",
       logo: {
         "@type": "ImageObject",
-        url: "https://socialmediastrategist.ne/logo.png"
+        url: "https://socialmediastrategist.net/logo.png"
       }
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://socialmediastrategist.ne/blog/${post.slug}`
+      "@id": `https://socialmediastrategist.net/blog/${post.slug}`
     }
   };
 
@@ -63,9 +63,9 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://socialmediastrategist.ne" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: "https://socialmediastrategist.ne/blog" },
-      { "@type": "ListItem", position: 3, name: post.title, item: `https://socialmediastrategist.ne/blog/${post.slug}` },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://socialmediastrategist.net" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://socialmediastrategist.net/blog" },
+      { "@type": "ListItem", position: 3, name: post.title, item: `https://socialmediastrategist.net/blog/${post.slug}` },
     ],
   };
 
