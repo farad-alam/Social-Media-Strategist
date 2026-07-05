@@ -10,9 +10,9 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Social Media Strategy That Actually Grows Your Business | Abul Hasan",
+  title: "Abul Hasan | Social Media Strategist for Hire — 13+ Yrs, 300+ Client",
   description:
-    "Expert social media strategy services by Abul Hasan — 13+ years experience, 300+ clients served. Custom strategies for brand growth, lead generation & ROI. Book your free strategy call today.",
+    "Abul Hasan is a social media strategist with 13+ years and 300+ clients served. Get a custom strategy built for measurable business growth.",
   alternates: {
     canonical: "https://socialmediastrategist.net",
   },
