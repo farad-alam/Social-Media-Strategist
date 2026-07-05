@@ -28,12 +28,12 @@ export default function ContactPage() {
     "@context": "https://schema.org",
     "@type": "ContactPage",
     name: "Contact Abul Hasan — Social Media Strategist",
-    url: "https://socialmediastrategist.ne/contact",
+    url: "https://socialmediastrategist.net/contact",
     mainEntity: {
       "@type": "Person",
       name: "Abul Hasan",
       jobTitle: "Social Media Strategist",
-      email: "hello@socialmediastrategist.ne",
+      email: "hello@socialmediastrategist.net",
     },
   };
 
@@ -207,8 +207,8 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <div className="text-sm font-semibold text-slate-800">Email</div>
-                        <a href="mailto:hello@socialmediastrategist.ne" className="text-sm text-primary hover:underline">
-                          hello@socialmediastrategist.ne
+                        <a href="mailto:hello@socialmediastrategist.net" className="text-sm text-primary hover:underline">
+                          hello@socialmediastrategist.net
                         </a>
                       </div>
                     </div>

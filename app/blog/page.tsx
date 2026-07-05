@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Social Media Strategy Blog | Insights & Guides",
   description: "Read the latest insights, strategies, and guides on social media marketing, content planning, and brand growth by Abul Hasan.",
   alternates: {
-    canonical: "https://socialmediastrategist.ne/blog",
+    canonical: "https://socialmediastrategist.net/blog",
   },
 };
 
@@ -19,7 +19,7 @@ export default async function BlogIndexPage() {
     "@context": "https://schema.org",
     "@type": "Blog",
     name: "Social Media Strategy Blog",
-    url: "https://socialmediastrategist.ne/blog",
+    url: "https://socialmediastrategist.net/blog",
     description: "Read the latest insights, strategies, and guides on social media marketing.",
     publisher: {
       "@type": "Person",
@@ -30,7 +30,7 @@ export default async function BlogIndexPage() {
       headline: post.title,
       description: post.excerpt,
       datePublished: post.date,
-      url: `https://socialmediastrategist.ne/blog/${post.slug}`,
+      url: `https://socialmediastrategist.net/blog/${post.slug}`,
     }))
   };
 
@@ -38,8 +38,8 @@ export default async function BlogIndexPage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://socialmediastrategist.ne" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: "https://socialmediastrategist.ne/blog" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://socialmediastrategist.net" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://socialmediastrategist.net/blog" },
     ],
   };
 

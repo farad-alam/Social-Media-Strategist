@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Meet Abul Hasan, a social media strategist with 13+ years of experience, 300+ clients served, and the BASIS Outsourcing Award 2021. Learn about his journey, expertise, and approach.",
   alternates: {
-    canonical: "https://socialmediastrategist.ne/about",
+    canonical: "https://socialmediastrategist.net/about",
   },
 };
 
@@ -53,7 +53,7 @@ export default function AboutPage() {
     "@type": "Person",
     name: "Abul Hasan",
     jobTitle: "Social Media Strategist",
-    url: "https://socialmediastrategist.ne/about",
+    url: "https://socialmediastrategist.net/about",
     description: "Social media strategist with 13+ years of experience helping 300+ businesses grow through strategic social media planning.",
     knowsAbout: expertise,
     award: "BASIS Outsourcing Award 2021 — District Level Top Individual",
@@ -71,8 +71,8 @@ export default function AboutPage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://socialmediastrategist.ne" },
-      { "@type": "ListItem", position: 2, name: "About", item: "https://socialmediastrategist.ne/about" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://socialmediastrategist.net" },
+      { "@type": "ListItem", position: 2, name: "About", item: "https://socialmediastrategist.net/about" },
     ],
   };
 

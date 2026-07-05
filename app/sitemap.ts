@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 import { getAllPosts } from "@/lib/blog";
 
-const BASE_URL = "https://socialmediastrategist.ne";
+const BASE_URL = "https://socialmediastrategist.net";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Static Routes

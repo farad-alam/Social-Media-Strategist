@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Download our free, comprehensive social media strategy template. Includes sections for audience research, competitive analysis, content pillars, and KPIs. No email required.",
   alternates: {
-    canonical: "https://socialmediastrategist.ne/social-media-strategy-template",
+    canonical: "https://socialmediastrategist.net/social-media-strategy-template",
   },
 };
 
@@ -16,8 +16,8 @@ export default function TemplatePage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://socialmediastrategist.ne" },
-      { "@type": "ListItem", position: 2, name: "Free Template", item: "https://socialmediastrategist.ne/social-media-strategy-template" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://socialmediastrategist.net" },
+      { "@type": "ListItem", position: 2, name: "Free Template", item: "https://socialmediastrategist.net/social-media-strategy-template" },
     ],
   };
 

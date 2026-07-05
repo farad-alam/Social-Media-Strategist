@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description:
     "Comprehensive social media strategy services including strategy planning, content calendars, competitor research, audience analysis, and monthly consulting. View packages and pricing.",
   alternates: {
-    canonical: "https://socialmediastrategist.ne/services",
+    canonical: "https://socialmediastrategist.net/services",
   },
 };
 
@@ -116,8 +116,8 @@ export default function ServicesPage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://socialmediastrategist.ne" },
-      { "@type": "ListItem", position: 2, name: "Services", item: "https://socialmediastrategist.ne/services" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://socialmediastrategist.net" },
+      { "@type": "ListItem", position: 2, name: "Services", item: "https://socialmediastrategist.net/services" },
     ],
   };
 

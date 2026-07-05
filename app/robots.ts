@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://socialmediastrategist.ne/sitemap.xml',
+    sitemap: 'https://socialmediastrategist.net/sitemap.xml',
   };
 }

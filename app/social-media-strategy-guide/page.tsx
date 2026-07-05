@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     "Learn how to create a social media strategy from scratch. This comprehensive 5,000+ word guide covers audience research, goal setting, content planning, and analytics.",
   alternates: {
-    canonical: "https://socialmediastrategist.ne/social-media-strategy-guide",
+    canonical: "https://socialmediastrategist.net/social-media-strategy-guide",
   },
 };
 
@@ -22,14 +22,14 @@ export default function GuidePage() {
     author: {
       "@type": "Person",
       name: "Abul Hasan",
-      url: "https://socialmediastrategist.ne/about",
+      url: "https://socialmediastrategist.net/about",
     },
     publisher: {
       "@type": "Organization",
       name: "Abul Hasan | Social Media Strategist",
       logo: {
         "@type": "ImageObject",
-        url: "https://socialmediastrategist.ne/images/logo.png",
+        url: "https://socialmediastrategist.net/images/logo.png",
       },
     },
     datePublished: "2026-06-30T00:00:00Z",
@@ -40,8 +40,8 @@ export default function GuidePage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://socialmediastrategist.ne" },
-      { "@type": "ListItem", position: 2, name: "Strategy Guide", item: "https://socialmediastrategist.ne/social-media-strategy-guide" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://socialmediastrategist.net" },
+      { "@type": "ListItem", position: 2, name: "Strategy Guide", item: "https://socialmediastrategist.net/social-media-strategy-guide" },
     ],
   };
 

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Explore top social media strategy examples from leading brands. See how companies like Nike, Apple, and HubSpot dominate social media and learn how to apply their tactics.",
   alternates: {
-    canonical: "https://socialmediastrategist.ne/social-media-strategy-examples",
+    canonical: "https://socialmediastrategist.net/social-media-strategy-examples",
   },
 };
 
@@ -55,8 +55,8 @@ export default function ExamplesPage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://socialmediastrategist.ne" },
-      { "@type": "ListItem", position: 2, name: "Examples", item: "https://socialmediastrategist.ne/social-media-strategy-examples" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://socialmediastrategist.net" },
+      { "@type": "ListItem", position: 2, name: "Examples", item: "https://socialmediastrategist.net/social-media-strategy-examples" },
     ],
   };
 

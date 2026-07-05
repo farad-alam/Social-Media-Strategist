@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description:
     "Expert social media strategy services by Abul Hasan — 13+ years experience, 300+ clients served. Custom strategies for brand growth, lead generation & ROI. Book your free strategy call today.",
   alternates: {
-    canonical: "https://socialmediastrategist.ne",
+    canonical: "https://socialmediastrategist.net",
   },
 };
 
@@ -317,10 +317,10 @@ export default function HomePage() {
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "Social Media Strategy That Actually Grows Your Business",
+    name: "A Social Media Strategist Who Actually Grows Your Business",
     description:
-      "Expert social media strategy services by Abul Hasan — 13+ years experience, 300+ clients served.",
-    url: "https://socialmediastrategist.ne",
+      "Abul Hasan is a social media strategist with 13+ years and 300+ clients served. Get a custom strategy built for measurable business growth.",
+    url: "https://socialmediastrategist.net",
     mainEntity: {
       "@type": "Person",
       name: "Abul Hasan",
@@ -401,7 +401,7 @@ export default function HomePage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://socialmediastrategist.ne",
+        item: "https://socialmediastrategist.net",
       },
     ],
   };
@@ -466,7 +466,7 @@ export default function HomePage() {
 
               {/* H1 */}
               <h1 className="text-display font-bold text-white mb-6 animate-fade-in-up">
-                Social Media Strategy That{" "}
+                A Social Media Strategist Who{" "}
                 <span className="bg-gradient-to-r from-primary-200 via-blue-300 to-secondary-light bg-clip-text text-transparent">
                   Actually Grows
                 </span>{" "}
@@ -475,9 +475,7 @@ export default function HomePage() {
 
               {/* Subtitle */}
               <p className="text-xl md:text-2xl text-white/70 leading-relaxed mb-10 animate-fade-in-up stagger-2 max-w-2xl">
-                Custom social media strategies built by a veteran strategist.
-                Increase brand awareness, generate qualified leads, and improve ROI
-                — backed by 13+ years and 300+ successful client engagements.
+                Custom social media strategies that increase brand awareness, accelerate audience growth, generate qualified leads, and drive measurable business growth. Backed by 13+ years of experience and 300+ clients served.
               </p>
 
               {/* CTAs */}

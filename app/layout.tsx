@@ -18,17 +18,17 @@ const inter = Inter({
   weight: ["400", "500", "600", "700"],
 });
 
-const siteUrl = "https://socialmediastrategist.ne";
+const siteUrl = "https://socialmediastrategist.net";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
     template: "%s | Abul Hasan — Social Media Strategist",
     default:
-      "Social Media Strategy That Actually Grows Your Business | Abul Hasan",
+      "Abul Hasan | Social Media Strategist for Hire — 13+ Yrs, 300+ Client",
   },
   description:
-    "Expert social media strategy services by Abul Hasan — 13+ years experience, 300+ clients served. Custom strategies for brand growth, lead generation & ROI. Book your free strategy call today.",
+    "Abul Hasan is a social media strategist with 13+ years and 300+ clients served. Get a custom strategy built for measurable business growth.",
   keywords: [
     "Social Media Strategist",
     "Social Media Strategy",
