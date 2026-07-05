@@ -997,7 +997,7 @@ export default function HomePage() {
             <ScrollReveal direction="left">
               <div className="relative">
                 <div className="aspect-square max-w-md mx-auto rounded-2xl bg-slate-800 overflow-hidden shadow-2xl shadow-primary/20 relative border-4 border-white/10">
-                  <img src="/images/abul-hasan.jpg" alt="Abul Hasan - Social Media Strategist - Headshot" className="w-full h-full object-cover object-top" />
+                  <img src="/images/abul-hasan-office.jpg" alt="Abul Hasan Office Photo" className="w-full h-full object-cover object-top" />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent pointer-events-none" />
                   <div className="absolute bottom-6 left-6 right-6 text-center">
                     <h3 className="text-2xl font-bold text-white mb-1">Abul Hasan</h3>
