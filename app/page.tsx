@@ -1068,7 +1068,7 @@ export default function HomePage() {
                 </div>
                 <div className="absolute -left-4 bottom-20 bg-white rounded-xl p-3 shadow-lg border border-slate-100 animate-float flex items-center gap-2" style={{ animationDelay: "2s" }}>
                   <div className="text-lg">⭐</div>
-                  <div className="text-xs font-bold text-slate-900">Top Rated</div>
+                  <div className="text-xs font-bold text-slate-900">Top Rated Plus</div>
                 </div>
               </div>
             </ScrollReveal>

@@ -108,8 +108,10 @@ export default function RootLayout({
       url: siteUrl,
     },
     sameAs: [
-      "https://www.linkedin.com/in/abulhasan",
-      "https://www.upwork.com/freelancers/abulhasan",
+      "https://web.facebook.com/HasanStrategist",
+      "https://www.instagram.com/hasanstrategist/",
+      "https://www.linkedin.com/in/hasanstrategist/",
+      "https://www.tiktok.com/@hasanstrategist"
     ],
     areaServed: "Worldwide",
     award: "BASIS Outsourcing Award 2021",
