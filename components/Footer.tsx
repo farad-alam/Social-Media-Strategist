@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 
+const footerLinks = {
   services: [
     { href: "/services/strategy-planning", label: "Strategy Planning" },
     { href: "/services/content-calendar", label: "Content Calendar" },
