@@ -970,6 +970,58 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      {/* ===== AWARDS & RECOGNITION ===== */}
+      <section id="awards" className="section-padding bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollReveal>
+            <SectionHeading
+              badge="Awards & Recognition"
+              title="Recognized for Excellence"
+              subtitle="Industry awards and platform recognitions that validate our commitment to delivering top-tier results."
+            />
+          </ScrollReveal>
+
+          <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+            {/* BASIS Award Card (70% width - spans 2 columns) */}
+            <ScrollReveal direction="left" delay={100} className="md:col-span-2">
+              <div className="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden group hover:border-primary/30 transition-all duration-300 h-full flex flex-col shadow-sm hover:shadow-md">
+                <div className="relative h-64 md:h-80 w-full overflow-hidden bg-slate-200">
+                  <img 
+                    src="/images/basis-award-2021.jpg" 
+                    alt="Abul Hasan Receiving BASIS Outsourcing Award 2021 (District Level Top Individual)" 
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="p-8 flex-1 flex flex-col">
+                  <h3 className="text-2xl font-bold text-slate-900 mb-4">BASIS Outsourcing Award 2021</h3>
+                  <p className="text-slate-600 leading-relaxed">
+                    Recognized at the district level for excellence in outsourcing and digital strategy by the Bangladesh Association of Software and Information Services (BASIS) — awarded for consistent, measurable results delivered to clients through strategic social media and digital marketing execution.
+                  </p>
+                </div>
+              </div>
+            </ScrollReveal>
+
+            {/* Upwork Top Rated Plus Card (30% width - spans 1 column) */}
+            <ScrollReveal direction="right" delay={200} className="md:col-span-1">
+              <div className="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden group hover:border-primary/30 transition-all duration-300 h-full flex flex-col shadow-sm hover:shadow-md">
+                <div className="relative h-64 md:h-80 w-full overflow-hidden bg-[#F2F1ED]">
+                  <img 
+                    src="/images/upwork-top-rated-plus.png" 
+                    alt="Abul Hasan Upwork Top Rated Plus profile, social media strategist with 99% Job Success Score" 
+                    className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="p-8 flex-1 flex flex-col border-t border-slate-200">
+                  <h3 className="text-xl font-bold text-slate-900 mb-4">Top Rated Plus on Upwork</h3>
+                  <p className="text-slate-600 leading-relaxed text-sm">
+                    Ranked in the top 3% of talent on Upwork, backed by 13+ years of freelance experience and a 99% Job Success Score — earned when clients consistently rate their projects as successful. This status is awarded only to freelancers with a proven track record of high-quality delivery and strong client satisfaction.
+                  </p>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
 
       {/* ===== TESTIMONIALS ===== */}
       <section id="testimonials" className="section-padding bg-slate-50">
