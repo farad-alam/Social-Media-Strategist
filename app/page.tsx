@@ -985,14 +985,14 @@ export default function HomePage() {
             {/* BASIS Award Card (70% width - spans 2 columns) */}
             <ScrollReveal direction="left" delay={100} className="md:col-span-2">
               <div className="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden group hover:border-primary/30 transition-all duration-300 h-full flex flex-col shadow-sm hover:shadow-md">
-                <div className="relative h-64 md:h-80 w-full overflow-hidden bg-slate-200">
+                <div className="relative h-72 md:h-[340px] w-full overflow-hidden bg-slate-100 flex items-center justify-center">
                   <img 
                     src="/images/basis-award-2021.jpg" 
                     alt="Abul Hasan Receiving BASIS Outsourcing Award 2021 (District Level Top Individual)" 
-                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <div className="p-8 flex-1 flex flex-col">
+                <div className="p-8 flex-1 flex flex-col border-t border-slate-200">
                   <h3 className="text-2xl font-bold text-slate-900 mb-4">BASIS Outsourcing Award 2021</h3>
                   <p className="text-slate-600 leading-relaxed">
                     Recognized at the district level for excellence in outsourcing and digital strategy by the Bangladesh Association of Software and Information Services (BASIS) — awarded for consistent, measurable results delivered to clients through strategic social media and digital marketing execution.
@@ -1004,7 +1004,7 @@ export default function HomePage() {
             {/* Upwork Top Rated Plus Card (30% width - spans 1 column) */}
             <ScrollReveal direction="right" delay={200} className="md:col-span-1">
               <div className="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden group hover:border-primary/30 transition-all duration-300 h-full flex flex-col shadow-sm hover:shadow-md">
-                <div className="relative h-64 md:h-80 w-full overflow-hidden bg-[#F2F1ED]">
+                <div className="relative h-72 md:h-[340px] w-full overflow-hidden bg-[#F2F1ED] flex items-center justify-center">
                   <img 
                     src="/images/upwork-top-rated-plus.png" 
                     alt="Abul Hasan Upwork Top Rated Plus profile, social media strategist with 99% Job Success Score" 
