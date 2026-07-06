@@ -985,11 +985,11 @@ export default function HomePage() {
             {/* BASIS Award Card (70% width - spans 2 columns) */}
             <ScrollReveal direction="left" delay={100} className="md:col-span-2">
               <div className="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden group hover:border-primary/30 transition-all duration-300 h-full flex flex-col shadow-sm hover:shadow-md">
-                <div className="relative h-72 md:h-[340px] w-full overflow-hidden bg-slate-100 flex items-center justify-center">
+                <div className="relative w-full overflow-hidden bg-slate-100">
                   <img 
                     src="/images/basis-award-2021.jpg" 
                     alt="Abul Hasan Receiving BASIS Outsourcing Award 2021 (District Level Top Individual)" 
-                    className="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-auto block group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="p-8 flex-1 flex flex-col border-t border-slate-200">
