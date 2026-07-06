@@ -2,20 +2,19 @@
 
 import Link from "next/link";
 
-const footerLinks = {
   services: [
     { href: "/services/strategy-planning", label: "Strategy Planning" },
     { href: "/services/content-calendar", label: "Content Calendar" },
     { href: "/services/competitor-research", label: "Competitor Research" },
     { href: "/services/audience-research", label: "Audience Research" },
     { href: "/services/brand-positioning", label: "Brand Positioning" },
+    { href: "/services/campaign-planning", label: "Campaign Planning" },
+    { href: "/services/organic-growth", label: "Organic Growth" },
+    { href: "/services/engagement-strategy", label: "Engagement Strategy" },
+    { href: "/services/paid-ads-strategy", label: "Paid Ads Strategy" },
+    { href: "/services/social-media-audit", label: "Social Media Audit" },
+    { href: "/services/analytics-reporting", label: "Analytics & Reporting" },
     { href: "/services/monthly-consulting", label: "Monthly Consulting" },
-  ],
-  resources: [
-    { href: "/social-media-strategy-guide", label: "Strategy Guide" },
-    { href: "/social-media-strategy-template", label: "Free Template" },
-    { href: "/social-media-strategy-examples", label: "Strategy Examples" },
-    { href: "/blog", label: "Blog" },
   ],
   industries: [
     { href: "/strategy-for-small-business", label: "Small Business" },
@@ -24,6 +23,18 @@ const footerLinks = {
     { href: "/strategy-for-saas", label: "SaaS" },
     { href: "/strategy-for-healthcare", label: "Healthcare" },
     { href: "/strategy-for-coaches", label: "Coaches" },
+    { href: "/strategy-for-realtors", label: "Real Estate" },
+    { href: "/strategy-for-lawyers", label: "Legal" },
+    { href: "/strategy-for-restaurants", label: "Restaurant" },
+    { href: "/strategy-for-startups", label: "Startup" },
+    { href: "/strategy-for-beauty-brands", label: "Beauty Brands" },
+    { href: "/strategy-for-nonprofit", label: "Nonprofit" },
+  ],
+  resources: [
+    { href: "/social-media-strategy-guide", label: "Strategy Guide" },
+    { href: "/social-media-strategy-template", label: "Free Template" },
+    { href: "/social-media-strategy-examples", label: "Strategy Examples" },
+    { href: "/blog", label: "Blog" },
   ],
   legal: [
     { href: "/privacy-policy", label: "Privacy Policy" },
@@ -194,6 +205,25 @@ export default function Footer() {
             </ul>
           </div>
 
+          {/* Industries Links */}
+          <div>
+            <h3 className="text-sm font-bold uppercase tracking-wider text-white mb-4">
+              Industries
+            </h3>
+            <ul className="space-y-3">
+              {footerLinks.industries.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-slate-400 hover:text-white transition-colors duration-200"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           {/* Resources Links */}
           <div>
             <h3 className="text-sm font-bold uppercase tracking-wider text-white mb-4">
@@ -211,50 +241,6 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-
-            <h3 className="text-sm font-bold uppercase tracking-wider text-white mb-4 mt-8">
-              Industries
-            </h3>
-            <ul className="space-y-3">
-              {footerLinks.industries.map((link) => (
-                <li key={link.label}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-slate-400 hover:text-white transition-colors duration-200"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Newsletter */}
-          <div>
-            <h3 className="text-sm font-bold uppercase tracking-wider text-white mb-4">
-              Stay Updated
-            </h3>
-            <p className="text-sm text-slate-400 mb-4">
-              Get weekly social media strategy tips and insights delivered to
-              your inbox.
-            </p>
-            <form
-              className="space-y-3"
-              onSubmit={(e) => e.preventDefault()}
-            >
-              <input
-                type="email"
-                placeholder="Your email address"
-                className="w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
-                aria-label="Email address for newsletter"
-              />
-              <button
-                type="submit"
-                className="w-full px-4 py-3 rounded-lg bg-primary text-white font-semibold text-sm hover:bg-primary-dark transition-all duration-200"
-              >
-                Subscribe
-              </button>
-            </form>
           </div>
         </div>
 
