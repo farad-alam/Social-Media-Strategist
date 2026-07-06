@@ -977,7 +977,7 @@ export default function HomePage() {
         <div className="absolute -top-40 -right-40 w-96 h-96 bg-primary/20 rounded-full blur-3xl pointer-events-none"></div>
         <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-secondary/20 rounded-full blur-3xl pointer-events-none"></div>
         
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
           <ScrollReveal>
             <SectionHeading
               badge="Awards & Recognition"
@@ -988,9 +988,9 @@ export default function HomePage() {
             />
           </ScrollReveal>
 
-          <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
-            {/* BASIS Award Card (70% width - spans 2 columns) */}
-            <ScrollReveal direction="left" delay={100} className="md:col-span-2">
+          <div className="grid md:grid-cols-5 gap-6 lg:gap-8">
+            {/* BASIS Award Card (60% width - spans 3 columns) */}
+            <ScrollReveal direction="left" delay={100} className="md:col-span-3">
               <div className="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden group hover:border-primary/30 transition-all duration-300 h-full flex flex-col shadow-sm hover:shadow-md">
                 <div className="relative w-full overflow-hidden bg-slate-100 flex-none">
                   <img 
@@ -1008,8 +1008,8 @@ export default function HomePage() {
               </div>
             </ScrollReveal>
 
-            {/* Upwork Top Rated Plus Card (30% width - spans 1 column) */}
-            <ScrollReveal direction="right" delay={200} className="md:col-span-1">
+            {/* Upwork Top Rated Plus Card (40% width - spans 2 columns) */}
+            <ScrollReveal direction="right" delay={200} className="md:col-span-2">
               <div className="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden group hover:border-primary/30 transition-all duration-300 h-full flex flex-col shadow-sm hover:shadow-md">
                 <div className="relative w-full flex-1 overflow-hidden bg-[#F2F1ED] flex items-center justify-center min-h-[200px]">
                   <img 
