@@ -244,5 +244,121 @@ export const industries: Record<string, IndustryData> = {
         ]
       }
     ]
+  },
+  "restaurants": {
+    title: "Social Media Strategy for Restaurants",
+    shortName: "Restaurant",
+    description: "Appetite-inducing strategies to drive local foot traffic and reservations.",
+    challenges: ["Highly localized competition", "Managing bad reviews", "Consistent high-quality content"],
+    strategy: ["Mouth-watering Instagram Reels & TikToks", "Local SEO and Google Business updates", "User-generated content from diners"],
+    articleSections: [
+      {
+        heading: "Driving Foot Traffic with Visual Storytelling",
+        content: [
+          "For restaurants, people eat with their eyes first. A highly visual, drool-worthy social media presence is the most effective way to turn digital scrollers into actual diners. A strategic approach to restaurant social media focuses on showcasing your best dishes, highlighting the ambiance, and creating an irresistible desire to visit.",
+          "Short-form videos on TikTok and Instagram Reels showing behind-the-scenes kitchen action, dramatic cheese pulls, or the pouring of a signature cocktail are incredibly effective at capturing local attention and driving immediate cravings."
+        ]
+      },
+      {
+        heading: "Mastering Local SEO and User-Generated Content",
+        content: [
+          "While going viral is great, a restaurant's true success relies on local discovery. Optimizing your Google Business Profile with weekly updates, responding to reviews, and using hyper-local hashtags ensures that when someone searches for 'best dinner near me,' your restaurant appears first.",
+          "Furthermore, encouraging user-generated content (UGC) by creating photogenic spaces or offering small incentives for tagging your location turns your customers into your most powerful micro-influencers."
+        ]
+      },
+      {
+        heading: "Your Recipe for Restaurant Growth",
+        content: [
+          "I help restaurants build social media strategies that directly impact the bottom line. From organizing local foodie influencer events to maintaining a consistent, mouth-watering content calendar, we will build a digital presence that keeps your tables fully booked."
+        ]
+      }
+    ]
+  },
+  "startups": {
+    title: "Social Media Strategy for Startups",
+    shortName: "Startup",
+    description: "High-growth strategies to build buzz, attract investors, and acquire early adopters.",
+    challenges: ["Limited marketing budget", "Building brand awareness from zero", "Pivoting messaging quickly"],
+    strategy: ["Founder-led storytelling on LinkedIn", "Viral-focused TikTok campaigns", "Community building on X/Twitter"],
+    articleSections: [
+      {
+        heading: "Building Buzz from Day One",
+        content: [
+          "Startups face the unique challenge of having to explain a brand-new concept while simultaneously building an audience from scratch. A startup social media strategy must be agile, highly engaging, and focused on rapid experimentation.",
+          "Instead of acting like a traditional corporation, successful startups leverage transparency. Building in public, sharing early wins and failures, and bringing your early adopters along for the journey creates a fiercely loyal community that traditional marketing cannot buy."
+        ]
+      },
+      {
+        heading: "The Power of Founder-Led Marketing",
+        content: [
+          "Investors and early customers invest in people as much as they invest in products. Activating the founder's personal brand on platforms like LinkedIn and X (Twitter) is one of the most cost-effective ways to generate B2B leads, attract top talent, and catch the eye of venture capitalists.",
+          "By sharing insights, industry hot-takes, and the raw reality of building a company, founders can generate organic reach that vastly outperforms the company's official pages."
+        ]
+      },
+      {
+        heading: "Scaling Your Startup's Social Presence",
+        content: [
+          "I partner with early-stage and growth-stage startups to build scalable social media engines. We will define your core messaging, implement a lean content production process, and utilize growth-hacking techniques to acquire your first 1,000 true fans and beyond."
+        ]
+      }
+    ]
+  },
+  "beauty-brands": {
+    title: "Social Media Strategy for Beauty Brands",
+    shortName: "Beauty Brands",
+    description: "Aesthetic-driven strategies for product launches, influencer marketing, and brand loyalty.",
+    challenges: ["Saturated market", "High customer acquisition costs", "Constantly changing trends"],
+    strategy: ["Influencer and micro-influencer partnerships", "Tutorials and transformation videos", "Shoppable social commerce"],
+    articleSections: [
+      {
+        heading: "Standing Out in a Saturated Beauty Market",
+        content: [
+          "The beauty industry is arguably the most competitive space on social media. To succeed, beauty brands must go beyond standard product photos. A winning beauty social media strategy relies heavily on education, authenticity, and visual proof of results.",
+          "Consumers want to see how products look on real skin with real textures. Unfiltered tutorials, before-and-after transformations, and deep dives into ingredient benefits are essential for building trust in today's market."
+        ]
+      },
+      {
+        heading: "Leveraging Influencers and Social Commerce",
+        content: [
+          "Influencer marketing remains the lifeblood of beauty brands on social media. However, the shift is moving from mega-celebrities toward micro and nano-influencers who boast highly engaged, niche communities. Partnering with the right creators provides authentic social proof.",
+          "Additionally, seamlessly integrating platforms like TikTok Shop and Instagram Shopping allows consumers to purchase the moment they feel inspired by a tutorial, drastically reducing friction and increasing conversion rates."
+        ]
+      },
+      {
+        heading: "A Custom Strategy for Your Beauty Brand",
+        content: [
+          "I help beauty brands navigate the fast-paced world of social media trends. We will build a robust influencer outreach program, develop a steady stream of highly engaging short-form video content, and create product launch campaigns that generate massive hype and immediate sales."
+        ]
+      }
+    ]
+  },
+  "nonprofit": {
+    title: "Social Media Strategy for Nonprofits",
+    shortName: "Nonprofit",
+    description: "Mission-driven strategies to raise awareness, boost donations, and recruit volunteers.",
+    challenges: ["Limited resources", "Asking for donations without fatigue", "Communicating complex issues"],
+    strategy: ["Impact storytelling and beneficiary highlights", "Peer-to-peer fundraising campaigns", "Corporate partnership spotlights"],
+    articleSections: [
+      {
+        heading: "Amplifying Your Mission Through Social Media",
+        content: [
+          "For nonprofits and charitable organizations, social media is the most powerful tool for amplifying your mission on a global scale. A strong nonprofit social media strategy doesn't just ask for donations; it educates the public, highlights the severity of the problem, and showcases the tangible impact of your work.",
+          "When supporters understand exactly how their contributions are making a difference, they transition from one-time donors to lifelong advocates."
+        ]
+      },
+      {
+        heading: "The Art of Impact Storytelling",
+        content: [
+          "People donate to people, not abstract concepts. The core of your social media strategy must be storytelling. Highlighting the stories of the people, animals, or communities you serve creates the emotional resonance required to drive action.",
+          "Video content is particularly vital for nonprofits. A well-crafted two-minute documentary-style video or a raw, behind-the-scenes look at your volunteers in action can generate more awareness and funding than traditional direct mail campaigns."
+        ]
+      },
+      {
+        heading: "Driving Donations and Volunteer Engagement",
+        content: [
+          "I help nonprofits maximize their limited marketing resources to create outsized impact. We will develop campaigns for giving days, optimize your donation funnels directly from social platforms, and train your team to tell compelling stories that mobilize volunteers and donors alike."
+        ]
+      }
+    ]
   }
 };

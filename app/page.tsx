@@ -197,6 +197,10 @@ const industries = [
   { name: "Healthcare", href: "/strategy-for-healthcare", emoji: "🏥" },
   { name: "Real Estate", href: "/strategy-for-realtors", emoji: "🏠" },
   { name: "Legal", href: "/strategy-for-lawyers", emoji: "⚖️" },
+  { name: "Restaurant", href: "/strategy-for-restaurants", emoji: "🍽️" },
+  { name: "Startup", href: "/strategy-for-startups", emoji: "🚀" },
+  { name: "Beauty Brands", href: "/strategy-for-beauty-brands", emoji: "💄" },
+  { name: "Nonprofit", href: "/strategy-for-nonprofit", emoji: "❤️" },
 ];
 
 const testimonials = [
