@@ -1015,7 +1015,7 @@ export default function HomePage() {
                   <img 
                     src="/images/upwork-top-rated-plus.png" 
                     alt="Abul Hasan Upwork Top Rated Plus profile, social media strategist with 99% Job Success Score" 
-                    className="w-full h-full object-contain p-0 md:p-2 group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-contain p-0 md:p-2 scale-[1.2] group-hover:scale-[1.25] transition-transform duration-500"
                   />
                 </div>
                 <div className="p-6 md:p-8 flex-none flex flex-col border-t border-slate-200">
