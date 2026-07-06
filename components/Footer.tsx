@@ -91,9 +91,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="mt-4 text-slate-400 text-sm leading-relaxed max-w-sm">
-              With 13+ years of experience and 300+ clients served, I help
-              businesses build powerful social media strategies that drive
-              growth, engagement, and measurable ROI.
+              With 13+ years of experience and 300+ clients served, I build social media strategies that expand audiences, boost engagement, and drive measurable business growth.
             </p>
 
             {/* Trust Badges */}

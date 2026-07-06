@@ -1083,9 +1083,9 @@ export default function HomePage() {
                 </h2>
                 <div className="space-y-4 text-slate-600 leading-relaxed">
                   <p>
-                    With <strong className="text-slate-800">13+ years</strong> of hands-on experience in social
+                    With <strong className="text-slate-800">13+ years </strong> of hands-on experience in social
                     media strategy, I&apos;ve helped <strong className="text-slate-800">300+ businesses</strong> across
-                    50+ industries transform their social media from a time-sink
+                    30+ industries transform their social media from a time-sink
                     into a revenue-driving machine.
                   </p>
                   <p>
