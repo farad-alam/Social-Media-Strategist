@@ -123,7 +123,7 @@ export default function Footer() {
                   />
                 </svg>
                 <span className="text-xs font-medium text-slate-300">
-                  Top Rated on Upwork
+                  Top Rated Plus on Upwork
                 </span>
               </div>
             </div>
