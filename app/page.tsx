@@ -931,8 +931,8 @@ export default function HomePage() {
               <span className="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6 bg-white/10 text-white/80 border border-white/20">
                 Proven Results
               </span>
-              <h2 className="text-3xl md:text-5xl font-bold mb-4">Numbers That Speak for Themselves</h2>
-              <p className="text-lg text-white/70 max-w-2xl mx-auto">Real ROI from data-driven social media strategies.</p>
+              <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">Numbers That Speak for Themselves</h2>
+              <p className="text-lg text-white/70 max-w-2xl mx-auto">Measurable business growth from data-driven social media strategies</p>
             </div>
           </ScrollReveal>
 
@@ -942,24 +942,24 @@ export default function HomePage() {
               <div className="bg-slate-800 rounded-2xl p-8 border border-white/10 relative overflow-hidden group hover:border-primary/50 transition-colors h-full flex flex-col justify-between">
                 <div>
                   <div className="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2" />
-                  <div className="text-sm text-secondary-light font-semibold mb-2">B2B SaaS Company</div>
-                  <h3 className="text-xl font-bold mb-6">LinkedIn Lead Gen Strategy</h3>
+                  <div className="text-sm text-secondary-light font-semibold mb-2">Lifestyle Brand</div>
+                  <h3 className="text-xl font-bold mb-6">TikTok Growth Strategy</h3>
                   <div className="space-y-4 mb-8">
                     <div className="flex justify-between items-end border-b border-white/10 pb-2">
-                      <span className="text-sm text-white/60">Qualified Leads (Q1)</span>
-                      <span className="text-2xl font-bold text-emerald-400">+340%</span>
+                      <span className="text-sm text-white/60">Follower Growth (3 Mo.)</span>
+                      <span className="text-2xl font-bold text-emerald-400">+1,124</span>
                     </div>
                     <div className="flex justify-between items-end border-b border-white/10 pb-2">
-                      <span className="text-sm text-white/60">Cost Per Lead (CPL)</span>
-                      <span className="text-2xl font-bold text-emerald-400">-42%</span>
+                      <span className="text-sm text-white/60">Organic Profile Views (3 Mo)</span>
+                      <span className="text-2xl font-bold text-emerald-400">+1411%</span>
                     </div>
                     <div className="flex justify-between items-end border-b border-white/10 pb-2">
-                      <span className="text-sm text-white/60">Organic Impressions</span>
-                      <span className="text-2xl font-bold text-white">1.2M</span>
+                      <span className="text-sm text-white/60">Growth Rate</span>
+                      <span className="text-2xl font-bold text-white">+229%</span>
                     </div>
                   </div>
                 </div>
-                <div className="text-sm text-white/70 italic border-t border-white/10 pt-4 mt-auto">"Abul's LinkedIn framework turned our profile from a digital resume into our #1 lead source."</div>
+                <div className="text-sm text-white/70 italic border-t border-white/10 pt-4 mt-auto">"Consistent short-form content strategy exceeded for three consecutive months"</div>
               </div>
             </ScrollReveal>
 
@@ -968,24 +968,24 @@ export default function HomePage() {
               <div className="bg-slate-800 rounded-2xl p-8 border border-white/10 relative overflow-hidden group hover:border-primary/50 transition-colors h-full flex flex-col justify-between">
                 <div>
                   <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/20 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2" />
-                  <div className="text-sm text-secondary-light font-semibold mb-2">D2C E-commerce</div>
+                  <div className="text-sm text-secondary-light font-semibold mb-2">Health & Fitness Coach</div>
                   <h3 className="text-xl font-bold mb-6">Instagram Growth Strategy</h3>
                   <div className="space-y-4 mb-8">
                     <div className="flex justify-between items-end border-b border-white/10 pb-2">
-                      <span className="text-sm text-white/60">Sales from Social</span>
-                      <span className="text-2xl font-bold text-emerald-400">+185%</span>
+                      <span className="text-sm text-white/60">Followers Growth (3 Mo.)</span>
+                      <span className="text-2xl font-bold text-emerald-400">+1,498</span>
                     </div>
                     <div className="flex justify-between items-end border-b border-white/10 pb-2">
-                      <span className="text-sm text-white/60">Engagement Rate</span>
-                      <span className="text-2xl font-bold text-emerald-400">8.4%</span>
+                      <span className="text-sm text-white/60">Avg. Engagement Rate</span>
+                      <span className="text-2xl font-bold text-emerald-400">12.9%</span>
                     </div>
                     <div className="flex justify-between items-end border-b border-white/10 pb-2">
-                      <span className="text-sm text-white/60">Follower Growth</span>
-                      <span className="text-2xl font-bold text-white">24k+</span>
+                      <span className="text-sm text-white/60">Profile Visit</span>
+                      <span className="text-2xl font-bold text-white">+202%</span>
                     </div>
                   </div>
                 </div>
-                <div className="text-sm text-white/70 italic border-t border-white/10 pt-4 mt-auto">"The content calendar completely changed how we sell online. We finally have a community."</div>
+                <div className="text-sm text-white/70 italic border-t border-white/10 pt-4 mt-auto">"Built an entire audience from zero in 3 months with consistently high engagement."</div>
               </div>
             </ScrollReveal>
 
@@ -994,24 +994,24 @@ export default function HomePage() {
               <div className="bg-slate-800 rounded-2xl p-8 border border-white/10 relative overflow-hidden group hover:border-primary/50 transition-colors h-full flex flex-col justify-between">
                 <div>
                   <div className="absolute top-0 right-0 w-32 h-32 bg-accent/20 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2" />
-                  <div className="text-sm text-secondary-light font-semibold mb-2">Local Service Business</div>
-                  <h3 className="text-xl font-bold mb-6">Local Awareness Campaign</h3>
+                  <div className="text-sm text-secondary-light font-semibold mb-2">Pilates & Wellness Coach</div>
+                  <h3 className="text-xl font-bold mb-6">Instagram Growth Strategy</h3>
                   <div className="space-y-4 mb-8">
                     <div className="flex justify-between items-end border-b border-white/10 pb-2">
-                      <span className="text-sm text-white/60">Inbound Inquiries</span>
-                      <span className="text-2xl font-bold text-emerald-400">4x</span>
+                      <span className="text-sm text-white/60">Followers Growth (3 Mo.)</span>
+                      <span className="text-2xl font-bold text-emerald-400">+1,077</span>
                     </div>
                     <div className="flex justify-between items-end border-b border-white/10 pb-2">
-                      <span className="text-sm text-white/60">Local Reach</span>
-                      <span className="text-2xl font-bold text-emerald-400">+560%</span>
+                      <span className="text-sm text-white/60">Avg. Engagement Rate</span>
+                      <span className="text-2xl font-bold text-emerald-400">8.5%</span>
                     </div>
                     <div className="flex justify-between items-end border-b border-white/10 pb-2">
-                      <span className="text-sm text-white/60">Google Reviews (via Social)</span>
-                      <span className="text-2xl font-bold text-white">+112</span>
+                      <span className="text-sm text-white/60">Profile visit (3 Mo.)</span>
+                      <span className="text-2xl font-bold text-white">8,083</span>
                     </div>
                   </div>
                 </div>
-                <div className="text-sm text-white/70 italic border-t border-white/10 pt-4 mt-auto">"We stopped paying for billboard ads. Social media is driving 90% of our new bookings now."</div>
+                <div className="text-sm text-white/70 italic border-t border-white/10 pt-4 mt-auto">"Grew a fully organic Pilates audience by over 1,000 followers with consistently strong engagement above industry average."</div>
               </div>
             </ScrollReveal>
           </div>
