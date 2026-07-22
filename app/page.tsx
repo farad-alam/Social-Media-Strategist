@@ -1032,13 +1032,13 @@ export default function HomePage() {
             />
           </ScrollReveal>
 
-          <div className="grid md:grid-cols-5 gap-6 lg:gap-8">
-            {/* BASIS Award Card (60% width - spans 3 columns) */}
-            <ScrollReveal direction="left" delay={100} className="md:col-span-3">
+          <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
+            {/* BASIS Award Card (50% width) */}
+            <ScrollReveal direction="left" delay={100}>
               <div className="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden group hover:border-primary/30 transition-all duration-300 h-full flex flex-col shadow-sm hover:shadow-md">
                 <div className="relative w-full overflow-hidden bg-slate-100 flex-none">
                   <img 
-                    src="/images/basis-award-2021.jpg" 
+                    src="/images/basis-award-new.jpg" 
                     alt="Abul Hasan Receiving BASIS Outsourcing Award 2021 (District Level Top Individual)" 
                     className="w-full h-auto block group-hover:scale-105 transition-transform duration-500"
                   />
@@ -1052,14 +1052,14 @@ export default function HomePage() {
               </div>
             </ScrollReveal>
 
-            {/* Upwork Top Rated Plus Card (40% width - spans 2 columns) */}
-            <ScrollReveal direction="right" delay={200} className="md:col-span-2">
+            {/* Upwork Top Rated Plus Card (50% width) */}
+            <ScrollReveal direction="right" delay={200}>
               <div className="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden group hover:border-primary/30 transition-all duration-300 h-full flex flex-col shadow-sm hover:shadow-md">
                 <div className="relative w-full flex-1 overflow-hidden bg-[#F2F1ED] flex items-center justify-center min-h-[200px]">
                   <img 
-                    src="/images/upwork-top-rated-plus.png" 
+                    src="/images/upwork-profile-new.png" 
                     alt="Abul Hasan Upwork Top Rated Plus profile, social media strategist with 99% Job Success Score" 
-                    className="w-full h-full object-contain p-0 md:p-2 scale-[1.2] group-hover:scale-[1.25] transition-transform duration-500"
+                    className="w-full h-full object-contain p-0 md:p-2 group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="p-6 md:p-8 flex-none flex flex-col border-t border-slate-200">
