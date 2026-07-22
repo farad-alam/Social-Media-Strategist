@@ -5,18 +5,11 @@ import { usePathname } from "next/navigation";
 
 const footerLinks = {
   services: [
-    { href: "/services/strategy-planning", label: "Strategy Planning" },
-    { href: "/services/content-calendar", label: "Content Calendar" },
-    { href: "/services/competitor-research", label: "Competitor Research" },
-    { href: "/services/audience-research", label: "Audience Research" },
-    { href: "/services/brand-positioning", label: "Brand Positioning" },
-    { href: "/services/campaign-planning", label: "Campaign Planning" },
-    { href: "/services/organic-growth", label: "Organic Growth" },
-    { href: "/services/engagement-strategy", label: "Engagement Strategy" },
-    { href: "/services/paid-ads-strategy", label: "Paid Ads Strategy" },
-    { href: "/services/social-media-audit", label: "Social Media Audit" },
-    { href: "/services/analytics-reporting", label: "Analytics & Reporting" },
-    { href: "/services/monthly-consulting", label: "Monthly Consulting" },
+    { href: "/services", label: "Strategy Audit" },
+    { href: "/services", label: "Growth Strategy" },
+    { href: "/services", label: "Full Partnership" },
+    { href: "/services", label: "Paid Ads Strategy" },
+    { href: "/services", label: "Engagement Strategy" },
   ],
   industries: [
     { href: "/strategy-for-small-business", label: "Small Business" },
@@ -95,7 +88,7 @@ export default function Footer() {
 
       {/* Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 lg:gap-8">
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <Link href="/" className="inline-block group">
@@ -211,11 +204,11 @@ export default function Footer() {
           </div>
 
           {/* Industries Links */}
-          <div>
+          <div className="lg:col-span-2">
             <h3 className="text-sm font-bold uppercase tracking-wider text-white mb-4">
               Industries
             </h3>
-            <ul className="space-y-3">
+            <ul className="grid grid-cols-2 gap-x-4 gap-y-3">
               {footerLinks.industries.map((link) => (
                 <li key={link.label}>
                   <Link
