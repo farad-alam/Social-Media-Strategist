@@ -189,18 +189,18 @@ const processSteps = [
 ];
 
 const industries = [
-  { name: "Small Business", href: "/strategy-for-small-business", emoji: "🏪" },
-  { name: "E-commerce", href: "/strategy-for-ecommerce", emoji: "🛒" },
-  { name: "B2B", href: "/strategy-for-b2b", emoji: "🤝" },
-  { name: "SaaS", href: "/strategy-for-saas", emoji: "💻" },
-  { name: "Coaches", href: "/strategy-for-coaches", emoji: "🎯" },
-  { name: "Healthcare", href: "/strategy-for-healthcare", emoji: "🏥" },
-  { name: "Real Estate", href: "/strategy-for-realtors", emoji: "🏠" },
-  { name: "Legal", href: "/strategy-for-lawyers", emoji: "⚖️" },
-  { name: "Restaurant", href: "/strategy-for-restaurants", emoji: "🍽️" },
-  { name: "Startup", href: "/strategy-for-startups", emoji: "🚀" },
-  { name: "Beauty Brands", href: "/strategy-for-beauty-brands", emoji: "💄" },
-  { name: "Nonprofit", href: "/strategy-for-nonprofit", emoji: "❤️" },
+  { name: "Small Business", href: "/strategy-for-small-business", emoji: "🏪", description: "Local growth strategies" },
+  { name: "E-commerce", href: "/strategy-for-ecommerce", emoji: "🛒", description: "Drive online sales" },
+  { name: "B2B", href: "/strategy-for-b2b", emoji: "🤝", description: "Lead generation focus" },
+  { name: "SaaS", href: "/strategy-for-saas", emoji: "💻", description: "User acquisition" },
+  { name: "Coaches", href: "/strategy-for-coaches", emoji: "🎯", description: "Personal branding" },
+  { name: "Healthcare", href: "/strategy-for-healthcare", emoji: "🏥", description: "Patient trust" },
+  { name: "Real Estate", href: "/strategy-for-realtors", emoji: "🏠", description: "Property visibility" },
+  { name: "Legal", href: "/strategy-for-lawyers", emoji: "⚖️", description: "Authority & reputation" },
+  { name: "Restaurant", href: "/strategy-for-restaurants", emoji: "🍽️", description: "Foot traffic & bookings" },
+  { name: "Startup", href: "/strategy-for-startups", emoji: "🚀", description: "Rapid brand awareness" },
+  { name: "Beauty Brands", href: "/strategy-for-beauty-brands", emoji: "💄", description: "Visual storytelling" },
+  { name: "Nonprofit", href: "/strategy-for-nonprofit", emoji: "❤️", description: "Community engagement" },
 ];
 
 const testimonials = [
@@ -910,11 +910,14 @@ export default function HomePage() {
                   href={industry.href}
                   className="group block bg-white rounded-xl p-6 text-center border border-slate-200 hover:border-primary/30 hover:shadow-lg transition-all duration-300 hover-lift"
                 >
-                  <span className="text-3xl md:text-4xl block mb-3">
+                  <span className="text-3xl md:text-4xl block mb-2">
                     {industry.emoji}
                   </span>
-                  <span className="text-sm md:text-base font-semibold text-slate-700 group-hover:text-primary transition-colors duration-200">
+                  <span className="text-sm md:text-base font-semibold text-slate-700 group-hover:text-primary transition-colors duration-200 block">
                     {industry.name}
+                  </span>
+                  <span className="text-xs text-slate-500 mt-1 block">
+                    {industry.description}
                   </span>
                 </Link>
               </ScrollReveal>
