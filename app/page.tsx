@@ -632,8 +632,8 @@ export default function HomePage() {
       {/* ===== WHAT IS SOCIAL MEDIA STRATEGY ===== */}
       <section id="what-is-social-media-strategy" className="section-padding">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-            <ScrollReveal direction="left" className="lg:col-span-5">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+            <ScrollReveal direction="left">
               <div>
                 <SectionHeading
                   badge="Understanding the Fundamentals"
@@ -645,9 +645,9 @@ export default function HomePage() {
 
                 <div className="space-y-6 text-slate-600 leading-relaxed">
                   <p>
-                    A <strong className="text-slate-800">social media strategy</strong> is a comprehensive
+                    A <strong className="text-slate-800">social media strategy </strong> is a comprehensive
                     document that outlines everything your brand does on social
-                    media — from the content you create and the platforms you use,
+                    media from the content you create and the platforms you use,
                     to the audience you target and the goals you&apos;re working toward.
                     It transforms random posting into a purposeful, measurable
                     system that drives real business results.
@@ -656,7 +656,7 @@ export default function HomePage() {
                     Think of it this way: <strong className="text-slate-800">social media management</strong>{" "}without
                     strategy is like driving without a destination. You&apos;re moving,
                     but you&apos;re not going anywhere. A social media strategist creates
-                    the GPS — setting clear goals, defining the route, and
+                    the GPS  setting clear goals, defining the route, and
                     adjusting when conditions change.
                   </p>
                   <p>
@@ -671,7 +671,7 @@ export default function HomePage() {
               </div>
             </ScrollReveal>
 
-            <ScrollReveal direction="right" delay={200} className="lg:col-span-7">
+            <ScrollReveal direction="right" delay={200}>
               <div className="space-y-6">
                 {/* Why It Matters Card */}
                 <div className="bg-primary-50 rounded-2xl p-8 border border-primary-100">
@@ -688,7 +688,7 @@ export default function HomePage() {
                       "Consistent branding increases revenue by up to 23%",
                       "73% of marketers say social media has been effective for their business",
                     ].map((stat, i) => (
-                      <li key={i} className="flex items-start gap-3 text-sm text-slate-700">
+                      <li key={i} className="flex items-start gap-2.5 text-[13px] text-slate-700">
                         <svg className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" />
                         </svg>
