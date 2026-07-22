@@ -206,46 +206,46 @@ const industries = [
 const testimonials = [
   {
     quote:
-      "Abul completely transformed our social media presence. Within 6 months, our engagement rate tripled and we started getting consistent leads from Instagram and LinkedIn.",
-    name: "Sarah Johnson",
-    role: "Marketing Director",
-    company: "TechStart Inc.",
+      "I very much enjoyed working with Hasan and wish I had started earlier with him! He really understood the vision and mission of my company and expressed that in great social posts for both Instagram and TikTok. I high recommend him.",
+    name: "Jon David Hague",
+    role: "Founder",
+    company: "@Bountisphere",
     avatar: "/images/avatar-1.png",
     source: "Upwork",
   },
   {
     quote:
-      "His strategic approach is what sets him apart. Instead of just posting content, Abul built us a complete social media ecosystem that actually drives revenue.",
-    name: "Michael Chen",
-    role: "CEO",
-    company: "GrowthLab Agency",
-    avatar: "/images/avatar-2.png",
-    source: "LinkedIn",
-  },
-  {
-    quote:
-      "We tried managing social media ourselves for 2 years with zero results. Abul's strategy gave us clarity and a clear path to growth. Best investment we made.",
-    name: "Emily Rodriguez",
+      "Working with Abul has been an excellent experience. He’s dedicated, skilled, and always delivers high-quality work. His responsiveness and professionalism make collaboration smooth and efficient. He follows instructions carefully, communicates clearly, and is proactive in ensuring results align with expectations. I appreciate his consistency, technical expertise, and positive attitude throughout our projects. I highly recommend Abul to anyone looking for a reliable and competent freelancer, it’s been a pleasure working with him, and I look forward to collaborating again.",
+    name: "Amale Bouzlafa",
     role: "Founder",
-    company: "Bloom Wellness",
-    avatar: "/images/avatar-3.png",
+    company: "TPU Ltd.",
+    avatar: "/images/avatar-2.png",
     source: "Upwork",
   },
   {
     quote:
-      "Working with Abul was a game-changer for our B2B brand. His understanding of LinkedIn strategy alone generated 47 qualified leads in the first quarter.",
-    name: "David Park",
-    role: "VP of Marketing",
-    company: "CloudSync Solutions",
-    avatar: "/images/avatar-4.png",
-    source: "Direct Client",
+      "Abdul is awesome! He knows the ins and outs of instagram and keeps up with the changing trends, and knows what works! He is always available in a timely manner as well. Thanks for everything Abul.",
+    name: "Chris Atley",
+    role: "Global Success Coach",
+    company: "@chrisatley",
+    avatar: "/images/avatar-3.png",
+    source: "LinkedIn",
   },
   {
     quote:
-      "Abul doesn't just create strategies — he creates systems. His content frameworks and analytics dashboards made our team 3x more efficient.",
-    name: "Lisa Thompson",
-    role: "Brand Manager",
-    company: "Artisan Foods Co.",
+      "He did a great job and was very responsive, with good communication. He definitely helped build my Pinterest and Instagram following and take the burden off me (I have other things to focus on aside from doing social media). No complaints, just appreciation. I will use him again in the future!",
+    name: "Sarah",
+    role: "Founder",
+    company: "@wifeychef",
+    avatar: "/images/avatar-4.png",
+    source: "Upwork",
+  },
+  {
+    quote:
+      "Hasan was the perfect fit for my job requirements. He is trustworthy and I was able to follow up on all his work. Somehow my instagram wasn't getting any traffic anymore. I let him take over my account and I couldn't be happier. If you need help with your Instagram, He is the man to hire. I highly recommend Hasan and will soon be working with him again.",
+    name: "Alex Witthoeft",
+    role: "Founder",
+    company: "@germanatorfit",
     avatar: "/images/avatar-5.png",
     source: "Upwork",
   },
