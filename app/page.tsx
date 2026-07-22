@@ -290,17 +290,17 @@ const faqs = [
   {
     question: "What's the difference between social media strategy and management?",
     answer:
-      "Strategy is the plan — it defines what you'll do, why, and how you'll measure success. Management is the execution — the day-to-day posting, community engagement, and content creation. Think of strategy as the blueprint and management as the construction. You need a solid strategy before management can be effective.",
+      "Strategy is the plan: it defines what you'll do, why, and how you'll measure success. Management is the execution: the day-to-day posting, community engagement, and content creation. Think of strategy as the blueprint and management as the construction. You need a solid strategy before management can be effective.",
   },
   {
     question: "Can small businesses benefit from a social media strategy?",
     answer:
-      "Small businesses actually benefit the most from having a strategy because they have limited time and budget. A strategy ensures every post serves a purpose, every platform is chosen intentionally, and every effort drives toward business goals. Many small businesses waste months posting without direction — a strategy prevents that.",
+      "Small businesses actually benefit the most from having a strategy because they have limited time and budget. A strategy ensures every post serves a purpose, every platform is chosen intentionally, and every effort drives toward business goals. Many small businesses waste months posting without direction, and a strategy prevents that.",
   },
   {
     question: "Do I need a social media strategy for every platform?",
     answer:
-      "No — and that's exactly what a strategy helps you avoid. A good social media strategist will identify the 2-3 platforms where your target audience is most active and create a focused strategy for those. Trying to be everywhere spreads your resources too thin. Focus beats spread every time.",
+      "No, and that's exactly what a strategy helps you avoid. A good social media strategist will identify the 2-3 platforms where your target audience is most active and create a focused strategy for those. Trying to be everywhere spreads your resources too thin. Focus beats spread every time.",
   },
   {
     question: "How do you measure social media strategy success?",
@@ -330,7 +330,7 @@ const faqs = [
   {
     question: "What industries do you specialize in?",
     answer:
-      "I've worked across 50+ industries including e-commerce, SaaS, healthcare, real estate, legal, coaching, education, finance, and more. While I bring industry-specific insights, my core methodology — audience research, competitive analysis, and data-driven content planning — is universal and adapts to any industry.",
+      "I've worked across 50+ industries including e-commerce, SaaS, healthcare, real estate, legal, coaching, education, finance, and more. While I bring industry-specific insights, my core methodology of audience research, competitive analysis, and data-driven content planning is universal and adapts to any industry.",
   },
   {
     question: "How do I get started?",
