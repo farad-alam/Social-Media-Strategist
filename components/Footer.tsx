@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const footerLinks = {
   services: [
@@ -45,12 +46,15 @@ const footerLinks = {
 };
 
 export default function Footer() {
+  const pathname = usePathname();
+  const isHomePage = pathname === "/";
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-slate-900 text-white" role="contentinfo">
       {/* CTA Banner */}
-      <div className="gradient-cta">
+      {!isHomePage && (
+        <div className="gradient-cta">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
           <h2 className="text-h2 font-bold text-white mb-4">
             Ready to Transform Your Social Media Presence?
@@ -87,7 +91,7 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-      </div>
+      )}
 
       {/* Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
