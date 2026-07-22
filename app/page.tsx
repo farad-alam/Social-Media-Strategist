@@ -632,14 +632,15 @@ export default function HomePage() {
       {/* ===== WHAT IS SOCIAL MEDIA STRATEGY ===== */}
       <section id="what-is-social-media-strategy" className="section-padding">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-            <ScrollReveal direction="left">
+          <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+            <ScrollReveal direction="left" className="lg:col-span-5">
               <div>
                 <SectionHeading
                   badge="Understanding the Fundamentals"
                   title="What Is Social Media Strategy?"
-                  subtitle="A social media strategy is your business's roadmap to social media success — and it's the foundation of every brand that thrives online."
+                  subtitle="A social media strategy is your business's roadmap to social media success and it's the foundation of every brand that thrives online."
                   centered={false}
+                  className="!mb-6"
                 />
 
                 <div className="space-y-6 text-slate-600 leading-relaxed">
@@ -652,7 +653,7 @@ export default function HomePage() {
                     system that drives real business results.
                   </p>
                   <p>
-                    Think of it this way: <strong className="text-slate-800">social media management</strong> without
+                    Think of it this way: <strong className="text-slate-800">social media management</strong>{" "}without
                     strategy is like driving without a destination. You&apos;re moving,
                     but you&apos;re not going anywhere. A social media strategist creates
                     the GPS — setting clear goals, defining the route, and
@@ -670,7 +671,7 @@ export default function HomePage() {
               </div>
             </ScrollReveal>
 
-            <ScrollReveal direction="right" delay={200}>
+            <ScrollReveal direction="right" delay={200} className="lg:col-span-7">
               <div className="space-y-6">
                 {/* Why It Matters Card */}
                 <div className="bg-primary-50 rounded-2xl p-8 border border-primary-100">
@@ -712,6 +713,8 @@ export default function HomePage() {
                       "Time savings",
                       "Competitive edge",
                       "Measurable growth",
+                      "Content consistency",
+                      "Increased conversions",
                     ].map((benefit, i) => (
                       <div
                         key={i}
