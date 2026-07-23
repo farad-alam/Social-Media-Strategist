@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Button from "@/components/ui/Button";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import SectionHeading from "@/components/ui/SectionHeading";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "About Abul Hasan — Social Media Strategist with 13+ Years Experience",
@@ -21,19 +22,19 @@ const milestones = [
   { year: "2026", title: "Continuing to Lead", description: "Continuing to help businesses build powerful social media strategies with data-driven, results-focused approaches." },
 ];
 
-const expertise = [
-  "Social Media Strategy",
-  "Content Strategy",
-  "Brand Positioning",
-  "Audience Research",
-  "Competitor Analysis",
-  "Social Media Audit",
-  "Campaign Planning",
-  "Community Management",
-  "Organic Growth",
-  "Platform Strategy",
-  "Analytics & Reporting",
-  "Social Media Consulting",
+const industries = [
+  { name: "Small Business", href: "/strategy-for-small-business", emoji: "🏪", description: "Local growth strategies" },
+  { name: "E-commerce", href: "/strategy-for-ecommerce", emoji: "🛒", description: "Drive online sales" },
+  { name: "B2B", href: "/strategy-for-b2b", emoji: "🤝", description: "Lead generation focus" },
+  { name: "SaaS", href: "/strategy-for-saas", emoji: "💻", description: "User acquisition" },
+  { name: "Coaches", href: "/strategy-for-coaches", emoji: "🎯", description: "Personal branding" },
+  { name: "Healthcare", href: "/strategy-for-healthcare", emoji: "🏥", description: "Patient trust" },
+  { name: "Real Estate", href: "/strategy-for-realtors", emoji: "🏠", description: "Property visibility" },
+  { name: "Legal", href: "/strategy-for-lawyers", emoji: "⚖️", description: "Authority & reputation" },
+  { name: "Restaurant", href: "/strategy-for-restaurants", emoji: "🍽️", description: "Foot traffic & bookings" },
+  { name: "Startup", href: "/strategy-for-startups", emoji: "🚀", description: "Rapid brand awareness" },
+  { name: "Beauty Brands", href: "/strategy-for-beauty-brands", emoji: "💄", description: "Visual storytelling" },
+  { name: "Nonprofit", href: "/strategy-for-nonprofit", emoji: "❤️", description: "Community engagement" },
 ];
 
 const platforms = [
@@ -251,12 +252,23 @@ export default function AboutPage() {
             />
           </ScrollReveal>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {expertise.map((skill, index) => (
-              <ScrollReveal key={index} delay={index * 50}>
-                <div className="bg-white rounded-xl p-5 border border-slate-200 hover:border-primary/30 hover:shadow-md transition-all duration-300 text-center">
-                  <div className="text-sm font-semibold text-slate-700">{skill}</div>
-                </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+            {industries.map((industry, index) => (
+              <ScrollReveal key={index} delay={index * 75}>
+                <Link
+                  href={industry.href}
+                  className="group block bg-white rounded-xl p-6 text-center border border-slate-200 hover:border-primary/30 hover:shadow-lg transition-all duration-300 hover-lift"
+                >
+                  <span className="text-3xl md:text-4xl block mb-2">
+                    {industry.emoji}
+                  </span>
+                  <span className="text-sm md:text-base font-semibold text-slate-700 group-hover:text-primary transition-colors duration-200 block">
+                    {industry.name}
+                  </span>
+                  <span className="text-xs text-slate-500 mt-1 block">
+                    {industry.description}
+                  </span>
+                </Link>
               </ScrollReveal>
             ))}
           </div>
