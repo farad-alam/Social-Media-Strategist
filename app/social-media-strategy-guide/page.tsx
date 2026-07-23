@@ -81,7 +81,11 @@ export default function GuidePage() {
           </p>
           <div className="flex items-center justify-center gap-4 text-white/60 text-sm">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xs">AH</div>
+              <img 
+                src="/images/abul-hasan.jpg" 
+                alt="Abul Hasan"
+                className="w-8 h-8 rounded-full object-cover border border-white/20"
+              />
               <span>By Abul Hasan</span>
             </div>
             <span>•</span>

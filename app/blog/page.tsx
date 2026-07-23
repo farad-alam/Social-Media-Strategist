@@ -88,9 +88,11 @@ export default async function BlogIndexPage() {
                 </Link>
                 <div className="px-8 pb-8 mt-auto flex items-center justify-between border-t border-slate-100 pt-6">
                   <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white text-xs font-bold">
-                      AH
-                    </div>
+                    <img 
+                      src="/images/abul-hasan.jpg" 
+                      alt={post.author}
+                      className="w-8 h-8 rounded-full object-cover border border-slate-200"
+                    />
                     <span className="text-sm font-medium text-slate-700">{post.author}</span>
                   </div>
                   <span className="text-xs text-slate-500">{post.readingTime}</span>
