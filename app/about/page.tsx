@@ -148,7 +148,7 @@ export default function AboutPage() {
               { value: "13+", label: "Years Experience" },
               { value: "300+", label: "Clients Served" },
               { value: "42K+", label: "Hours Delivered" },
-              { value: "50+", label: "Industries" },
+              { value: "30+", label: "Industries" },
             ].map((stat, i) => (
               <div key={i} className="text-center">
                 <div className="text-3xl font-bold gradient-text">{stat.value}</div>
