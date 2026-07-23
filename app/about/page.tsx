@@ -96,8 +96,7 @@ export default function AboutPage() {
                 </span>
               </h1>
               <p className="text-xl text-white/80 leading-relaxed mb-8">
-                A social media strategist with <strong className="text-white">13+ years of experience</strong> helping
-                businesses transform their social media from random posting into strategic, revenue-driving systems.
+                A social media strategist with <strong className="text-white">13+ years of experience</strong> helping businesses transform their social media from random posting into strategic systems that accelerate audience growth and deliver measurable business results.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button href="/contact" size="lg" variant="primary">
@@ -111,9 +110,9 @@ export default function AboutPage() {
             <div className="relative">
               <div className="aspect-[4/5] max-w-sm mx-auto rounded-2xl bg-slate-800 overflow-hidden shadow-2xl shadow-primary/30 relative border-4 border-white/10">
                 <img 
-                  src="/images/abul-hasan.jpg" 
-                  alt="Abul Hasan - Social Media Strategist" 
-                  className="w-full h-full object-cover object-top"
+                  src="/images/abul-hasan-about-hero.jpg" 
+                  alt="Abul Hasan - Social Media Strategist Working" 
+                  className="w-full h-full object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-transparent to-transparent pointer-events-none" />
                 <div className="absolute bottom-6 left-6 right-6 text-center">
@@ -132,8 +131,8 @@ export default function AboutPage() {
               <div className="absolute -left-4 bottom-16 bg-white rounded-xl p-4 shadow-xl border border-slate-100 animate-float flex items-center gap-3" style={{ animationDelay: "2s" }}>
                 <div className="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center text-xl">⭐</div>
                 <div>
-                  <div className="text-sm font-bold text-slate-900">Top Rated</div>
-                  <div className="text-xs text-slate-500">Upwork</div>
+                  <div className="text-sm font-bold text-slate-900">Upwork:</div>
+                  <div className="text-xs text-slate-500">Top Rated Plus</div>
                 </div>
               </div>
             </div>
