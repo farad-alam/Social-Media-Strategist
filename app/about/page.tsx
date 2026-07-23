@@ -56,7 +56,7 @@ export default function AboutPage() {
     jobTitle: "Social Media Strategist",
     url: "https://socialmediastrategist.net/about",
     description: "Social media strategist with 13+ years of experience helping 300+ businesses grow through strategic social media planning.",
-    knowsAbout: expertise,
+    knowsAbout: industries.map((i) => i.name),
     award: "BASIS Outsourcing Award 2021 — District Level Top Individual",
     sameAs: [
       "https://www.linkedin.com/in/abulhasan",
