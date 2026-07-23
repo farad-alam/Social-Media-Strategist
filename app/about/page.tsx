@@ -170,24 +170,24 @@ export default function AboutPage() {
             />
           </ScrollReveal>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <ScrollReveal>
-              <div className="prose prose-lg max-w-none text-slate-600">
+          <div className="grid md:grid-cols-12 gap-12 items-center">
+            <ScrollReveal className="md:col-span-7">
+              <div className="prose prose-lg max-w-none text-slate-600 space-y-6">
                 <p>
-                  My journey as a social media strategist began over 13 years ago when social media was still finding its place in the business world. While most saw it as just a place to share updates, I recognized its potential as a powerful business growth engine — and I built my career on that conviction.
+                  My journey as a social media strategist began over 13 years ago when social media was still finding its place in the business world. While most saw it as just a place to share updates, I recognized its potential as a powerful business growth engine, and I built my career on that conviction.
                 </p>
                 <p>
-                  Over the years, I&apos;ve had the privilege of working with <strong className="text-slate-800">300+ clients</strong> across more than 50 industries. From local startups to international brands, each engagement taught me something new about what makes social media strategy truly effective: it&apos;s not about following trends — it&apos;s about understanding people.
+                  Over the years, I&apos;ve had the privilege of working with <strong className="text-slate-800">300+ clients</strong> across more than 50 industries. From local startups to international brands, each engagement taught me something new about what makes social media strategy truly effective: it&apos;s not about following trends, it&apos;s about understanding people.
                 </p>
                 <p>
                   My work on Upwork, where I&apos;ve delivered <strong className="text-slate-800">42,000+ hours</strong> as a Top Rated professional, gave me the unique opportunity to work across diverse markets and cultures. This cross-industry experience is what allows me to bring fresh, proven strategies to every new client.
                 </p>
                 <p>
-                  Today, I continue to help businesses build social media strategies that don&apos;t just look good on paper — they drive real, measurable results. Every strategy I create is rooted in data, informed by experience, and designed for growth.
+                  Today, I continue to help businesses build social media strategies that don&apos;t just look good on paper. They drive real, measurable results. Every strategy I create is rooted in data, informed by experience, and designed for growth.
                 </p>
               </div>
             </ScrollReveal>
-            <ScrollReveal delay={200}>
+            <ScrollReveal delay={200} className="md:col-span-5">
               <div className="relative">
                 <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl border border-slate-200">
                   <img src="/images/workspace.png" alt="Social Media Strategy Workspace" className="w-full h-full object-cover" />
