@@ -773,7 +773,6 @@ export default function HomePage() {
                   title={service.title}
                   description={service.description}
                   icon={service.icon}
-                  href="/services"
                 />
               </ScrollReveal>
             ))}
