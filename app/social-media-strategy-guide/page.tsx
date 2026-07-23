@@ -84,7 +84,7 @@ export default function GuidePage() {
               <img 
                 src="/images/abul-hasan.jpg" 
                 alt="Abul Hasan"
-                className="w-8 h-8 rounded-full object-cover border border-white/20"
+                className="w-8 h-8 rounded-full object-cover object-top border border-white/20"
               />
               <span>By Abul Hasan</span>
             </div>

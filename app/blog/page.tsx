@@ -91,7 +91,7 @@ export default async function BlogIndexPage() {
                     <img 
                       src="/images/abul-hasan.jpg" 
                       alt={post.author}
-                      className="w-8 h-8 rounded-full object-cover border border-slate-200"
+                      className="w-8 h-8 rounded-full object-cover object-top border border-slate-200"
                     />
                     <span className="text-sm font-medium text-slate-700">{post.author}</span>
                   </div>
