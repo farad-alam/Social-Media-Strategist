@@ -40,7 +40,7 @@ const footerLinks = {
 
 export default function Footer() {
   const pathname = usePathname();
-  const hideCta = pathname === "/" || pathname === "/services";
+  const hideCta = pathname === "/" || pathname === "/services" || pathname === "/about";
   const currentYear = new Date().getFullYear();
 
   return (
