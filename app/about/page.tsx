@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 const milestones = [
-  { year: "2012", title: "Started Social Media Career", description: "Began working with local businesses to build their social media presence from scratch." },
+  { year: "2012", title: "Started Social Media Career", description: "Began working in social media management and lead generation for web-based businesses." },
   { year: "2015", title: "100+ Clients Milestone", description: "Reached 100 clients served, specializing in social media strategy for SMBs and startups." },
   { year: "2018", title: "Expanded to Global Clients", description: "Started working with international brands across the US, UK, Canada, and Australia." },
   { year: "2021", title: "Founded Agency & Won BASIS Award", description: "Built a social media agency and received the prestigious BASIS Outsourcing Award — District Level Top Individual." },
