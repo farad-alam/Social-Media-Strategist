@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 const packages = [
   {
     name: "Strategy Audit",
-    price: "1,500",
+    price: "999",
     description: "A deep-dive audit of your current social media presence with actionable recommendations.",
     features: [
       "Full social media audit",
@@ -32,7 +32,7 @@ const packages = [
   },
   {
     name: "Growth Strategy",
-    price: "3,500",
+    price: "2,500",
     description: "A comprehensive social media strategy built from scratch to drive measurable growth.",
     features: [
       "Everything in Strategy Audit",
@@ -52,17 +52,18 @@ const packages = [
     name: "Full Partnership",
     price: "7,500",
     priceNote: "/month",
-    description: "Ongoing strategic partnership with continuous optimization and hands-on guidance.",
+    description: "Ongoing strategic partnership combining hands-on execution with continuous optimization - strategy led personally by me, delivered through my dedicated team.",
     features: [
       "Everything in Growth Strategy",
-      "Monthly strategy refresh",
-      "Weekly content direction",
-      "Campaign planning & support",
-      "Performance reporting",
+      "Full content execution: creation, scheduling, and posting handled by my team",
+      "Engagement strategy implementation for organic growth",
+      "Paid ads strategy implementation for faster, measurable growth",
+      "Monthly strategy refresh based on performance data",
+      "Weekly content direction and approval (led personally by me)",
+      "Performance reporting and analytics",
       "Quarterly strategy review",
-      "Direct Slack/WhatsApp access",
-      "Team training sessions",
-      "Priority support",
+      "Direct Slack/WhatsApp access to me and my team",
+      "Priority support and fast turnaround",
     ],
     popular: false,
     cta: "Become a Partner",
@@ -87,8 +88,24 @@ const serviceFaqs = [
     answer: "Yes. If your needs don't fit neatly into one of these packages, I'll create a custom proposal based on your specific requirements and budget.",
   },
   {
-    question: "What if I'm not satisfied with the strategy?",
-    answer: "I offer one round of revisions included in every package. My goal is to create a strategy you're confident in. In 300+ engagements, I've maintained a 98% client satisfaction rate.",
+    question: "Do you provide services for any niche?",
+    answer: "I work with a broad range of niches. The exceptions are CBD, alcohol, adult content, and any industries restricted by law. I also reserve the right to decline projects in areas I'm not comfortable working in.",
+  },
+  {
+    question: "Do I need to pay upfront?",
+    answer: "Yes. A 50% deposit is required upfront across all packages — Strategy Audit, Growth Strategy, and Full Partnership — with the remaining balance due upon delivery for one-time projects, or at the start of each billing cycle for Full Partnership.",
+  },
+  {
+    question: "What is your refund policy?",
+    answer: <>Because each package involves custom strategy work built specifically for your business, deposits and payments are non-refundable once work has begun. If you haven&apos;t received your first deliverable yet, please reach out to me directly to discuss your options. See our full <Link href="/refund-policy" className="text-primary hover:underline font-medium">Refund Policy</Link> for details.</>,
+  },
+  {
+    question: "Can I cancel my Full Partnership plan anytime?",
+    answer: "Yes. You can cancel anytime. I'll calculate the value of work completed up to that point, deduct it from your payment, and refund the remaining balance.",
+  },
+  {
+    question: "What happens if I'm not satisfied with the strategy?",
+    answer: "You'll get 2x revisions included with every project to make sure the final strategy fits your goals. If something isn't working, let's talk — I'd rather adjust the approach with you than have you walk away unhappy.",
   },
 ];
 

@@ -40,13 +40,13 @@ const footerLinks = {
 
 export default function Footer() {
   const pathname = usePathname();
-  const isHomePage = pathname === "/";
+  const hideCta = pathname === "/" || pathname === "/services";
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-slate-900 text-white" role="contentinfo">
       {/* CTA Banner */}
-      {!isHomePage && (
+      {!hideCta && (
         <div className="gradient-cta">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
           <h2 className="text-h2 font-bold text-white mb-4">

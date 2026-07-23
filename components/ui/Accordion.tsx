@@ -4,7 +4,7 @@ import { useState } from "react";
 
 interface AccordionItem {
   question: string;
-  answer: string;
+  answer: string | React.ReactNode;
 }
 
 interface AccordionProps {
