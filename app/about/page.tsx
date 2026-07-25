@@ -111,7 +111,7 @@ export default function AboutPage() {
             <div className="relative">
               <div className="aspect-[4/5] max-w-sm mx-auto rounded-2xl bg-slate-800 overflow-hidden shadow-2xl shadow-primary/30 relative border-4 border-white/10">
                 <img 
-                  src="/images/abul-hasan-about-hero.jpg" 
+                  src="/images/abul-hasan.jpg" 
                   alt="Abul Hasan - Social Media Strategist Working" 
                   className="w-full h-full object-cover object-center"
                 />
@@ -191,7 +191,7 @@ export default function AboutPage() {
             <ScrollReveal delay={200} className="md:col-span-5">
               <div className="relative">
                 <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl border border-slate-200">
-                  <img src="/images/workspace.png" alt="Social Media Strategy Workspace" className="w-full h-full object-cover" />
+                  <img src="/images/abul-hasan-about-hero.jpg" alt="Social Media Strategy Workspace" className="w-full h-full object-cover" />
                 </div>
                 <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl border border-slate-100 max-w-[280px]">
                   <div className="flex gap-1 mb-2">
