@@ -9,7 +9,7 @@ export default function ContactPage() {
     name: "",
     email: "",
     company: "",
-    budget: "",
+    service: "",
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -33,7 +33,7 @@ export default function ContactPage() {
       "@type": "Person",
       name: "Abul Hasan",
       jobTitle: "Social Media Strategist",
-      email: "hello@socialmediastrategist.net",
+      email: "hasan@socialmediastrategist.net",
     },
   };
 
@@ -131,20 +131,20 @@ export default function ContactPage() {
                             />
                           </div>
                           <div>
-                            <label htmlFor="contact-budget" className="block text-sm font-semibold text-slate-700 mb-2">
-                              Budget Range
+                            <label htmlFor="contact-service" className="block text-sm font-semibold text-slate-700 mb-2">
+                              Service Interest
                             </label>
                             <select
-                              id="contact-budget"
-                              value={formState.budget}
-                              onChange={(e) => setFormState({ ...formState, budget: e.target.value })}
+                              id="contact-service"
+                              value={formState.service}
+                              onChange={(e) => setFormState({ ...formState, service: e.target.value })}
                               className="w-full px-4 py-3 rounded-xl border border-slate-200 text-slate-800 focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
                             >
-                              <option value="">Select budget range</option>
-                              <option value="1k-3k">$1,000 — $3,000</option>
-                              <option value="3k-5k">$3,000 — $5,000</option>
-                              <option value="5k-10k">$5,000 — $10,000</option>
-                              <option value="10k+">$10,000+</option>
+                              <option value="">Select service</option>
+                              <option value="strategy-audit">Strategy Audit</option>
+                              <option value="growth-strategy">Growth Strategy</option>
+                              <option value="full-partnership">Full Partnership</option>
+                              <option value="others">Others</option>
                             </select>
                           </div>
                         </div>
@@ -220,8 +220,8 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <div className="text-sm font-semibold text-slate-800">Email</div>
-                        <a href="mailto:hello@socialmediastrategist.net" className="text-sm text-primary hover:underline">
-                          hello@socialmediastrategist.net
+                        <a href="mailto:hasan@socialmediastrategist.net" className="text-sm text-primary hover:underline">
+                          hasan@socialmediastrategist.net
                         </a>
                       </div>
                     </div>
@@ -251,21 +251,7 @@ export default function ContactPage() {
                 </div>
               </ScrollReveal>
 
-              <ScrollReveal delay={450}>
-                <div className="bg-primary-50 rounded-2xl border border-primary-100 p-8">
-                  <h3 className="text-lg font-bold text-slate-900 mb-3">Prefer a Video Call?</h3>
-                  <p className="text-sm text-slate-600 mb-5">
-                    Book a free 30-minute strategy call directly on my calendar.
-                  </p>
-                  {/* Calendly placeholder */}
-                  <div className="bg-white rounded-xl border border-slate-200 p-6 text-center">
-                    <p className="text-sm text-slate-400 mb-4">Calendly integration will appear here</p>
-                    <Button href="#" variant="primary" size="sm">
-                      Schedule a Call
-                    </Button>
-                  </div>
-                </div>
-              </ScrollReveal>
+
             </div>
           </div>
         </div>
