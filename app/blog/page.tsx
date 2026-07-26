@@ -70,21 +70,28 @@ export default async function BlogIndexPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {posts.map((post) => (
               <article key={post.slug} className="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg hover:border-primary/30 transition-all duration-300 flex flex-col overflow-hidden group">
-                <Link href={`/blog/${post.slug}`} className="block flex-1 p-8">
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-xs font-bold uppercase tracking-wider text-primary bg-primary-50 px-3 py-1 rounded-full">
-                      {post.category}
-                    </span>
-                    <span className="text-xs text-slate-500">
-                      {new Date(post.date).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
-                    </span>
+                <Link href={`/blog/${post.slug}`} className="block flex-1 flex flex-col">
+                  {post.featuredImageUrl && (
+                    <div className="h-48 w-full overflow-hidden border-b border-slate-100">
+                      <img src={post.featuredImageUrl} alt={post.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    </div>
+                  )}
+                  <div className="p-8 flex-1 flex flex-col">
+                    <div className="flex items-center justify-between mb-4">
+                      <span className="text-xs font-bold uppercase tracking-wider text-primary bg-primary-50 px-3 py-1 rounded-full">
+                        {post.category}
+                      </span>
+                      <span className="text-xs text-slate-500">
+                        {new Date(post.date).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
+                      </span>
+                    </div>
+                    <h2 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-primary transition-colors">
+                      {post.title}
+                    </h2>
+                    <p className="text-slate-600 text-sm leading-relaxed mb-6 flex-1">
+                      {post.excerpt}
+                    </p>
                   </div>
-                  <h2 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-primary transition-colors">
-                    {post.title}
-                  </h2>
-                  <p className="text-slate-600 text-sm leading-relaxed mb-6">
-                    {post.excerpt}
-                  </p>
                 </Link>
                 <div className="px-8 pb-8 mt-auto flex items-center justify-between border-t border-slate-100 pt-6">
                   <div className="flex items-center gap-3">

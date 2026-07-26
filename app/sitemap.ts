@@ -1,53 +1,58 @@
-import { MetadataRoute } from "next";
-import { getAllPosts } from "@/lib/blog";
-
-const BASE_URL = "https://socialmediastrategist.net";
+import { MetadataRoute } from 'next'
+import { getAllPosts } from '@/lib/blog'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  // Static Routes
-  const staticRoutes = [
-    "",
-    "/about",
-    "/services",
-    "/contact",
-    "/social-media-strategy-guide",
-    "/social-media-strategy-template",
-    "/social-media-strategy-examples",
-    "/blog"
-  ].map((route) => ({
-    url: `${BASE_URL}${route}`,
-    lastModified: new Date(),
-    changeFrequency: (route === "" || route === "/blog") ? "weekly" : "monthly" as "weekly" | "monthly",
-    priority: route === "" ? 1 : 0.8,
-  }));
+  const baseUrl = 'https://socialmediastrategist.net'
 
-  // Industry Routes
-  const industries = [
-    "small-business",
-    "ecommerce",
-    "b2b",
-    "saas",
-    "healthcare",
-    "coaches",
-    "realtors",
-    "lawyers"
-  ];
-  
-  const industryRoutes = industries.map((industry) => ({
-    url: `${BASE_URL}/strategy-for-${industry}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as "monthly",
-    priority: 0.7,
-  }));
+  // Fetch all published posts from Sanity
+  const posts = await getAllPosts()
 
-  // Blog Routes
-  const posts = await getAllPosts();
-  const blogRoutes = posts.map((post) => ({
-    url: `${BASE_URL}/blog/${post.slug}`,
-    lastModified: new Date(post.date),
-    changeFrequency: "yearly" as "yearly",
-    priority: 0.6,
-  }));
+  const blogUrls: MetadataRoute.Sitemap = posts.map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: new Date(post.updatedAt),
+    changeFrequency: 'weekly',
+    priority: 0.8,
+  }))
 
-  return [...staticRoutes, ...industryRoutes, ...blogRoutes];
+  // Define static routes
+  const staticRoutes: MetadataRoute.Sitemap = [
+    {
+      url: baseUrl,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 1.0,
+    },
+    {
+      url: `${baseUrl}/about`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/services`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/contact`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: new Date(),
+      changeFrequency: 'daily', // Blog index changes often
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/social-media-strategy-guide`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+  ]
+
+  return [...staticRoutes, ...blogUrls]
 }
