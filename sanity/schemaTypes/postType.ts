@@ -45,6 +45,7 @@ export const postType = defineType({
       name: 'publishedAt',
       title: 'Published at',
       type: 'datetime',
+      initialValue: () => new Date().toISOString(),
       validation: (Rule) => Rule.required(),
     }),
     defineField({
@@ -52,7 +53,6 @@ export const postType = defineType({
       title: 'Excerpt (Meta Description)',
       type: 'text',
       description: 'A short summary for the blog card and SEO meta description.',
-      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'content',
