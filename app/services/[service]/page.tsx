@@ -48,7 +48,7 @@ const servicesData: Record<
 };
 
 type Props = {
-  params: { service: string };
+  params: Promise<{ service: string }>;
 };
 
 // Next.js SSG
@@ -60,7 +60,8 @@ export async function generateStaticParams() {
 
 // Dynamic SEO Metadata
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const serviceInfo = servicesData[params.service];
+  const { service } = await params;
+  const serviceInfo = servicesData[service];
 
   if (!serviceInfo) {
     return {
@@ -72,14 +73,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${serviceInfo.title} Services | Social Media Strategist`,
     description: serviceInfo.description,
     alternates: {
-      canonical: `https://socialmediastrategist.net/services/${params.service}`,
+      canonical: `https://socialmediastrategist.net/services/${service}`,
     },
   };
 }
 
-export default function ServicePage({ params }: Props) {
-  const serviceKey = params.service;
-  const serviceInfo = servicesData[serviceKey];
+export default async function ServicePage({ params }: Props) {
+  const { service } = await params;
+  const serviceInfo = servicesData[service];
 
   if (!serviceInfo) {
     notFound();
@@ -97,7 +98,7 @@ export default function ServicePage({ params }: Props) {
     },
     description: serviceInfo.description,
     areaServed: "Worldwide",
-    url: `https://socialmediastrategist.net/services/${serviceKey}`,
+    url: `https://socialmediastrategist.net/services/${service}`,
   };
 
   return (

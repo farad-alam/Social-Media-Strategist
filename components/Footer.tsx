@@ -40,6 +40,7 @@ const footerLinks = {
 
 export default function Footer() {
   const pathname = usePathname();
+  if (pathname?.startsWith("/studio")) return null;
   const hideCta = pathname === "/" || pathname === "/services" || pathname === "/about" || pathname === "/social-media-strategy-guide";
   const currentYear = new Date().getFullYear();
 

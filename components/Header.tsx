@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -13,6 +14,9 @@ const navLinks = [
 ];
 
 export default function Header() {
+  const pathname = usePathname();
+  if (pathname?.startsWith("/studio")) return null;
+
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
