@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getPostBySlug, getAllPosts } from "@/lib/blog";
 import Button from "@/components/ui/Button";
-import { PortableText } from '@portabletext/react';
+import PortableTextRenderer from "@/components/blog/PortableTextRenderer";
 
 export async function generateStaticParams() {
   const posts = await getAllPosts();
@@ -137,9 +137,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               </div>
             )}
 
-            <div className="prose prose-lg md:prose-xl prose-slate max-w-none prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-2xl prose-p:text-slate-600 prose-p:leading-relaxed prose-a:text-primary hover:prose-a:text-primary-dark">
-              <PortableText value={post.content} />
-            </div>
+            <PortableTextRenderer value={post.content} />
             
             {/* Author Bio */}
             <div className="mt-16 pt-8 border-t border-slate-200">
