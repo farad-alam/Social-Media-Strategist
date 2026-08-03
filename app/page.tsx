@@ -206,7 +206,7 @@ const industries = [
 const testimonials = [
   {
     quote:
-      "I very much enjoyed working with Hasan and wish I had started earlier with him! He really understood the vision and mission of my company and expressed that in great social posts for both Instagram and TikTok. I high recommend him.",
+      "I very much enjoyed working with Hasan and wish I had started earlier with him! He really understood the vision and mission of my company and expressed that in great social posts for both Instagram and TikTok. I highly recommend him.",
     name: "Jon David Hague",
     role: "Founder",
     company: "@Bountisphere",

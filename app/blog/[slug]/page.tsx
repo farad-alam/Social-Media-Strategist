@@ -147,7 +147,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                   <h3 className="text-xl font-bold text-slate-900 mb-1">Written by {post.author}</h3>
                   <p className="text-sm font-medium text-primary mb-3">Lead Social Media Strategist</p>
                   <p className="text-slate-600 leading-relaxed text-sm">
-                    Abul is a social media strategist with over 13 years of experience helping B2B and B2C brands turn their social channels into revenue engines. He is a BASIS Outsourcing Award winner and a Top Rated professional on Upwork.
+                    Abul Hasan is a social media strategist with over 13 years of experience helping B2B and B2C brands turn their social channels into revenue engines. He is a BASIS Outsourcing Award winner and a Top Rated professional on Upwork.
                   </p>
                 </div>
               </div>
