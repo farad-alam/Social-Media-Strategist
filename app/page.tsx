@@ -8,6 +8,7 @@ import Timeline from "@/components/ui/Timeline";
 import TestimonialCarousel from "@/components/ui/TestimonialCarousel";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import Link from "next/link";
+import { getAllIndustryPages } from "@/lib/industries";
 
 export const metadata: Metadata = {
   title: "Abul Hasan | Social Media Strategist for Hire — 13+ Yrs, 300+ Client",
@@ -356,7 +357,8 @@ const faqs = [
 
 /* ===== PAGE COMPONENT ===== */
 
-export default function HomePage() {
+export default async function HomePage() {
+  const industryPages = await getAllIndustryPages();
   // JSON-LD schemas
   const webPageSchema = {
     "@context": "https://schema.org",
@@ -908,24 +910,30 @@ export default function HomePage() {
           </ScrollReveal>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-            {industries.map((industry, index) => (
-              <ScrollReveal key={index} delay={index * 75}>
-                <Link
-                  href={industry.href}
-                  className="group block bg-white rounded-xl p-6 text-center border border-slate-200 hover:border-primary/30 hover:shadow-lg transition-all duration-300 hover-lift"
-                >
-                  <span className="text-3xl md:text-4xl block mb-2">
-                    {industry.emoji}
-                  </span>
-                  <span className="text-sm md:text-base font-semibold text-slate-700 group-hover:text-primary transition-colors duration-200 block">
-                    {industry.name}
-                  </span>
-                  <span className="text-xs text-slate-500 mt-1 block">
-                    {industry.description}
-                  </span>
-                </Link>
-              </ScrollReveal>
-            ))}
+            {industryPages.map((industry, index) => {
+              // If a blog post is linked in Sanity, point to it; otherwise use static route
+              const href = industry.linkedBlogPost
+                ? `/blog/${industry.linkedBlogPost.slug}`
+                : `/strategy-for-${industry.key}`;
+              return (
+                <ScrollReveal key={industry.key} delay={index * 75}>
+                  <Link
+                    href={href}
+                    className="group block bg-white rounded-xl p-6 text-center border border-slate-200 hover:border-primary/30 hover:shadow-lg transition-all duration-300 hover-lift"
+                  >
+                    <span className="text-3xl md:text-4xl block mb-2">
+                      {industry.emoji}
+                    </span>
+                    <span className="text-sm md:text-base font-semibold text-slate-700 group-hover:text-primary transition-colors duration-200 block">
+                      {industry.shortName}
+                    </span>
+                    <span className="text-xs text-slate-500 mt-1 block">
+                      {industry.cardDescription || industry.description}
+                    </span>
+                  </Link>
+                </ScrollReveal>
+              );
+            })}
           </div>
         </div>
       </section>
