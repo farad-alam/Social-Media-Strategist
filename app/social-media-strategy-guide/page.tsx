@@ -121,7 +121,7 @@ export default function GuidePage() {
           {/* Banner image */}
           <div className="mt-8 rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
             <img
-              src="https://drive.google.com/uc?export=view&id=1vecz6RxEQu1p1TVB08XF2DqF4Fxnt1sx"
+              src="https://lh3.googleusercontent.com/d/1vecz6RxEQu1p1TVB08XF2DqF4Fxnt1sx"
               alt="The Ultimate Social Media Strategy Guide 2026 — Hasan Growth Loop™"
               className="w-full object-cover"
             />
@@ -166,7 +166,7 @@ export default function GuidePage() {
             </aside>
 
             {/* Article */}
-            <article className="lg:w-3/4 prose prose-lg md:prose-xl prose-slate max-w-none">
+            <article className="lg:w-3/4 guide-article">
 
               {/* Intro */}
               <p className="lead text-2xl text-slate-600 mb-10">
@@ -247,7 +247,7 @@ export default function GuidePage() {
 
               <div className="not-prose my-8 bg-slate-50 rounded-2xl overflow-hidden border border-slate-200">
                 <img
-                  src="https://drive.google.com/uc?export=view&id=1Lc1ZoNq7a-vjstuiC4Cf9HhYHu22pyJQ"
+                  src="https://lh3.googleusercontent.com/d/1Lc1ZoNq7a-vjstuiC4Cf9HhYHu22pyJQ"
                   alt="The Hasan Growth Loop™ — 7-Stage Social Media Strategy Framework"
                   className="w-full object-contain"
                 />
@@ -335,7 +335,7 @@ export default function GuidePage() {
 
               <div className="not-prose my-8 bg-slate-50 rounded-2xl overflow-hidden border border-slate-200">
                 <img
-                  src="https://drive.google.com/uc?export=view&id=15qKvMooU4f_SIsc7wilhClVXN_jQo7pL"
+                  src="https://lh3.googleusercontent.com/d/15qKvMooU4f_SIsc7wilhClVXN_jQo7pL"
                   alt="Social media audit table — baseline tracking template"
                   className="w-full object-contain"
                 />
@@ -438,7 +438,7 @@ export default function GuidePage() {
 
               <div className="not-prose my-8 bg-slate-50 rounded-2xl overflow-hidden border border-slate-200">
                 <img
-                  src="https://drive.google.com/uc?export=view&id=13xi9lma9Cln-wB9GA2uBouV3zEvSgOL_"
+                  src="https://lh3.googleusercontent.com/d/13xi9lma9Cln-wB9GA2uBouV3zEvSgOL_"
                   alt="Audience persona cards example"
                   className="w-full object-contain"
                 />
@@ -526,7 +526,7 @@ export default function GuidePage() {
 
               <div className="not-prose my-8 bg-slate-50 rounded-2xl overflow-hidden border border-slate-200">
                 <img
-                  src="https://drive.google.com/uc?export=view&id=1KEuq0rxh8n3ldxH561e0C6MAUcpINSTb"
+                  src="https://lh3.googleusercontent.com/d/1KEuq0rxh8n3ldxH561e0C6MAUcpINSTb"
                   alt="Platform comparison chart 2026"
                   className="w-full object-contain"
                 />
@@ -579,7 +579,7 @@ export default function GuidePage() {
 
               <div className="not-prose my-8 bg-slate-50 rounded-2xl overflow-hidden border border-slate-200">
                 <img
-                  src="https://drive.google.com/uc?export=view&id=1ZiivgAlFjlYCzjMVQm25isD_b39QdK-P"
+                  src="https://lh3.googleusercontent.com/d/1ZiivgAlFjlYCzjMVQm25isD_b39QdK-P"
                   alt="Content pillar wheel diagram"
                   className="w-full object-contain"
                 />
@@ -631,7 +631,7 @@ export default function GuidePage() {
 
               <div className="not-prose my-8 bg-slate-50 rounded-2xl overflow-hidden border border-slate-200">
                 <img
-                  src="https://drive.google.com/uc?export=view&id=1Of8zWfdwTs8nY9b-MLNSahBCCQMYcslB"
+                  src="https://lh3.googleusercontent.com/d/1Of8zWfdwTs8nY9b-MLNSahBCCQMYcslB"
                   alt="Content calendar template example"
                   className="w-full object-contain"
                 />
@@ -719,7 +719,7 @@ export default function GuidePage() {
 
               <div className="not-prose my-8 bg-slate-50 rounded-2xl overflow-hidden border border-slate-200">
                 <img
-                  src="https://drive.google.com/uc?export=view&id=18ObQi0Y_rHRiL1oIlZpPv1We0AADT1yJ"
+                  src="https://lh3.googleusercontent.com/d/18ObQi0Y_rHRiL1oIlZpPv1We0AADT1yJ"
                   alt="KPI dashboard example for social media measurement"
                   className="w-full object-contain"
                 />

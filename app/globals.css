@@ -392,3 +392,93 @@
   background: var(--primary-200);
   color: var(--primary-dark);
 }
+
+/* ===== GUIDE ARTICLE TYPOGRAPHY ===== */
+/* Full prose styles without needing @tailwindcss/typography */
+.guide-article {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #334155;
+  max-width: none;
+}
+
+.guide-article p {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.guide-article h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.guide-article h3 {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.35;
+}
+
+.guide-article h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #334155;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.guide-article ul,
+.guide-article ol {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  padding-left: 1.75rem;
+}
+
+.guide-article ul { list-style-type: disc; }
+.guide-article ol { list-style-type: decimal; }
+
+.guide-article li {
+  margin-bottom: 0.5rem;
+}
+
+.guide-article strong {
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.guide-article em { font-style: italic; }
+
+.guide-article hr {
+  border: none;
+  border-top: 1px solid #e2e8f0;
+  margin: 3rem 0;
+}
+
+.guide-article a {
+  color: #4f46e5;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.guide-article a:hover { color: #4338ca; }
+
+.guide-article .lead {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: #475569;
+  margin-bottom: 2rem;
+}
+
+/* Keep .not-prose blocks from inheriting article styles */
+.guide-article .not-prose { margin-top: 2rem; margin-bottom: 2rem; }
+.guide-article .not-prose * { list-style: none; padding: 0; }
+
