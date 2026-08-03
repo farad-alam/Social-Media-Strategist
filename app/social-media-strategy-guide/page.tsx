@@ -330,7 +330,7 @@ export default function GuidePage() {
                 Document the answers in a simple spreadsheet: one row per platform, columns for followers, average engagement rate, posting frequency, and top-performing content type. This single document becomes your baseline — the number everything else in your strategy will be measured against.
               </p>
               <p>
-                {"In my own audits, I'd estimate roughly seven out of ten businesses have never actually pulled this data into one place before. They're going on gut feeling about what's "working," which is usually the last post they happened to notice getting a few extra comments."}
+                In my own audits, I&apos;d estimate roughly seven out of ten businesses have never actually pulled this data into one place before. They&apos;re going on gut feeling about what&apos;s &quot;working,&quot; which is usually the last post they happened to notice getting a few extra comments.
               </p>
 
               <div className="not-prose my-8 bg-slate-50 rounded-2xl overflow-hidden border border-slate-200">
@@ -347,7 +347,7 @@ export default function GuidePage() {
                 Step 2: Set SMART Goals & KPIs
               </h2>
               <p>
-                {"Every strategy needs a "why." Vague goals like "grow our social media" or "post more" don't give you anything to measure or optimize against. Instead, use the SMART framework:"}
+                Every strategy needs a &quot;why.&quot; Vague goals like &quot;grow our social media&quot; or &quot;post more&quot; don&apos;t give you anything to measure or optimize against. Instead, use the SMART framework:
               </p>
               <ul>
                 <li><strong>Specific</strong> — exactly what are you trying to achieve?</li>
@@ -395,7 +395,7 @@ export default function GuidePage() {
                 </table>
               </div>
               <p>
-                {"Don't try to chase every goal on every platform at once. Pick 1–3 core goals for the next quarter. You can layer in more once the fundamentals are working. In my experience building strategies across dozens of industries, the accounts that try to optimize for awareness, engagement, and conversions simultaneously — on every platform — are almost always the ones that end up moving none of those numbers."}
+                Don&apos;t try to chase every goal on every platform at once. Pick 1&ndash;3 core goals for the next quarter. You can layer in more once the fundamentals are working. In my experience building strategies across dozens of industries, the accounts that try to optimize for awareness, engagement, and conversions simultaneously &mdash; on every platform &mdash; are almost always the ones that end up moving none of those numbers.
               </p>
 
               {/* ── STEP 3 ── */}
@@ -521,7 +521,7 @@ export default function GuidePage() {
                 <li><em>"TikTok is where we build top-of-funnel awareness with short, authentic behind-the-scenes content."</em></li>
               </ul>
               <p>
-                {"If you can't write a clear mission statement for a platform, that's a sign you may not need to be there yet. Start with 1–3 platforms. Prove the model works, build the muscle of consistent posting and engagement, then expand."}
+                If you can&apos;t write a clear mission statement for a platform, that&apos;s a sign you may not need to be there yet. Start with 1&ndash;3 platforms. Prove the model works, build the muscle of consistent posting and engagement, then expand.
               </p>
 
               <div className="not-prose my-8 bg-slate-50 rounded-2xl overflow-hidden border border-slate-200">
@@ -829,13 +829,13 @@ export default function GuidePage() {
               <ul>
                 <li>You have a few focused hours a week to dedicate</li>
                 <li>Your goals are still exploratory</li>
-                <li>{"You're comfortable learning by testing"}</li>
+                <li>You&apos;re comfortable learning by testing</li>
               </ul>
               <p><strong>Hire a strategist when:</strong></p>
               <ul>
                 <li>Social media is expected to hit specific revenue or lead targets</li>
-                <li>{"You're managing more than 2–3 platforms"}</li>
-                <li>{"Your team's time is better spent elsewhere in the business"}</li>
+                <li>You&apos;re managing more than 2&ndash;3 platforms</li>
+                <li>Your team&apos;s time is better spent elsewhere in the business</li>
               </ul>
               <p>
                 Many of my clients start by building a first version themselves using a framework like this one. Then they bring in outside help once they know social is worth scaling.
@@ -861,7 +861,7 @@ export default function GuidePage() {
                 AI can help speed up certain parts of the process — drafting content ideas, summarizing posts, and outlining a calendar structure — but it can't replace the core of what makes a strategy actually work. AI doesn't make judgment calls, and strategy is built on decisions: which platforms deserve real investment, which competitors are genuinely relevant versus just noisy, and what makes your brand's approach different from everyone else's. A strategy that's just AI-generated often ends up generic, since it's pulling from patterns rather than understanding your specific business and audience. A specialist brings context AI doesn't have: industry nuance, platform-specific judgment, and the ability to read what's actually working versus what looks good on paper.
               </p>
 
-              <h3>{"What's the difference between a marketing strategy and a social media strategy?"}</h3>
+              <h3>What&apos;s the difference between a marketing strategy and a social media strategy?</h3>
               <p>
                 A marketing strategy is the overarching plan for how a business attracts and retains customers across every channel: email, paid ads, SEO, events, social, and more. A social media strategy is one component nested inside it, focused specifically on social platforms. A good social media strategy is always built to support the broader marketing strategy's goals, not run as a separate, disconnected effort.
               </p>
@@ -881,14 +881,14 @@ export default function GuidePage() {
                 Start with 2–3 platforms where your specific audience is most active, rather than spreading thin across every major network.
               </p>
 
-              <h3>{"What's the difference between a social media strategy and a content calendar?"}</h3>
+              <h3>What&apos;s the difference between a social media strategy and a content calendar?</h3>
               <p>
                 The strategy defines the why, who, where, and how success will be measured. The content calendar is the tactical execution tool — the specific posts, dates, and formats that bring the strategy to life.
               </p>
 
               <h3>What is the most important KPI for social media?</h3>
               <p>
-                {"There isn't one universal answer. The right KPI depends entirely on the goal behind each platform or campaign. Brand awareness campaigns should track reach and impressions; conversion-focused campaigns should track leads, sign-ups, or revenue."}
+                There isn&apos;t one universal answer. The right KPI depends entirely on the goal behind each platform or campaign. Brand awareness campaigns should track reach and impressions; conversion-focused campaigns should track leads, sign-ups, or revenue.
               </p>
 
               <h3>Do I need a different strategy for every platform?</h3>
