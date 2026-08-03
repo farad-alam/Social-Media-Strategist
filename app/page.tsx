@@ -210,7 +210,7 @@ const testimonials = [
     name: "Jon David Hague",
     role: "Founder",
     company: "@Bountisphere",
-    avatar: "/images/avatar-1.png",
+    avatar: "/images/testimonial-jon.jpg",
     source: "Upwork",
   },
   {
@@ -219,7 +219,7 @@ const testimonials = [
     name: "Amale Bouzlafa",
     role: "Founder",
     company: "TPU Ltd.",
-    avatar: "/images/avatar-2.png",
+    avatar: "/images/testimonial-amale.jpg",
     source: "Upwork",
   },
   {
@@ -228,7 +228,7 @@ const testimonials = [
     name: "Chris Atley",
     role: "Global Success Coach",
     company: "@chrisatley",
-    avatar: "/images/avatar-3.png",
+    avatar: "/images/testimonial-chris.jpg",
     source: "LinkedIn",
   },
   {
@@ -237,7 +237,7 @@ const testimonials = [
     name: "Sarah",
     role: "Founder",
     company: "@wifeychef",
-    avatar: "/images/avatar-4.png",
+    avatar: "/images/testimonial-sarah.jpg",
     source: "Upwork",
   },
   {
@@ -246,7 +246,7 @@ const testimonials = [
     name: "Alex Witthoeft",
     role: "Founder",
     company: "@germanatorfit",
-    avatar: "/images/avatar-5.png",
+    avatar: "/images/testimonial-alex.jpg",
     source: "Upwork",
   },
 ];
