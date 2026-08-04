@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getPostBySlug, getAllPosts } from "@/lib/blog";
 import Button from "@/components/ui/Button";
 import PortableTextRenderer from "@/components/blog/PortableTextRenderer";
+import Link from "next/link";
 
 export async function generateStaticParams() {
   const posts = await getAllPosts();
@@ -19,8 +20,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     return {};
   }
 
-  const title = post.seo?.metaTitle || `${post.title} | Social Media Strategy Blog`;
-  const description = post.seo?.metaDescription || post.excerpt;
+  const title = post.seo?.metaTitle || `${post.title} | Abul Hasan`;
+  const description = (post.seo?.metaDescription || post.excerpt || "").slice(0, 155);
   const image = post.seo?.ogImageUrl || post.featuredImageUrl || "https://socialmediastrategist.net/og-image.jpg";
 
   return {
@@ -61,6 +62,15 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   if (!post) {
     notFound();
   }
+
+  const allPosts = await getAllPosts();
+  const relatedPosts = allPosts
+    .filter((p) => p.slug !== post.slug && p.category === post.category)
+    .slice(0, 3);
+  const fallbackRelated =
+    relatedPosts.length > 0
+      ? relatedPosts
+      : allPosts.filter((p) => p.slug !== post.slug).slice(0, 3);
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -165,6 +175,32 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                  </Button>
                </div>
             </div>
+
+            {/* Related Articles */}
+            {fallbackRelated.length > 0 && (
+              <div className="mt-16 pt-12 border-t border-slate-200">
+                <h3 className="text-2xl font-bold text-slate-900 mb-6">Related Articles</h3>
+                <div className="grid md:grid-cols-3 gap-6">
+                  {fallbackRelated.map((rel) => (
+                    <Link
+                      key={rel.slug}
+                      href={`/blog/${rel.slug}`}
+                      className="group block bg-slate-50 rounded-xl p-5 border border-slate-200 hover:border-primary/30 hover:shadow-md transition-all duration-300"
+                    >
+                      <span className="text-xs font-bold uppercase tracking-wider text-primary block mb-2">
+                        {rel.category}
+                      </span>
+                      <h4 className="font-bold text-slate-900 group-hover:text-primary transition-colors text-base line-clamp-2 mb-2">
+                        {rel.title}
+                      </h4>
+                      <p className="text-xs text-slate-500 line-clamp-2">
+                        {rel.excerpt}
+                      </p>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </article>

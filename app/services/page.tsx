@@ -4,6 +4,7 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Accordion from "@/components/ui/Accordion";
 import Link from "next/link";
+import { getAllIndustryPages } from "@/lib/industries";
 
 export const metadata: Metadata = {
   title: "Social Media Strategy Services — Custom Packages & Pricing",
@@ -109,7 +110,8 @@ const serviceFaqs = [
   },
 ];
 
-export default function ServicesPage() {
+export default async function ServicesPage() {
+  const industryPages = await getAllIndustryPages();
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -138,10 +140,27 @@ export default function ServicesPage() {
     ],
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: serviceFaqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text:
+          typeof faq.answer === "string"
+            ? faq.answer
+            : "Because each package involves custom strategy work built specifically for your business, deposits and payments are non-refundable once work has begun. See our full Refund Policy for details.",
+      },
+    })),
+  };
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema).replace(/</g, "\\u003c") }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema).replace(/</g, "\\u003c") }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema).replace(/</g, "\\u003c") }} />
 
       {/* Hero */}
       <section className="gradient-hero pt-32 pb-20 md:pt-40 md:pb-28">
@@ -228,6 +247,32 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* SEO Strategic Value Overview */}
+      <section className="section-padding bg-white border-t border-slate-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollReveal>
+            <SectionHeading
+              badge="Why Strategy Comes First"
+              title="Stop Posting Randomly. Start Growing Systematically."
+              subtitle="Professional social media strategy consulting designed for measurable ROI."
+            />
+          </ScrollReveal>
+          <ScrollReveal delay={150}>
+            <div className="prose prose-lg max-w-none text-slate-600 space-y-6 mt-8">
+              <p>
+                Most businesses fail on social media not because of algorithm changes or lack of effort, but because they treat social media as an afterthought. Without a documented, data-driven <strong className="text-slate-900">social media strategy</strong>, time and budget are wasted on random posts that never convert followers into customers.
+              </p>
+              <p>
+                As an experienced <strong className="text-slate-900">social media strategist</strong> with over 13 years of expertise and 300+ successful client engagements, I help brands replace guesswork with structured systems. Whether you are a local small business, a high-growth e-commerce store, or an enterprise B2B company, each service package is custom-engineered around your target audience, competitive landscape, and primary business objectives.
+              </p>
+              <p>
+                From foundational strategy audits to comprehensive growth roadmaps and full-service monthly partnerships, my goal is simple: turn your social channels into predictable, scalable revenue engines.
+              </p>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* What's Included */}
       <section className="section-padding bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -272,25 +317,21 @@ export default function ServicesPage() {
           </ScrollReveal>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[
-              { name: "Small Business", href: "/strategy-for-small-business" },
-              { name: "E-commerce", href: "/strategy-for-ecommerce" },
-              { name: "B2B", href: "/strategy-for-b2b" },
-              { name: "SaaS", href: "/strategy-for-saas" },
-              { name: "Healthcare", href: "/strategy-for-healthcare" },
-              { name: "Coaches", href: "/strategy-for-coaches" },
-              { name: "Real Estate", href: "/strategy-for-realtors" },
-              { name: "Legal", href: "/strategy-for-lawyers" },
-            ].map((industry, i) => (
-              <ScrollReveal key={i} delay={i * 75}>
-                <Link
-                  href={industry.href}
-                  className="block bg-white rounded-xl p-5 text-center border border-slate-200 hover:border-primary/30 hover:shadow-lg transition-all duration-300 hover-lift font-semibold text-sm text-slate-700 hover:text-primary"
-                >
-                  {industry.name}
-                </Link>
-              </ScrollReveal>
-            ))}
+            {industryPages.map((industry, i) => {
+              const href = industry.linkedBlogPost
+                ? `/blog/${industry.linkedBlogPost.slug}`
+                : `/strategy-for-${industry.key}`;
+              return (
+                <ScrollReveal key={industry.key} delay={i * 75}>
+                  <Link
+                    href={href}
+                    className="block bg-white rounded-xl p-5 text-center border border-slate-200 hover:border-primary/30 hover:shadow-lg transition-all duration-300 hover-lift font-semibold text-sm text-slate-700 hover:text-primary"
+                  >
+                    {industry.shortName}
+                  </Link>
+                </ScrollReveal>
+              );
+            })}
           </div>
         </div>
       </section>

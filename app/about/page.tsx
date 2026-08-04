@@ -3,6 +3,7 @@ import Button from "@/components/ui/Button";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Link from "next/link";
+import { getAllIndustryPages } from "@/lib/industries";
 
 export const metadata: Metadata = {
   title: "About Abul Hasan — Social Media Strategist with 13+ Years Experience",
@@ -48,7 +49,9 @@ const platforms = [
   { name: "Threads", icon: "🧵" },
 ];
 
-export default function AboutPage() {
+export default async function AboutPage() {
+  const industryPages = await getAllIndustryPages();
+
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -59,8 +62,10 @@ export default function AboutPage() {
     knowsAbout: industries.map((i) => i.name),
     award: "BASIS Outsourcing Award 2021 — District Level Top Individual",
     sameAs: [
-      "https://www.linkedin.com/in/abulhasan",
-      "https://www.upwork.com/freelancers/abulhasan",
+      "https://web.facebook.com/HasanStrategist",
+      "https://www.instagram.com/hasanstrategist/",
+      "https://www.linkedin.com/in/hasanstrategist/",
+      "https://www.tiktok.com/@hasanstrategist",
     ],
     worksFor: {
       "@type": "Organization",
@@ -117,7 +122,7 @@ export default function AboutPage() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-transparent to-transparent pointer-events-none" />
                 <div className="absolute bottom-6 left-6 right-6 text-center">
-                  <h2 className="text-2xl font-bold text-white mb-1">Abul Hasan</h2>
+                  <p className="text-2xl font-bold text-white mb-1">Abul Hasan</p>
                   <p className="text-white/90 font-medium">Lead Social Media Strategist</p>
                   <p className="text-white/60 text-sm mt-1">Since 2012</p>
                 </div>
@@ -253,24 +258,29 @@ export default function AboutPage() {
           </ScrollReveal>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-            {industries.map((industry, index) => (
-              <ScrollReveal key={index} delay={index * 75}>
-                <Link
-                  href={industry.href}
-                  className="group block bg-white rounded-xl p-6 text-center border border-slate-200 hover:border-primary/30 hover:shadow-lg transition-all duration-300 hover-lift"
-                >
-                  <span className="text-3xl md:text-4xl block mb-2">
-                    {industry.emoji}
-                  </span>
-                  <span className="text-sm md:text-base font-semibold text-slate-700 group-hover:text-primary transition-colors duration-200 block">
-                    {industry.name}
-                  </span>
-                  <span className="text-xs text-slate-500 mt-1 block">
-                    {industry.description}
-                  </span>
-                </Link>
-              </ScrollReveal>
-            ))}
+            {industryPages.map((industry, index) => {
+              const href = industry.linkedBlogPost
+                ? `/blog/${industry.linkedBlogPost.slug}`
+                : `/strategy-for-${industry.key}`;
+              return (
+                <ScrollReveal key={industry.key} delay={index * 75}>
+                  <Link
+                    href={href}
+                    className="group block bg-white rounded-xl p-6 text-center border border-slate-200 hover:border-primary/30 hover:shadow-lg transition-all duration-300 hover-lift"
+                  >
+                    <span className="text-3xl md:text-4xl block mb-2">
+                      {industry.emoji}
+                    </span>
+                    <span className="text-sm md:text-base font-semibold text-slate-700 group-hover:text-primary transition-colors duration-200 block">
+                      {industry.shortName}
+                    </span>
+                    <span className="text-xs text-slate-500 mt-1 block">
+                      {industry.cardDescription || industry.description}
+                    </span>
+                  </Link>
+                </ScrollReveal>
+              );
+            })}
           </div>
 
           {/* Platforms */}

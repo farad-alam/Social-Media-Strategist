@@ -11,7 +11,7 @@ import Link from "next/link";
 import { getAllIndustryPages } from "@/lib/industries";
 
 export const metadata: Metadata = {
-  title: "Abul Hasan | Social Media Strategist for Hire — 13+ Yrs, 300+ Client",
+  title: "Abul Hasan | Social Media Strategist for Hire — 13+ Yrs, 300+ Clients",
   description:
     "Abul Hasan is a social media strategist with 13+ years and 300+ clients served. Get a custom strategy built for measurable business growth.",
   alternates: {
@@ -383,6 +383,25 @@ export default async function HomePage() {
         "Social Media Consulting",
       ],
       award: "BASIS Outsourcing Award 2021",
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "5.0",
+        bestRating: "5",
+        reviewCount: "300",
+      },
+      review: testimonials.map((t) => ({
+        "@type": "Review",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+          bestRating: "5",
+        },
+        author: {
+          "@type": "Person",
+          name: t.name,
+        },
+        reviewBody: t.quote,
+      })),
     },
   };
 
