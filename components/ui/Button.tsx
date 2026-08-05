@@ -10,6 +10,7 @@ interface ButtonProps {
   type?: "button" | "submit";
   fullWidth?: boolean;
   icon?: React.ReactNode;
+  target?: string;
 }
 
 const variants = {
@@ -41,6 +42,7 @@ export default function Button({
   type = "button",
   fullWidth = false,
   icon,
+  target,
 }: ButtonProps) {
   const baseClasses = `inline-flex items-center justify-center gap-2 font-semibold transition-all duration-200 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed ${
     variants[variant]
@@ -48,7 +50,7 @@ export default function Button({
 
   if (href) {
     return (
-      <Link href={href} className={baseClasses}>
+      <Link href={href} className={baseClasses} target={target} rel={target === '_blank' ? 'noopener noreferrer' : undefined}>
         <span>{children}</span>
         {icon || (
           <svg

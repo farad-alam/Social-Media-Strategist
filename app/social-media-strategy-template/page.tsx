@@ -119,13 +119,13 @@ export default async function TemplatePage() {
                   <div className="text-4xl mb-4">📄</div>
                   <h3 className="text-xl font-bold mb-2">Google Drive</h3>
                   <p className="text-sm text-slate-500 mb-6">Best for collaborative writing and easy sharing.</p>
-                  <Button href={googleDriveUrl} variant="outline" fullWidth>Copy to Google Drive</Button>
+                  <Button href={googleDriveUrl} target="_blank" variant="outline" fullWidth>Copy to Google Drive</Button>
                </div>
                <div className="bg-white border-2 border-slate-200 rounded-2xl p-8 hover:border-primary transition-colors text-center">
                   <div className="text-4xl mb-4">📑</div>
                   <h3 className="text-xl font-bold mb-2">PDF Download</h3>
                   <p className="text-sm text-slate-500 mb-6">Best for printing or viewing offline.</p>
-                  <Button href={pdfUrl} variant="outline" fullWidth>Download PDF</Button>
+                  <Button href={pdfUrl} target="_blank" variant="outline" fullWidth>Download PDF</Button>
                </div>
             </div>
          </div>
