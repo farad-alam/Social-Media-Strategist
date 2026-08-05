@@ -1,19 +1,19 @@
 import { MetadataRoute } from "next";
 import { getAllPosts } from "@/lib/blog";
 
-const INDUSTRY_ROUTES = [
-  "small-business",
-  "ecommerce",
-  "b2b",
-  "saas",
-  "coaches",
-  "healthcare",
-  "realtors",
-  "lawyers",
-  "restaurants",
-  "startups",
-  "beauty-brands",
-  "nonprofit",
+const INDUSTRY_BLOG_SLUGS = [
+  "social-media-strategy-for-small-business",
+  "social-media-strategy-for-ecommerce",
+  "social-media-strategy-for-b2b",
+  "social-media-strategy-for-saas",
+  "social-media-strategy-for-coaches",
+  "social-media-strategy-for-healthcare",
+  "social-media-strategy-for-real-estate",
+  "social-media-strategy-for-law-firms",
+  "social-media-strategy-for-restaurants",
+  "social-media-strategy-for-startups",
+  "social-media-strategy-for-beauty-brands",
+  "social-media-strategy-for-nonprofits",
 ];
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -30,9 +30,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.8,
   }));
 
-  // Industry landing pages
-  const industryUrls: MetadataRoute.Sitemap = INDUSTRY_ROUTES.map((key) => ({
-    url: `${baseUrl}/strategy-for-${key}`,
+  // Industry articles (now living at /blog/*)
+  const industryUrls: MetadataRoute.Sitemap = INDUSTRY_BLOG_SLUGS.map((slug) => ({
+    url: `${baseUrl}/blog/${slug}`,
     lastModified: defaultLastModified,
     changeFrequency: "monthly",
     priority: 0.7,
