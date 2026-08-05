@@ -205,36 +205,6 @@ export default function GuidePage() {
               </ul>
               <p>Let's build it, step by step.</p>
 
-              {/* TOC block */}
-              <div className="not-prose bg-slate-50 border border-slate-200 rounded-2xl p-8 my-10">
-                <h3 className="text-lg font-bold text-slate-900 mb-4">Table of Contents</h3>
-                <ol className="space-y-1.5 text-sm text-primary font-medium list-decimal list-inside">
-                  {[
-                    ["hasan-growth-loop", "The Hasan Growth Loop™: My Framework"],
-                    ["what-is-social-media-strategy", "What Is a Social Media Strategy?"],
-                    ["why-documented-strategy-matters", "Why a Documented Strategy Matters"],
-                    ["step-1-audit", "Step 1: Audit Where You Are Now"],
-                    ["step-2-smart-goals", "Step 2: Set SMART Goals & KPIs"],
-                    ["step-3-audience", "Step 3: Research & Define Your Audience"],
-                    ["step-4-competitor", "Step 4: Run a Competitor Analysis"],
-                    ["step-5-platforms", "Step 5: Choose the Right Platforms"],
-                    ["step-6-content-pillars", "Step 6: Build Your Content Pillars & Mix"],
-                    ["step-7-calendar", "Step 7: Build a Content Calendar"],
-                    ["step-8-execution", "Step 8: Execute, Publishing & Community Management"],
-                    ["step-9-measure", "Step 9: Measure What Matters"],
-                    ["step-10-optimize", "Step 10: Test, Optimize, Evolve"],
-                    ["real-strategy-models", "Real Strategy Models Used by Top Brands"],
-                    ["common-mistakes", "Common Social Media Strategy Mistakes"],
-                    ["faq", "FAQ: Social Media Strategy"],
-                  ].map(([id, label], i) => (
-                    <li key={id}>
-                      <a href={`#${id}`} className="hover:underline text-primary">
-                        {label}
-                      </a>
-                    </li>
-                  ))}
-                </ol>
-              </div>
 
               {/* ── HASAN GROWTH LOOP ── */}
               <h2 id="hasan-growth-loop" className="scroll-mt-24">The Hasan Growth Loop™: My Framework for Strategies That Compound</h2>
