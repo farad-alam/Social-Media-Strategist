@@ -57,14 +57,11 @@ export default function TemplatePage() {
              <ScrollReveal direction="left">
                <div className="bg-white p-4 rounded-2xl shadow-xl border border-slate-200">
                   <div className="aspect-[4/3] bg-slate-100 rounded-xl flex items-center justify-center relative overflow-hidden">
-                     {/* Placeholder for actual template preview image */}
-                     <div className="absolute inset-0 bg-gradient-to-br from-slate-200 to-slate-300 opacity-50"></div>
-                     <div className="relative z-10 text-center">
-                       <svg className="w-16 h-16 text-slate-400 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                       </svg>
-                       <span className="text-slate-500 font-medium">Template Preview</span>
-                     </div>
+                     <img 
+                        src="/images/strategy-template-preview.png" 
+                        alt="Social Media Strategy Template Preview" 
+                        className="w-full h-full object-cover"
+                     />
                   </div>
                </div>
              </ScrollReveal>
@@ -110,24 +107,18 @@ export default function TemplatePage() {
             <h2 className="text-3xl font-bold text-slate-900 mb-4">Choose Your Format</h2>
             <p className="text-slate-600 mb-12">No email required. Just click and start planning.</p>
 
-            <div className="grid md:grid-cols-3 gap-6">
-               <div className="bg-white border-2 border-slate-200 rounded-2xl p-8 hover:border-primary transition-colors">
+            <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+               <div className="bg-white border-2 border-slate-200 rounded-2xl p-8 hover:border-primary transition-colors text-center">
                   <div className="text-4xl mb-4">📄</div>
-                  <h3 className="text-xl font-bold mb-2">Google Docs</h3>
+                  <h3 className="text-xl font-bold mb-2">Google Drive</h3>
                   <p className="text-sm text-slate-500 mb-6">Best for collaborative writing and easy sharing.</p>
-                  <Button variant="outline" fullWidth>Copy to Google Drive</Button>
+                  <Button href="#" variant="outline" fullWidth>Copy to Google Drive</Button>
                </div>
-               <div className="bg-white border-2 border-slate-200 rounded-2xl p-8 hover:border-primary transition-colors">
-                  <div className="text-4xl mb-4">📊</div>
-                  <h3 className="text-xl font-bold mb-2">Notion</h3>
-                  <p className="text-sm text-slate-500 mb-6">Best if you already use Notion for workspace management.</p>
-                  <Button variant="outline" fullWidth>Duplicate to Notion</Button>
-               </div>
-               <div className="bg-white border-2 border-slate-200 rounded-2xl p-8 hover:border-primary transition-colors">
+               <div className="bg-white border-2 border-slate-200 rounded-2xl p-8 hover:border-primary transition-colors text-center">
                   <div className="text-4xl mb-4">📑</div>
                   <h3 className="text-xl font-bold mb-2">PDF Download</h3>
                   <p className="text-sm text-slate-500 mb-6">Best for printing or viewing offline.</p>
-                  <Button variant="outline" fullWidth>Download PDF</Button>
+                  <Button href="#" variant="outline" fullWidth>Download PDF</Button>
                </div>
             </div>
          </div>
