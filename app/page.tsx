@@ -556,9 +556,9 @@ export default async function HomePage() {
               {/* Mini Social Proof */}
               <div className="mt-8 flex items-center gap-4 animate-fade-in-up stagger-4">
                 <div className="flex -space-x-3">
-                  <img src="/images/avatar-1.png" alt="Client" className="w-10 h-10 rounded-full border-2 border-slate-900 object-cover" />
-                  <img src="/images/avatar-2.png" alt="Client" className="w-10 h-10 rounded-full border-2 border-slate-900 object-cover" />
-                  <img src="/images/avatar-3.png" alt="Client" className="w-10 h-10 rounded-full border-2 border-slate-900 object-cover" />
+                  <img src="/images/testimonial-jon.jpg" alt="Client" className="w-10 h-10 rounded-full border-2 border-slate-900 object-cover" />
+                  <img src="/images/testimonial-amale.jpg" alt="Client" className="w-10 h-10 rounded-full border-2 border-slate-900 object-cover" />
+                  <img src="/images/testimonial-chris.jpg" alt="Client" className="w-10 h-10 rounded-full border-2 border-slate-900 object-cover" />
                   <div className="w-10 h-10 rounded-full border-2 border-slate-900 bg-slate-800 flex items-center justify-center text-xs font-bold text-white">
                     300+
                   </div>
