@@ -463,13 +463,17 @@
   margin: 3rem 0;
 }
 
-.guide-article a {
+.guide-article p a,
+.guide-article li a {
   color: #4f46e5;
   text-decoration: underline;
   text-underline-offset: 2px;
 }
 
-.guide-article a:hover { color: #4338ca; }
+.guide-article p a:hover,
+.guide-article li a:hover {
+  color: #4338ca;
+}
 
 .guide-article .lead {
   font-size: 1.3rem;
@@ -480,12 +484,6 @@
 
 /* Keep .not-prose blocks from inheriting article styles */
 .guide-article .not-prose { margin-top: 2rem; margin-bottom: 2rem; }
-.guide-article .not-prose * { list-style: none; padding: 0; }
-.guide-article .not-prose a {
-  color: inherit;
-  text-decoration: none;
-}
-.guide-article .not-prose a:hover {
-  color: inherit;
-}
+.guide-article .not-prose ul,
+.guide-article .not-prose ol { list-style: none; padding: 0; }
 
