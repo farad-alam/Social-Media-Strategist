@@ -869,14 +869,27 @@ export default function GuidePage() {
               <hr className="my-12" />
 
               {/* Bottom CTA */}
-              <div className="not-prose bg-primary text-white rounded-2xl p-10 text-center">
-                <h2 className="text-3xl font-bold text-white mt-0 mb-4">Need a strategy built specifically for your brand?</h2>
-                <p className="text-primary-100 mb-8 max-w-xl mx-auto">
-                  While this guide gives you the Hasan Growth Loop™ framework, nothing beats a custom strategy built by an expert who has done it 300+ times across 10+ countries.
+              <div className="not-prose bg-primary text-white rounded-3xl p-10 md:p-14 text-center shadow-2xl shadow-primary/30 relative overflow-hidden mt-16">
+                {/* Decorative background blur elements */}
+                <div className="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-white opacity-10 rounded-full blur-3xl"></div>
+                <div className="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-white opacity-10 rounded-full blur-3xl"></div>
+                
+                <h2 className="text-3xl md:text-4xl font-bold text-white mt-0 mb-6 relative z-10 leading-tight">
+                  Need a strategy built specifically for your brand?
+                </h2>
+                <p className="text-primary-100 mb-10 max-w-2xl mx-auto text-lg md:text-xl leading-relaxed relative z-10">
+                  While this guide gives you the Hasan Growth Loop™ framework, nothing beats a custom strategy built by an expert who has done it 300+ times across 10+ countries. Let's talk about your business.
                 </p>
-                <Button href="/contact" variant="secondary" size="lg">
-                  Book Your Free Strategy Call
-                </Button>
+                <div className="relative z-10">
+                  <Button 
+                    href="/contact" 
+                    variant="accent" 
+                    size="lg" 
+                    className="font-bold tracking-wide shadow-xl shadow-accent/30 hover:-translate-y-1 hover:shadow-accent/50 px-8 py-4"
+                  >
+                    Book Your Free Strategy Call
+                  </Button>
+                </div>
               </div>
 
             </article>
