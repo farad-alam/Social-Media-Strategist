@@ -930,10 +930,23 @@ export default async function HomePage() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {industryPages.map((industry, index) => {
-              // If a blog post is linked in Sanity, point to it; otherwise use static route
-              const href = industry.linkedBlogPost
-                ? `/blog/${industry.linkedBlogPost.slug}`
-                : `/strategy-for-${industry.key}`;
+              // Blog slug map - always prefer /blog/* routes
+              const blogSlugMap: Record<string, string> = {
+                'small-business': 'social-media-strategy-for-small-business',
+                'ecommerce': 'social-media-strategy-for-ecommerce',
+                'b2b': 'social-media-strategy-for-b2b',
+                'saas': 'social-media-strategy-for-saas',
+                'coaches': 'social-media-strategy-for-coaches',
+                'healthcare': 'social-media-strategy-for-healthcare',
+                'realtors': 'social-media-strategy-for-real-estate',
+                'lawyers': 'social-media-strategy-for-law-firms',
+                'restaurants': 'social-media-strategy-for-restaurants',
+                'startups': 'social-media-strategy-for-startups',
+                'beauty-brands': 'social-media-strategy-for-beauty-brands',
+                'nonprofit': 'social-media-strategy-for-nonprofits',
+              };
+              const blogSlug = industry.linkedBlogPost?.slug || blogSlugMap[industry.key];
+              const href = blogSlug ? `/blog/${blogSlug}` : `/strategy-for-${industry.key}`;
               return (
                 <ScrollReveal key={industry.key} delay={index * 75}>
                   <Link
