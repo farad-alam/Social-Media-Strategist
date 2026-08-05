@@ -11,7 +11,14 @@ export const metadata: Metadata = {
   },
 };
 
-export default function TemplatePage() {
+import { client } from "@/sanity/lib/client";
+
+export default async function TemplatePage() {
+  const query = `*[_type == "templateDownloads"][0]`;
+  const templateDownloads = await client.fetch(query, {}, { next: { revalidate: 60 } });
+  
+  const googleDriveUrl = templateDownloads?.googleDriveUrl || "#";
+  const pdfUrl = templateDownloads?.pdfUrl || "#";
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -112,13 +119,13 @@ export default function TemplatePage() {
                   <div className="text-4xl mb-4">📄</div>
                   <h3 className="text-xl font-bold mb-2">Google Drive</h3>
                   <p className="text-sm text-slate-500 mb-6">Best for collaborative writing and easy sharing.</p>
-                  <Button href="#" variant="outline" fullWidth>Copy to Google Drive</Button>
+                  <Button href={googleDriveUrl} variant="outline" fullWidth>Copy to Google Drive</Button>
                </div>
                <div className="bg-white border-2 border-slate-200 rounded-2xl p-8 hover:border-primary transition-colors text-center">
                   <div className="text-4xl mb-4">📑</div>
                   <h3 className="text-xl font-bold mb-2">PDF Download</h3>
                   <p className="text-sm text-slate-500 mb-6">Best for printing or viewing offline.</p>
-                  <Button href="#" variant="outline" fullWidth>Download PDF</Button>
+                  <Button href={pdfUrl} variant="outline" fullWidth>Download PDF</Button>
                </div>
             </div>
          </div>
