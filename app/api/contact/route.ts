@@ -19,7 +19,7 @@ export async function POST(req: Request) {
 
     // Send notification email to the admin
     await resend.emails.send({
-      from: 'Contact Form <onboarding@resend.dev>', // Update this to your verified domain e.g., 'noreply@socialmediastrategist.net'
+      from: 'Contact Form <hello@socialmediastrategist.net>',
       to: recipientEmail,
       subject: `🔔 New Contact Form Submission — ${name}`,
       html: `
@@ -35,7 +35,7 @@ export async function POST(req: Request) {
 
     // Send auto-reply to the visitor
     await resend.emails.send({
-      from: 'Abul Hasan <onboarding@resend.dev>', // Update this to your verified domain e.g., 'hello@socialmediastrategist.net'
+      from: 'Abul Hasan <hello@socialmediastrategist.net>',
       to: email,
       subject: `Got your message! I'll be in touch soon — Abul Hasan`,
       html: `
