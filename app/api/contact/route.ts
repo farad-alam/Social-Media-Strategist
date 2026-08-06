@@ -19,7 +19,7 @@ export async function POST(req: Request) {
 
     // Send notification email to the admin
     await resend.emails.send({
-      from: 'Contact Form <hello@socialmediastrategist.net>',
+      from: 'Contact Form <hasan@socialmediastrategist.net>',
       to: recipientEmail,
       subject: `🔔 New Contact Form Submission — ${name}`,
       html: `
@@ -35,7 +35,7 @@ export async function POST(req: Request) {
 
     // Send auto-reply to the visitor
     await resend.emails.send({
-      from: 'Abul Hasan <hello@socialmediastrategist.net>',
+      from: 'Abul Hasan <hasan@socialmediastrategist.net>',
       to: email,
       subject: `Got your message! I'll be in touch soon — Abul Hasan`,
       html: `
