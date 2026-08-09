@@ -531,7 +531,7 @@ export default async function HomePage() {
               </div>
 
               {/* H1 */}
-              <h1 className="text-display font-bold text-white mb-6 animate-fade-in-up">
+              <h1 className="text-display font-bold text-white mb-6">
                 A Social Media Strategist Who{" "}
                 <span className="bg-gradient-to-r from-primary-200 via-blue-300 to-secondary-light bg-clip-text text-transparent">
                   Actually Grows
@@ -540,12 +540,12 @@ export default async function HomePage() {
               </h1>
 
               {/* Subtitle */}
-              <p className="text-xl md:text-2xl text-white/70 leading-relaxed mb-10 animate-fade-in-up stagger-2 max-w-2xl">
+              <p className="text-xl md:text-2xl text-white/70 leading-relaxed mb-10 max-w-2xl">
                 Custom social media strategies that increase brand awareness, accelerate audience growth, generate qualified leads, and drive measurable business growth. Backed by 13+ years of experience and 300+ clients served.
               </p>
 
               {/* CTAs */}
-              <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up stagger-3">
+              <div className="flex flex-col sm:flex-row gap-4">
                 <Button href="/contact" size="lg" variant="primary">
                   Get Your Free Strategy Call
                 </Button>
@@ -555,7 +555,7 @@ export default async function HomePage() {
               </div>
               
               {/* Mini Social Proof */}
-              <div className="mt-8 flex items-center gap-4 animate-fade-in-up stagger-4">
+              <div className="mt-8 flex items-center gap-4">
                 <div className="flex -space-x-3">
                   <Image src="/images/testimonial-jon.jpg" alt="Client" width={40} height={40} className="w-10 h-10 rounded-full border-2 border-slate-900 object-cover" />
                   <Image src="/images/testimonial-amale.jpg" alt="Client" width={40} height={40} className="w-10 h-10 rounded-full border-2 border-slate-900 object-cover" />
@@ -571,13 +571,12 @@ export default async function HomePage() {
             </div>
 
             {/* Right Column - Image & Proof Cards */}
-            <div className="lg:col-span-5 relative animate-fade-in-up stagger-2 hidden lg:block">
+            <div className="lg:col-span-5 relative hidden lg:block">
               <div className="relative w-full max-w-[450px] aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10 mx-auto bg-slate-800">
                 <Image 
                   src="/images/abul-hasan.webp" 
                   alt="Abul Hasan - Social Media Strategist - Headshot" 
                   fill
-                  priority
                   className="object-cover object-top"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent pointer-events-none" />
