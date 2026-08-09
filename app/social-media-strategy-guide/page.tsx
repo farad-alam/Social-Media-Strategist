@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Button from "@/components/ui/Button";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import TableOfContents from "@/components/ui/TableOfContents";
@@ -119,19 +120,24 @@ export default function GuidePage() {
           </p>
 
           {/* Banner image */}
-          <div className="mt-8 rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
-            <img
-              src="https://lh3.googleusercontent.com/d/1vecz6RxEQu1p1TVB08XF2DqF4Fxnt1sx"
+          <div className="mt-8 rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative">
+            <Image
+              src="/images/guide/guide-hero-banner.webp"
               alt="The Ultimate Social Media Strategy Guide 2026 — Hasan Growth Loop™"
+              width={1200}
+              height={630}
+              priority
               className="w-full object-cover"
             />
           </div>
 
           <div className="flex items-center justify-center gap-4 text-white/60 text-sm mt-8">
             <div className="flex items-center gap-2">
-              <img
-                src="/images/abul-hasan.jpg"
+              <Image
+                src="/images/abul-hasan.webp"
                 alt="Abul Hasan"
+                width={32}
+                height={32}
                 className="w-8 h-8 rounded-full object-cover object-top border border-white/20"
               />
               <span>By Abul Hasan</span>
@@ -216,9 +222,11 @@ export default function GuidePage() {
               </p>
 
               <div className="not-prose my-8 bg-slate-50 rounded-2xl overflow-hidden border border-slate-200">
-                <img
-                  src="https://lh3.googleusercontent.com/d/1Lc1ZoNq7a-vjstuiC4Cf9HhYHu22pyJQ"
+                <Image
+                  src="/images/guide/guide-hasan-growth-loop.webp"
                   alt="The Hasan Growth Loop™ — 7-Stage Social Media Strategy Framework"
+                  width={900}
+                  height={600}
                   className="w-full object-contain"
                 />
               </div>
@@ -304,9 +312,11 @@ export default function GuidePage() {
               </p>
 
               <div className="not-prose my-8 bg-slate-50 rounded-2xl overflow-hidden border border-slate-200">
-                <img
-                  src="https://lh3.googleusercontent.com/d/15qKvMooU4f_SIsc7wilhClVXN_jQo7pL"
+                <Image
+                  src="/images/guide/guide-step1-audit.webp"
                   alt="Social media audit table — baseline tracking template"
+                  width={900}
+                  height={500}
                   className="w-full object-contain"
                 />
               </div>
@@ -407,9 +417,11 @@ export default function GuidePage() {
               </p>
 
               <div className="not-prose my-8 bg-slate-50 rounded-2xl overflow-hidden border border-slate-200">
-                <img
-                  src="https://lh3.googleusercontent.com/d/13xi9lma9Cln-wB9GA2uBouV3zEvSgOL_"
+                <Image
+                  src="/images/guide/guide-step3-personas.webp"
                   alt="Audience persona cards example"
+                  width={900}
+                  height={500}
                   className="w-full object-contain"
                 />
               </div>
@@ -495,9 +507,11 @@ export default function GuidePage() {
               </p>
 
               <div className="not-prose my-8 bg-slate-50 rounded-2xl overflow-hidden border border-slate-200">
-                <img
-                  src="https://lh3.googleusercontent.com/d/1KEuq0rxh8n3ldxH561e0C6MAUcpINSTb"
+                <Image
+                  src="/images/guide/guide-step5-platforms.webp"
                   alt="Platform comparison chart 2026"
+                  width={900}
+                  height={500}
                   className="w-full object-contain"
                 />
               </div>
@@ -548,9 +562,11 @@ export default function GuidePage() {
               </p>
 
               <div className="not-prose my-8 bg-slate-50 rounded-2xl overflow-hidden border border-slate-200">
-                <img
-                  src="/images/content-pillar-wheel.png"
+                <Image
+                  src="/images/content-pillar-wheel.webp"
                   alt="Content pillar wheel diagram"
+                  width={900}
+                  height={700}
                   className="w-full object-contain"
                 />
               </div>
@@ -600,9 +616,11 @@ export default function GuidePage() {
               </p>
 
               <div className="not-prose my-8 bg-slate-50 rounded-2xl overflow-hidden border border-slate-200">
-                <img
-                  src="https://lh3.googleusercontent.com/d/1Of8zWfdwTs8nY9b-MLNSahBCCQMYcslB"
+                <Image
+                  src="/images/guide/guide-step7-calendar.webp"
                   alt="Content calendar template example"
+                  width={900}
+                  height={500}
                   className="w-full object-contain"
                 />
               </div>
@@ -688,9 +706,11 @@ export default function GuidePage() {
               </p>
 
               <div className="not-prose my-8 bg-slate-50 rounded-2xl overflow-hidden border border-slate-200">
-                <img
-                  src="https://lh3.googleusercontent.com/d/18ObQi0Y_rHRiL1oIlZpPv1We0AADT1yJ"
+                <Image
+                  src="/images/guide/guide-step9-kpi.webp"
                   alt="KPI dashboard example for social media measurement"
+                  width={900}
+                  height={500}
                   className="w-full object-contain"
                 />
               </div>

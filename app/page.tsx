@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Button from "@/components/ui/Button";
 import StatCounter from "@/components/ui/StatCounter";
 import Card from "@/components/ui/Card";
@@ -556,9 +557,9 @@ export default async function HomePage() {
               {/* Mini Social Proof */}
               <div className="mt-8 flex items-center gap-4 animate-fade-in-up stagger-4">
                 <div className="flex -space-x-3">
-                  <img src="/images/testimonial-jon.jpg" alt="Client" className="w-10 h-10 rounded-full border-2 border-slate-900 object-cover" />
-                  <img src="/images/testimonial-amale.jpg" alt="Client" className="w-10 h-10 rounded-full border-2 border-slate-900 object-cover" />
-                  <img src="/images/testimonial-chris.jpg" alt="Client" className="w-10 h-10 rounded-full border-2 border-slate-900 object-cover" />
+                  <Image src="/images/testimonial-jon.jpg" alt="Client" width={40} height={40} className="w-10 h-10 rounded-full border-2 border-slate-900 object-cover" />
+                  <Image src="/images/testimonial-amale.jpg" alt="Client" width={40} height={40} className="w-10 h-10 rounded-full border-2 border-slate-900 object-cover" />
+                  <Image src="/images/testimonial-chris.jpg" alt="Client" width={40} height={40} className="w-10 h-10 rounded-full border-2 border-slate-900 object-cover" />
                   <div className="w-10 h-10 rounded-full border-2 border-slate-900 bg-slate-800 flex items-center justify-center text-xs font-bold text-white">
                     300+
                   </div>
@@ -572,10 +573,12 @@ export default async function HomePage() {
             {/* Right Column - Image & Proof Cards */}
             <div className="lg:col-span-5 relative animate-fade-in-up stagger-2 hidden lg:block">
               <div className="relative w-full max-w-[450px] aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10 mx-auto bg-slate-800">
-                <img 
-                  src="/images/abul-hasan.jpg" 
+                <Image 
+                  src="/images/abul-hasan.webp" 
                   alt="Abul Hasan - Social Media Strategist - Headshot" 
-                  className="w-full h-full object-cover object-top"
+                  fill
+                  priority
+                  className="object-cover object-top"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent pointer-events-none" />
                 <div className="absolute bottom-6 left-6 right-6">
@@ -635,7 +638,7 @@ export default async function HomePage() {
               </div>
               <img src="https://cdn.brandfetch.io/clutch.co/w/400/h/150/logo" alt="Clutch" className="h-6 brightness-0 invert" />
               <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" alt="TikTok" className="h-8 brightness-0 invert" />
-              <img src="/images/basis.png" alt="Basis" className="h-10 opacity-90" />
+              <Image src="/images/basis.webp" alt="Basis" width={100} height={40} className="h-10 w-auto opacity-90" />
             </div>
           </div>
         </div>

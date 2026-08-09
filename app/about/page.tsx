@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Button from "@/components/ui/Button";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import SectionHeading from "@/components/ui/SectionHeading";
@@ -115,10 +116,12 @@ export default async function AboutPage() {
             </div>
             <div className="relative">
               <div className="aspect-[4/5] max-w-sm mx-auto rounded-2xl bg-slate-800 overflow-hidden shadow-2xl shadow-primary/30 relative border-4 border-white/10">
-                <img 
-                  src="/images/abul-hasan.jpg" 
+                <Image 
+                  src="/images/abul-hasan.webp" 
                   alt="Abul Hasan - Social Media Strategist Working" 
-                  className="w-full h-full object-cover object-center"
+                  fill
+                  priority
+                  className="object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-transparent to-transparent pointer-events-none" />
                 <div className="absolute bottom-6 left-6 right-6 text-center">
@@ -195,8 +198,8 @@ export default async function AboutPage() {
             </ScrollReveal>
             <ScrollReveal delay={200} className="md:col-span-5">
               <div className="relative">
-                <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl border border-slate-200">
-                  <img src="/images/abul-hasan-about-hero.jpg" alt="Social Media Strategy Workspace" className="w-full h-full object-cover" />
+                <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl border border-slate-200 relative">
+                  <Image src="/images/abul-hasan-about-hero.webp" alt="Social Media Strategy Workspace" fill className="object-cover" />
                 </div>
                 <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl border border-slate-100 max-w-[280px]">
                   <div className="flex gap-1 mb-2">
