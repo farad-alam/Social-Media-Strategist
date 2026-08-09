@@ -549,7 +549,7 @@ export default function GuidePage() {
 
               <div className="not-prose my-8 bg-slate-50 rounded-2xl overflow-hidden border border-slate-200">
                 <img
-                  src="https://lh3.googleusercontent.com/d/1ZiivgAlFjlYCzjMVQm25isD_b39QdK-P"
+                  src="/images/content-pillar-wheel.png"
                   alt="Content pillar wheel diagram"
                   className="w-full object-contain"
                 />
