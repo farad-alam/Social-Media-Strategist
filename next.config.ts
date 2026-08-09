@@ -6,6 +6,8 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "lh3.googleusercontent.com" },
       { protocol: "https", hostname: "cdn.sanity.io" },
       { protocol: "https", hostname: "drive.google.com" },
+      { protocol: "https", hostname: "upload.wikimedia.org" },
+      { protocol: "https", hostname: "cdn.brandfetch.io" },
     ],
     formats: ["image/avif", "image/webp"],
     minimumCacheTTL: 31536000,

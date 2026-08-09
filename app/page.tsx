@@ -621,7 +621,7 @@ export default async function HomePage() {
               Trusted by Brands & Agencies on
             </p>
             <div className="flex flex-wrap justify-center items-center gap-10 md:gap-16 opacity-70 grayscale hover:grayscale-0 transition-all duration-300">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Upwork-logo.svg" alt="Upwork" className="h-9 brightness-0 invert" />
+              <Image src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Upwork-logo.svg" alt="Upwork" width={100} height={36} className="h-9 w-auto brightness-0 invert" />
               <div className="text-xl font-bold text-white flex items-center gap-1">
                 <div className="bg-white text-blue-600 rounded-sm px-1 leading-none pt-1">in</div> LinkedIn
               </div>
@@ -635,8 +635,8 @@ export default async function HomePage() {
                   <path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12c0-5.523-4.477-10-10-10z"/>
                 </svg> Meta
               </div>
-              <img src="https://cdn.brandfetch.io/clutch.co/w/400/h/150/logo" alt="Clutch" className="h-6 brightness-0 invert" />
-              <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" alt="TikTok" className="h-8 brightness-0 invert" />
+              <Image src="https://cdn.brandfetch.io/clutch.co/w/400/h/150/logo" alt="Clutch" width={85} height={24} className="h-6 w-auto brightness-0 invert" />
+              <Image src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" alt="TikTok" width={100} height={32} className="h-8 w-auto brightness-0 invert" />
               <Image src="/images/basis.webp" alt="Basis" width={100} height={40} className="h-10 w-auto opacity-90" />
             </div>
           </div>
@@ -1088,11 +1088,12 @@ export default async function HomePage() {
             {/* BASIS Award Card (50% width) */}
             <ScrollReveal direction="left" delay={100}>
               <div className="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden group hover:border-primary/30 transition-all duration-300 h-full flex flex-col shadow-sm hover:shadow-md">
-                <div className="relative w-full overflow-hidden bg-slate-100 flex-none">
-                  <img 
-                    src="/images/basis-award-new.jpg" 
+                <div className="relative w-full aspect-[4/3] overflow-hidden bg-slate-100 flex-none">
+                  <Image 
+                    src="/images/basis-award-new.webp" 
                     alt="Abul Hasan Receiving BASIS Outsourcing Award 2021 (District Level Top Individual)" 
-                    className="w-full h-auto block group-hover:scale-105 transition-transform duration-500"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="p-6 md:p-8 flex-1 flex flex-col border-t border-slate-200">
@@ -1108,10 +1109,11 @@ export default async function HomePage() {
             <ScrollReveal direction="right" delay={200}>
               <div className="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden group hover:border-primary/30 transition-all duration-300 h-full flex flex-col shadow-sm hover:shadow-md">
                 <div className="relative w-full flex-1 overflow-hidden bg-[#F2F1ED] flex items-center justify-center min-h-[200px]">
-                  <img 
-                    src="/images/upwork-profile-new.png" 
+                  <Image 
+                    src="/images/upwork-profile-new.webp" 
                     alt="Abul Hasan Upwork Top Rated Plus profile, social media strategist with 99% Job Success Score" 
-                    className="w-full h-full object-contain p-0 md:p-2 group-hover:scale-105 transition-transform duration-500"
+                    fill
+                    className="object-contain p-0 md:p-2 group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="p-6 md:p-8 flex-none flex flex-col border-t border-slate-200">
@@ -1150,7 +1152,7 @@ export default async function HomePage() {
             <ScrollReveal direction="left">
               <div className="relative">
                 <div className="aspect-square max-w-md mx-auto rounded-2xl bg-slate-800 overflow-hidden shadow-2xl shadow-primary/20 relative border-4 border-white/10">
-                  <img src="/images/abul-hasan-office.jpg" alt="Abul Hasan Office Photo" className="w-full h-full object-cover object-top" />
+                  <Image src="/images/abul-hasan-office.webp" alt="Abul Hasan Office Photo" fill className="object-cover object-top" />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent pointer-events-none" />
                   <div className="absolute bottom-6 left-6 right-6 text-center">
                     <h3 className="text-2xl font-bold text-white mb-1">Abul Hasan</h3>
