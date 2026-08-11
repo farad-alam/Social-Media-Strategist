@@ -571,43 +571,45 @@ export default async function HomePage() {
             </div>
 
             {/* Right Column - Image & Proof Cards */}
-            <div className="lg:col-span-5 relative hidden lg:block">
-              <div className="relative w-full max-w-[450px] aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10 mx-auto bg-slate-800">
+            <div className="lg:col-span-5 relative mt-16 lg:mt-0 px-4 sm:px-12 lg:px-0">
+              <div className="relative w-full max-w-[320px] sm:max-w-[380px] lg:max-w-[450px] aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10 mx-auto bg-slate-800">
                 <Image 
                   src="/images/abul-hasan.webp" 
                   alt="Abul Hasan - Social Media Strategist - Headshot" 
                   fill
+                  priority
+                  sizes="(max-width: 640px) 320px, (max-width: 1024px) 380px, 450px"
                   className="object-cover object-top"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent pointer-events-none" />
                 <div className="absolute bottom-6 left-6 right-6">
-                  <div className="text-2xl font-bold text-white mb-1">Abul Hasan</div>
-                  <div className="text-sm text-white/80 font-medium">Lead Social Media Strategist</div>
+                  <div className="text-xl lg:text-2xl font-bold text-white mb-1">Abul Hasan</div>
+                  <div className="text-xs lg:text-sm text-white/80 font-medium">Lead Social Media Strategist</div>
                 </div>
               </div>
 
               {/* Floating Card 1 */}
-              <div className="absolute -left-12 top-20 bg-slate-900/90 backdrop-blur-md border border-white/10 rounded-xl p-4 shadow-xl animate-float">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center">
-                    <span className="text-secondary-light font-bold">13+</span>
+              <div className="absolute -left-2 sm:-left-4 lg:-left-12 top-10 lg:top-20 bg-slate-900/90 backdrop-blur-md border border-white/10 rounded-xl p-3 lg:p-4 shadow-xl animate-float z-10 scale-90 sm:scale-100 origin-top-left">
+                <div className="flex items-center gap-2 lg:gap-3">
+                  <div className="w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-secondary/20 flex items-center justify-center">
+                    <span className="text-secondary-light font-bold text-sm lg:text-base">13+</span>
                   </div>
                   <div>
-                    <div className="text-white font-bold text-sm">Years Experience</div>
-                    <div className="text-white/60 text-xs">Since 2012</div>
+                    <div className="text-white font-bold text-xs lg:text-sm">Years Experience</div>
+                    <div className="text-white/60 text-[10px] lg:text-xs">Since 2012</div>
                   </div>
                 </div>
               </div>
 
               {/* Floating Card 2 */}
-              <div className="absolute -right-8 bottom-32 bg-slate-900/90 backdrop-blur-md border border-white/10 rounded-xl p-4 shadow-xl animate-float" style={{ animationDelay: "2s" }}>
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center">
-                    <span className="text-xl">🏆</span>
+              <div className="absolute -right-2 sm:-right-4 lg:-right-8 bottom-16 lg:bottom-32 bg-slate-900/90 backdrop-blur-md border border-white/10 rounded-xl p-3 lg:p-4 shadow-xl animate-float z-10 scale-90 sm:scale-100 origin-bottom-right" style={{ animationDelay: "2s" }}>
+                <div className="flex items-center gap-2 lg:gap-3">
+                  <div className="w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-accent/20 flex items-center justify-center">
+                    <span className="text-lg lg:text-xl">🏆</span>
                   </div>
                   <div>
-                    <div className="text-white font-bold text-sm">BASIS Award</div>
-                    <div className="text-white/60 text-xs">Top Individual 2021</div>
+                    <div className="text-white font-bold text-xs lg:text-sm">BASIS Award</div>
+                    <div className="text-white/60 text-[10px] lg:text-xs">Top Individual 2021</div>
                   </div>
                 </div>
               </div>
