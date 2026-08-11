@@ -184,12 +184,9 @@ export default async function GuidePage() {
             {data.heroSubtitle}
           </p>
 
-          {/* Banner image — visible on all devices */}
+          {/* Banner image */}
           {data.heroBanner && data.heroBanner.asset && (
-            <div
-              className="mt-8 rounded-2xl overflow-hidden border border-white/10 shadow-2xl"
-              style={{ aspectRatio: '1200 / 630' }}
-            >
+            <div className="mt-8 rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative">
               <Image
                 src={urlForImage(data.heroBanner)?.width(1200).url() || '/images/guide/guide-hero-banner.webp'}
                 alt={`${data.title} — Hasan Growth Loop™ Framework`}
@@ -197,7 +194,7 @@ export default async function GuidePage() {
                 height={630}
                 priority
                 sizes="(max-width: 640px) 95vw, (max-width: 1024px) 90vw, 896px"
-                className="w-full h-full object-cover"
+                className="w-full h-auto object-cover"
               />
             </div>
           )}
