@@ -214,7 +214,7 @@ export default function Header() {
 
               <div className="mt-4 flex items-center justify-center gap-4">
                 <a
-                  href="https://linkedin.com/in/abulhasan"
+                  href="https://www.linkedin.com/in/hasanstrategist/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 rounded-lg text-slate-400 hover:text-primary hover:bg-primary-50 transition-all duration-200"
@@ -225,7 +225,7 @@ export default function Header() {
                   </svg>
                 </a>
                 <a
-                  href="https://upwork.com/freelancers/abulhasan"
+                  href="https://www.upwork.com/freelancers/hasanstrategist"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 rounded-lg text-slate-400 hover:text-secondary hover:bg-green-50 transition-all duration-200"

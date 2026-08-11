@@ -89,6 +89,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.1,
     },
     {
+      url: `${baseUrl}/social-media-strategy-template`,
+      lastModified: defaultLastModified,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/social-media-strategy-examples`,
+      lastModified: defaultLastModified,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
       url: `${baseUrl}/refund-policy`,
       lastModified: defaultLastModified,
       changeFrequency: "yearly",

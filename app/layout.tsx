@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   title: {
     template: "%s | Abul Hasan — Social Media Strategist",
     default:
-      "Abul Hasan | Social Media Strategist for Hire — 13+ Yrs, 300+ Client",
+      "Abul Hasan | Social Media Strategist for Hire — 13+ Yrs, 300+ Clients",
   },
   description:
     "Abul Hasan is a social media strategist with 13+ years and 300+ clients served. Get a custom strategy built for measurable business growth.",
@@ -103,7 +103,7 @@ export default function RootLayout({
     "@type": "Organization",
     name: "Abul Hasan | Social Media Strategist",
     url: siteUrl,
-    logo: `${siteUrl}/images/logo.png`,
+    logo: `${siteUrl}/icon.png`,
     description:
       "Expert social media strategy services helping brands grow their online presence, generate leads, and improve ROI.",
     founder: {
