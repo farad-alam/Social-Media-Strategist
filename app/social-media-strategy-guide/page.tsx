@@ -184,16 +184,20 @@ export default async function GuidePage() {
             {data.heroSubtitle}
           </p>
 
-          {/* Banner image */}
+          {/* Banner image — visible on all devices */}
           {data.heroBanner && data.heroBanner.asset && (
-            <div className="mt-8 rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative">
+            <div
+              className="mt-8 rounded-2xl overflow-hidden border border-white/10 shadow-2xl"
+              style={{ aspectRatio: '1200 / 630' }}
+            >
               <Image
-                src={urlForImage(data.heroBanner)?.url() || '/images/guide/guide-hero-banner.webp'}
-                alt={data.title}
+                src={urlForImage(data.heroBanner)?.width(1200).url() || '/images/guide/guide-hero-banner.webp'}
+                alt={`${data.title} — Hasan Growth Loop™ Framework`}
                 width={1200}
                 height={630}
                 priority
-                className="w-full object-cover"
+                sizes="(max-width: 640px) 95vw, (max-width: 1024px) 90vw, 896px"
+                className="w-full h-full object-cover"
               />
             </div>
           )}
@@ -205,6 +209,7 @@ export default async function GuidePage() {
                 alt="Abul Hasan"
                 width={32}
                 height={32}
+                sizes="32px"
                 className="w-8 h-8 rounded-full object-cover object-top border border-white/20"
               />
               <span>By {data.author}</span>
