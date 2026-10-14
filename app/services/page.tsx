@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 const packages = [
   {
     name: "Strategy Audit",
-    price: "999",
+    price: "299",
     description: "A deep-dive audit of your current social media presence with actionable recommendations.",
     features: [
       "Full social media audit",
@@ -33,7 +33,7 @@ const packages = [
   },
   {
     name: "Growth Strategy",
-    price: "2,500",
+    price: "999",
     description: "A comprehensive social media strategy built from scratch to drive measurable growth.",
     features: [
       "Everything in Strategy Audit",
@@ -51,7 +51,7 @@ const packages = [
   },
   {
     name: "Full Partnership",
-    price: "7,500",
+    price: "3,500",
     priceNote: "/month",
     description: "Ongoing strategic partnership combining hands-on execution with continuous optimization - strategy led personally by me, delivered through my dedicated team.",
     features: [
